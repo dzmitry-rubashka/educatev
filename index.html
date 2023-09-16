@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Educat e.V.</title>
+  </head>
+  <body>
+    <div class="map-container" id="map-container">
+      <img class="map-image" src="./assets/images/map.jpg" alt="map" />
+      <div id="labels-container"></div> <!--  исправить-->
+    </div>
+    <div class="navigation-container">
+      <a href="#" class="navigation-button-plus" id="nbp"></a>
+      <a href="#" class="navigation-button-minus" id="nbm"></a>
+      <a href="#" class="navigation-button-reset" id="nbr"></a>
+    </div>
+    <div class="persons-container">
+      <div class="persons-colors">
+        <div class="green-color"></div>
+        <div class="orange-color"></div>
+        <div class="violet-color"></div>
+        <div class="red-color"></div>
+      </div>
+      <div>
+        <div>Князев Георгий Алексеевич</div>
+        <div>Лукницкий Павел Николаевич</div>
+        <div>Ползикова-Рубец Ксения Владимировна</div>
+        <div>Чекризов Василий Федорович</div>
+      </div>
+    </div>
+    <div class="search-container">
+      <div>
+        <button
+          id="toggleButtonPersons"
+          class="button toggle-button"
+          onclick="onClickToggleButton(id)"
+        >
+          Выбрать человека
+        </button>
+        <ul id="selectOptionPersons">
+          <li id="knyazev" onclick="onSelectPerson(id)">
+            Князев Георгий Алексеевич
+          </li>
+          <li id="luknitskiy" onclick="onSelectPerson(id)">
+            Лукницкий Павел Николаевич
+          </li>
+          <li id="polzikovaRubets" onclick="onSelectPerson(id)">
+            Ползикова-Рубец Ксения Владимировна
+          </li>
+          <li id="chekrizov" onclick="onSelectPerson(id)">
+            Чекризов Василий Федорович
+          </li>
+          <button
+            id="closeButtonPersons"
+            class="button close-button"
+            onclick="onClickCloseButton(id)"
+          >
+            &#9650;
+          </button>
+        </ul>
+      </div>
+      <div>
+        <button
+          id="toggleButtonDates"
+          class="button toggle-button"
+          onclick="onClickToggleButton(id)"
+        >
+          Выбрать месяц
+        </button>
+        <ul id="selectOptionDates">
+          <li id="september1941" onclick="onSelectDate(id)">сентябрь 1941</li>
+          <li id="october1941" onclick="onSelectDate(id)">октябрь 1941</li>
+          <li id="november1941" onclick="onSelectDate(id)">ноябрь 1941</li>
+          <li id="december1941" onclick="onSelectDate(id)">декабрь 1941</li>
+          <li id="january1942" onclick="onSelectDate(id)">январь 1942</li>
+          <li id="february1942" onclick="onSelectDate(id)">февраль 1942</li>
+          <li id="march1942" onclick="onSelectDate(id)">март 1942</li>
+          <li id="april1942" onclick="onSelectDate(id)">апрель 1942</li>
+          <button
+            id="closeButtonDates"
+            class="button close-button"
+            onclick="onClickCloseButton(id)"
+          >
+            &#9650;
+          </button>
+        </ul>
+      </div>
+      <div>
+        <button class="button search-button" onclick="onClickSearchButton()">
+          Поиск
+        </button>
+      </div>
+      <div>
+        <button class="button clear-button" onclick="onClickClearButton()">
+          Очистить
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
