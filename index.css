@@ -18,6 +18,15 @@
   transform: translate(-50%, -100%);
 }
 
+.marker-info {
+  position: absolute;
+  background-color: #f5f5ed;
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-width: 600px;
+  z-index: 1;
+}
+
 .navigation-container {
   position: fixed;
   top: 10px;

@@ -4,36 +4,7 @@ const navigationPlusButton = document.getElementById("npb");
 const navigationMinusButton = document.getElementById("nmb");
 const navigationResetButton = document.getElementById("nrb");
 
-const increaseMapSize = () => {
-  const currentWidth = parseFloat(map.style.width) || 100;
-  map.style.width = currentWidth + 20 + "%";
-};
-
-const decreaseMapSize = () => {
-  const currentWidth = parseFloat(map.style.width) || 100;
-  if (currentWidth !== 100) {
-    map.style.width = currentWidth - 20 + "%";
-  }
-};
-
-const resetMapSize = () => {
-  map.style.width = "100%";
-};
-
-navigationPlusButton.addEventListener("click", increaseMapSize);
-navigationMinusButton.addEventListener("click", decreaseMapSize);
-navigationResetButton.addEventListener("click", resetMapSize);
-
 const markersContainer = document.getElementById("markers-container");
-
-const createMarker = (x, y, imageSrc) => {
-  const marker = document.createElement("img");
-  marker.classList.add("marker");
-  marker.style.left = x + "%";
-  marker.style.top = y + "%";
-  marker.src = imageSrc;
-  markersContainer.appendChild(marker);
-};
 
 const knyazevMarkerSrc = "./assets/icons/marker-icon-green.png";
 const luknitskiyMarkerSrc = "./assets/icons/marker-icon-orange.png";
@@ -46,7 +17,9 @@ const personsMarkers = [
     y: 25.73,
     person: "knyazev",
     date: "september1941",
-    description: "description1",
+    description:
+      "Семьдесят девятый день войны. Понедельник. Когда я возвращался со службы, на отрей день войны началась бомбежка Ленинграда. Впереди, пожалуй, предстоит много еще таких тревожных ночей. Чашу испытаний нужно будет выпить до дна, трудную чашу.",
+    imageSrc: "./assets/images/knyazev/knyazev1.jpg",
     marker: knyazevMarkerSrc,
   },
   {
@@ -79,6 +52,7 @@ const personsMarkers = [
     person: "luknitskiy",
     date: "september1941",
     description: "description5",
+    imageSrc: "./assets/images/luknitskiy/luknitskiy1.jpg",
     marker: luknitskiyMarkerSrc,
   },
   {
@@ -111,6 +85,7 @@ const personsMarkers = [
     person: "polzikovaRubets",
     date: "september1941",
     description: "description9",
+    imageSrc: "./assets/images/polzikovaRubets/polzikovaRubets1.jpg",
     marker: polzikovaRubetsMarkerSrc,
   },
   {
@@ -118,7 +93,8 @@ const personsMarkers = [
     y: 33,
     person: "polzikovaRubets",
     date: "october1941",
-    description: "description10",
+    description:
+      "ый день редстоит много еще таких тревожных ночей. Чашу испытаний нужно будет выпить до дна, трудную чашу.",
     marker: polzikovaRubetsMarkerSrc,
   },
   {
@@ -142,7 +118,9 @@ const personsMarkers = [
     y: 40,
     person: "chekrizov",
     date: "september1941",
-    description: "description13",
+    description:
+      "Семьдесят девятый ой Невы — чло только череоста пк, на семьдесят девятый день войны началась бомбежка Ленинграда. Впереди, пожалуй, предстоит много еще таких тревожных ночей. Чашу испытаний нужно будет выпить до дна, трудную чашу.",
+    imageSrc: "./assets/images/chekrizov/chekrizov1.jpg",
     marker: chekrizovMarkerSrc,
   },
   {
@@ -158,7 +136,7 @@ const personsMarkers = [
     y: 34,
     person: "chekrizov",
     date: "november1941",
-    description: "description15",
+    description: "ыежнойспытаний нужно будет выпить до дна, трудную чашу.",
     marker: chekrizovMarkerSrc,
   },
   {
@@ -171,8 +149,116 @@ const personsMarkers = [
   },
 ];
 
+const infoContainer = document.getElementById("info-container");
+
+const increaseMapSize = () => {
+  const currentWidth = parseFloat(map.style.width) || 100;
+  map.style.width = currentWidth + 20 + "%";
+
+  const duration = 500;
+  const startY = window.scrollY;
+  const startX = window.scrollX;
+  const startTime = performance.now();
+
+  const scrollStep = (timestamp) => {
+    const progress = Math.min((timestamp - startTime) / duration, 1);
+    window.scrollTo(startX + startX * 0.1, startY + startY * 0.1);
+    if (progress < 1) {
+      requestAnimationFrame(scrollStep);
+    }
+  };
+
+  requestAnimationFrame(scrollStep);
+};
+
+const decreaseMapSize = () => {
+  const currentWidth = parseFloat(map.style.width) || 100;
+  if (currentWidth !== 100) {
+    map.style.width = currentWidth - 20 + "%";
+
+    const duration = 500;
+    const startY = window.scrollY;
+    const startX = window.scrollX;
+    const startTime = performance.now();
+
+    const scrollStep = (timestamp) => {
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      window.scrollTo(startX - startX * 0.1, startY - startY * 0.1);
+      if (progress < 1) {
+        requestAnimationFrame(scrollStep);
+      }
+    };
+
+    requestAnimationFrame(scrollStep);
+  }
+};
+
+const resetMapSize = () => {
+  map.style.width = "100%";
+};
+
+navigationPlusButton.addEventListener("click", increaseMapSize);
+navigationMinusButton.addEventListener("click", decreaseMapSize);
+navigationResetButton.addEventListener("click", resetMapSize);
+
+const showInfo = (description, x, y, imageSrc) => {
+  const info = document.createElement("div");
+  infoContainer.appendChild(info);
+  info.innerHTML = description;
+  info.classList.add("marker-info");
+  if (x <= 100 / 3) {
+    info.style.left = x + "%";
+  } else if (x > 100 / 3 && x < 100 / (3 / 2)) {
+    info.style.left =
+      x - ((info.offsetWidth / infoContainer.offsetWidth) * 100) / 2 + "%";
+  } else {
+    info.style.left =
+      x - (info.offsetWidth / infoContainer.offsetWidth) * 100 + "%";
+  }
+  info.style.top = y + 0.2 + "%";
+
+  if (imageSrc) {
+    const img = document.createElement("img");
+    img.src = imageSrc;
+    img.alt = "Info Image";
+    img.style.width = "100%";
+    img.style.paddingTop = "5px";
+    info.appendChild(img);
+  }
+};
+
+const hideInfo = () => {
+  while (infoContainer.firstChild) {
+    infoContainer.removeChild(infoContainer.firstChild);
+  }
+};
+
+const createMarker = (x, y, markerSrc, description, imageSrc) => {
+  const marker = document.createElement("img");
+  marker.classList.add("marker");
+  marker.style.left = x + "%";
+  marker.style.top = y + "%";
+  marker.src = markerSrc;
+
+  marker.addEventListener("mouseenter", () => {
+    showInfo(description, x, y, imageSrc);
+  });
+
+  marker.addEventListener("mouseleave", () => {
+    hideInfo();
+  });
+
+  markersContainer.appendChild(marker);
+};
+
 personsMarkers.forEach((marker) => {
-  createMarker(marker.x, marker.y, marker.marker);
+  createMarker(
+    marker.x,
+    marker.y,
+    marker.marker,
+    marker.description,
+    marker.imageSrc
+  );
 });
 
 const onClickToggleButton = (id) => {
@@ -207,11 +293,10 @@ selectOptionsDates.forEach((option) => {
 });
 
 const onClickCloseButton = (id) => {
-  let closeButton;
   let selectOption;
   id === "closeButtonPersons"
-    ? (closeButton = document.getElementById("closeButtonPersons"))
-    : (closeButton = document.getElementById("closeButtonDates"));
+    ? document.getElementById("closeButtonPersons")
+    : document.getElementById("closeButtonDates");
   id === "closeButtonDates"
     ? (selectOption = document.getElementById("selectOptionDates"))
     : (selectOption = document.getElementById("selectOptionPersons"));
@@ -237,83 +322,18 @@ const onSelectDate = (id) => {
   });
 };
 
-// const onClickClearButton = () => {
-//   const allPersonsItems = document.querySelectorAll("#selectOptionPersons li");
-//   const allDatesItems = document.querySelectorAll("#selectOptionDates li");
-//   allPersonsItems.forEach((item) => item.classList.remove("active"));
-//   allDatesItems.forEach((item) => item.classList.remove("active"));
-//   map.eachLayer((layer) => {
-//     !layer._url ? map.removeLayer(layer) : null;
-//   });
-//   document.getElementById("toggleButtonPersons").innerHTML = "Выбрать человека";
-//   document.getElementById("toggleButtonDates").innerHTML = "Выбрать месяц";
-//   personsLayers.forEach((person) => {
-//     new L.GeoJSON(person.layer, {
-//       pointToLayer: (feature, latlng) => {
-//         return L.marker(latlng, { icon: person.marker }).bindPopup(
-//           feature.properties.description
-//         );
-//       },
-//     }).addTo(map);
-//   });
-// };
+const onClickClearButton = () => {
+  const allPersonsItems = document.querySelectorAll("#selectOptionPersons li");
+  const allDatesItems = document.querySelectorAll("#selectOptionDates li");
+  allPersonsItems.forEach((item) => item.classList.remove("active"));
+  allDatesItems.forEach((item) => item.classList.remove("active"));
+  document.getElementById("toggleButtonPersons").innerHTML = "Выбрать человека";
+  document.getElementById("toggleButtonDates").innerHTML = "Выбрать месяц";
+  // personsMarkers.forEach((marker) => {
+  //   createMarker(marker.x, marker.y, marker.marker);
+  // });
+};
 
-// const onClickSearchButton = () => {
-//   let person = null;
-//   let date = null;
-//   const allPersonsItems = document.querySelectorAll("#selectOptionPersons li");
-//   const allDatesItems = document.querySelectorAll("#selectOptionDates li");
-//   allPersonsItems.forEach((item) => {
-//     item.className === "active" ? (person = item.id) : null;
-//   });
-//   allDatesItems.forEach((item) => {
-//     item.className === "active" ? (date = item.id) : null;
-//   });
-//   person === null && date === null
-//     ? null
-//     : person === null
-//     ? (map.eachLayer((layer) => {
-//         !layer._url ? map.removeLayer(layer) : null;
-//       }),
-//       personsLayers
-//         .map((personLayer) => ({
-//           layer: personLayer.layer.features.filter(
-//             (item) => item.properties.date === date
-//           ),
-//           marker: personLayer.marker,
-//         }))
-//         .forEach((person) => {
-//           new L.GeoJSON(person.layer, {
-//             pointToLayer: (feature, latlng) =>
-//               L.marker(latlng, { icon: person.marker }).bindPopup(
-//                 feature.properties.description
-//               ),
-//           }).addTo(map);
-//         }))
-//     : null;
-//   const addLayerToMap = (layer, marker, date) => {
-//     map.eachLayer((layer) => {
-//       !layer._url ? map.removeLayer(layer) : null;
-//     });
-//     const filteredLayer =
-//       date === null
-//         ? layer
-//         : layer.features.filter((item) => item.properties.date === date);
-//     new L.GeoJSON(filteredLayer, {
-//       pointToLayer: (feature, latlng) => {
-//         return L.marker(latlng, { icon: marker }).bindPopup(
-//           feature.properties.description
-//         );
-//       },
-//     }).addTo(map);
-//   };
-//   person === "knyazev"
-//     ? addLayerToMap(knyazevLayer, knyazevMarker, date)
-//     : person === "luknitskiy"
-//     ? addLayerToMap(luknitskiyLayer, luknitskiyMarker, date)
-//     : person === "polzikovaRubets"
-//     ? addLayerToMap(polzikovaRubetsLayer, polzikovaRubetsMarker, date)
-//     : person === "chekrizov"
-//     ? addLayerToMap(chekrizovLayer, chekrizovMarker, date)
-//     : null;
-// };
+const onClickSearchButton = () => {
+  console.log(123);
+};
