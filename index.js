@@ -151,6 +151,9 @@ const personsMarkers = [
 
 const infoContainer = document.getElementById("info-container");
 
+let selectedPerson = null;
+let selectedDate = null;
+
 const increaseMapSize = () => {
   const currentWidth = parseFloat(map.style.width) || 100;
   map.style.width = currentWidth + 20 + "%";
@@ -308,7 +311,7 @@ const onSelectPerson = (id) => {
   const allPersonsItems = document.querySelectorAll("#selectOptionPersons li");
   allPersonsItems.forEach((item) => {
     item.id === id
-      ? item.classList.add("active")
+      ? (item.classList.add("active"), (selectedPerson = item.id))
       : item.classList.remove("active");
   });
 };
@@ -317,8 +320,15 @@ const onSelectDate = (id) => {
   const allDatesItems = document.querySelectorAll("#selectOptionDates li");
   allDatesItems.forEach((item) => {
     item.id === id
-      ? item.classList.add("active")
+      ? (item.classList.add("active"), (selectedDate = item.id))
       : item.classList.remove("active");
+  });
+};
+
+const removeAllMarkers = () => {
+  const markers = document.querySelectorAll(".marker");
+  markers.forEach((marker) => {
+    markersContainer.removeChild(marker);
   });
 };
 
@@ -329,11 +339,61 @@ const onClickClearButton = () => {
   allDatesItems.forEach((item) => item.classList.remove("active"));
   document.getElementById("toggleButtonPersons").innerHTML = "Выбрать человека";
   document.getElementById("toggleButtonDates").innerHTML = "Выбрать месяц";
-  // personsMarkers.forEach((marker) => {
-  //   createMarker(marker.x, marker.y, marker.marker);
-  // });
+  selectedPerson = null;
+  selectedDate = null;
+
+  removeAllMarkers();
+
+  personsMarkers.forEach((marker) => {
+    createMarker(
+      marker.x,
+      marker.y,
+      marker.marker,
+      marker.description,
+      marker.imageSrc
+    );
+  });
 };
 
 const onClickSearchButton = () => {
-  console.log(123);
+  if (selectedPerson && selectedDate) {
+    removeAllMarkers();
+    personsMarkers.filter((marker) => {
+      if (marker.person === selectedPerson && marker.date === selectedDate) {
+        createMarker(
+          marker.x,
+          marker.y,
+          marker.marker,
+          marker.description,
+          marker.imageSrc
+        );
+      }
+    });
+  } else if (selectedPerson) {
+    removeAllMarkers();
+    personsMarkers.filter((marker) => {
+      if (marker.person === selectedPerson) {
+        createMarker(
+          marker.x,
+          marker.y,
+          marker.marker,
+          marker.description,
+          marker.imageSrc
+        );
+      }
+    });
+  } else if (selectedDate) {
+    removeAllMarkers();
+    personsMarkers.filter((marker) => {
+      if (marker.date === selectedDate) {
+        createMarker(
+          marker.x,
+          marker.y,
+          marker.marker,
+          marker.description,
+          marker.imageSrc
+        );
+      }
+    });
+  }
 };
