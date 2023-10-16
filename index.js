@@ -10,6 +10,9 @@ const knyazevMarkerSrc = "./assets/icons/marker-icon-green.png";
 const luknitskiyMarkerSrc = "./assets/icons/marker-icon-orange.png";
 const polzikovaRubetsMarkerSrc = "./assets/icons/marker-icon-violet.png";
 const chekrizovMarkerSrc = "./assets/icons/marker-icon-red.png";
+const zimnickayaMarkerSrc = "./assets/icons/marker-icon-blue.png";
+const zagorskayaMarkerSrc = "./assets/icons/marker-icon-yellow.png";
+const glinskayaMarkerSrc = "./assets/icons/marker-icon-grey.png";
 
 const personsMarkers = [
   {
@@ -146,6 +149,30 @@ const personsMarkers = [
     date: "december1941",
     description: "description16",
     marker: chekrizovMarkerSrc,
+  },
+  {
+    x: 45,
+    y: 11,
+    person: "zimnickaya",
+    date: "december1941",
+    description: "description17",
+    marker: zimnickayaMarkerSrc,
+  },
+  {
+    x: 45,
+    y: 13,
+    person: "zagorskaya",
+    date: "december1941",
+    description: "description18",
+    marker: zagorskayaMarkerSrc,
+  },
+  {
+    x: 45,
+    y: 15,
+    person: "glinskaya",
+    date: "december1941",
+    description: "description19",
+    marker: glinskayaMarkerSrc,
   },
 ];
 

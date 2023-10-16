@@ -78,22 +78,37 @@
 
 .green-color {
   background-color: #27ac24;
-  height: 25%;
+  height: calc(100% / 7);
 }
 
 .orange-color {
   background-color: #ca8428;
-  height: 25%;
+  height: calc(100% / 7);
 }
 
 .violet-color {
   background-color: #a246d0;
-  height: 25%;
+  height: calc(100% / 7);
 }
 
 .red-color {
   background-color: #ca223a;
-  height: 25%;
+  height: calc(100% / 7);
+}
+
+.blue-color {
+  background-color: #4495cf;
+  height: calc(100% / 7);
+}
+
+.yellow-color {
+  background-color: #fed52e;
+  height: calc(100% / 7);
+}
+
+.grey-color {
+  background-color: #7d7d7d;
+  height: calc(100% / 7);
 }
 
 .search-container {
