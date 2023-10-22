@@ -2087,7 +2087,7 @@ selectOptionsPersons.forEach((option) => {
 
 selectOptionsDates.forEach((option) => {
   option.addEventListener("click", () => {
-    toggleButtonDates.textContent = option.textContent;
+    toggleButtonDates.textContent = `${option.textContent} (весь месяц)`;
   });
 });
 
@@ -2136,6 +2136,27 @@ const onSelectDate = (id) => {
       item.classList.remove("active");
     }
   });
+};
+
+const onSelectDay = (id, value) => {
+  selectedDate = id;
+  if (id.includes("september")) {
+    toggleButtonDates.textContent = `${value} сентября 1941`;
+  } else if (id.includes("october")) {
+    toggleButtonDates.textContent = `${value} октября 1941`;
+  } else if (id.includes("november")) {
+    toggleButtonDates.textContent = `${value} ноября 1941`;
+  } else if (id.includes("december")) {
+    toggleButtonDates.textContent = `${value} декабря 1941`;
+  } else if (id.includes("january")) {
+    toggleButtonDates.textContent = `${value} января 1942`;
+  } else if (id.includes("february")) {
+    toggleButtonDates.textContent = `${value} февраля 1942`;
+  } else if (id.includes("march")) {
+    toggleButtonDates.textContent = `${value} марта 1942`;
+  } else {
+    toggleButtonDates.textContent = `${value} апреля 1942`;
+  }
 };
 
 const removeAllMarkers = () => {

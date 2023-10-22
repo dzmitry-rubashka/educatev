@@ -203,3 +203,7 @@ ul li:nth-last-child(2),
   text-align: center;
   width: calc(100% / 7);
 }
+
+.calendar-flex-item:hover {
+  background-color: #ccc5c5;
+}
