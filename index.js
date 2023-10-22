@@ -2038,7 +2038,6 @@ const hideInfo = () => {
 let infoVisible = false;
 
 document.addEventListener("click", (event) => {
-  console.log(event.target);
   if (infoVisible && event.target.nodeName.toLowerCase() === "img") {
     hideInfo();
     infoVisible = false;
@@ -2217,7 +2216,6 @@ const onClickClearButton = () => {
 };
 
 const onClickSearchButton = () => {
-  console.log(selectedDate, selectedPerson);
   if (selectedPerson && selectedDate) {
     removeAllMarkers();
     personsMarkers.filter((marker) => {
