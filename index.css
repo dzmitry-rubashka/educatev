@@ -170,6 +170,7 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-top: 2px solid #ccc5c5;
 }
 
 ul li:hover {
@@ -180,9 +181,25 @@ ul li:first-child {
   margin-top: 10px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border-top: none;
 }
 
-ul li:nth-last-child(2) {
+ul li:nth-last-child(2),
+#april1942 {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.calendar-container {
+  display: none;
+}
+
+.calendar-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar-flex-item {
+  text-align: center;
+  width: calc(100% / 7);
 }

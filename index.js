@@ -719,8 +719,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 50,
-    y: 11,
+    x: 0,
+    y: 0,
     person: "knyazev",
     date: "december1941",
     description:
@@ -2115,9 +2115,26 @@ const onSelectPerson = (id) => {
 const onSelectDate = (id) => {
   const allDatesItems = document.querySelectorAll("#selectOptionDates li");
   allDatesItems.forEach((item) => {
-    item.id === id
-      ? (item.classList.add("active"), (selectedDate = item.id))
-      : item.classList.remove("active");
+    if (item.id === id) {
+      selectedDate = item.id;
+      if (item.classList.contains("active")) {
+        item.classList.remove("active");
+        const textElement = document.getElementById(id + "-calendar");
+        textElement.style.display = "none";
+      } else {
+        const allTextElements = document.querySelectorAll(
+          ".calendar-container"
+        );
+        allTextElements.forEach((element) => {
+          element.style.display = "none";
+        });
+        item.classList.add("active");
+        const textElement = document.getElementById(id + "-calendar");
+        textElement.style.display = "block";
+      }
+    } else {
+      item.classList.remove("active");
+    }
   });
 };
 
@@ -2152,6 +2169,7 @@ const onClickClearButton = () => {
 };
 
 const onClickSearchButton = () => {
+  console.log(selectedDate, selectedPerson);
   if (selectedPerson && selectedDate) {
     removeAllMarkers();
     personsMarkers.filter((marker) => {
