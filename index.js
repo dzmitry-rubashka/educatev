@@ -1951,7 +1951,7 @@ let selectedDate = null;
 
 const increaseMapSize = () => {
   const currentWidth = parseFloat(map.style.width) || 100;
-  map.style.width = currentWidth + 20 + "%";
+  map.style.width = currentWidth + 40 + "%";
 
   const duration = 500;
   const startY = window.scrollY;
@@ -1972,7 +1972,7 @@ const increaseMapSize = () => {
 const decreaseMapSize = () => {
   const currentWidth = parseFloat(map.style.width) || 100;
   if (currentWidth !== 100) {
-    map.style.width = currentWidth - 20 + "%";
+    map.style.width = currentWidth - 40 + "%";
 
     const duration = 500;
     const startY = window.scrollY;
