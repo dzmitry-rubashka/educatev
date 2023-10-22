@@ -2002,9 +2002,12 @@ navigationResetButton.addEventListener("click", resetMapSize);
 const showInfo = (description, x, y, imageSrc) => {
   const info = document.createElement("div");
   infoContainer.appendChild(info);
-  info.innerHTML = '<div contentEditable="true">' + description + "</div>";
+  info.innerHTML = "<div>" + description + "</div>";
   info.classList.add("marker-info");
-  info.style.fontSize = "10px";
+  info.style.fontSize = "16px";
+  info.style.border = "2px solid #ccc5c5";
+  let divInfoHeight = 20 > 99 - y ? 99 - y : 20;
+  info.style.maxHeight = `${divInfoHeight}%`;
   if (x <= 100 / 3) {
     info.style.left = x + "%";
   } else if (x > 100 / 3 && x < 100 / (3 / 2)) {
@@ -2032,6 +2035,16 @@ const hideInfo = () => {
   }
 };
 
+let infoVisible = false;
+
+document.addEventListener("click", (event) => {
+  console.log(event.target);
+  if (infoVisible && event.target.nodeName.toLowerCase() === "img") {
+    hideInfo();
+    infoVisible = false;
+  }
+});
+
 const createMarker = (x, y, markerSrc, description, imageSrc) => {
   const marker = document.createElement("img");
   marker.classList.add("marker");
@@ -2040,11 +2053,25 @@ const createMarker = (x, y, markerSrc, description, imageSrc) => {
   marker.src = markerSrc;
 
   marker.addEventListener("mouseenter", () => {
-    showInfo(description, x, y, imageSrc);
+    if (!infoVisible) {
+      showInfo(description, x, y, imageSrc);
+    }
   });
 
   marker.addEventListener("mouseleave", () => {
-    hideInfo();
+    if (!infoVisible) {
+      hideInfo();
+    }
+  });
+
+  marker.addEventListener("click", (event) => {
+    if (infoVisible) {
+      hideInfo();
+    } else {
+      showInfo(description, x, y, imageSrc);
+    }
+    infoVisible = !infoVisible;
+    event.stopPropagation();
   });
 
   markersContainer.appendChild(marker);

@@ -25,6 +25,7 @@
   border-radius: 5px;
   max-width: 600px;
   z-index: 1;
+  overflow-y: auto;
 }
 
 .navigation-container {
