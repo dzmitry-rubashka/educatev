@@ -208,3 +208,12 @@ ul li:nth-last-child(2),
 .calendar-flex-item:hover {
   background-color: #ccc5c5;
 }
+
+.hidden-date {
+  /* background-color: #a246d0; */
+  opacity: 0.5;
+}
+
+.hidden-date:hover {
+  background-color: inherit;
+}
