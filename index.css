@@ -205,15 +205,18 @@ ul li:nth-last-child(2),
   width: calc(100% / 7);
 }
 
-.calendar-flex-item:hover {
+.calendar-flex-item:not(.selected-date):hover {
   background-color: #ccc5c5;
 }
 
 .hidden-date {
-  /* background-color: #a246d0; */
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .hidden-date:hover {
   background-color: inherit;
+}
+
+.selected-date {
+  background-color: #ccc5c5;
 }

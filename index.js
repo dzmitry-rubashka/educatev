@@ -97,7 +97,7 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 46.78,
+    x: 46.28,
     y: 64.33, // Лиговский пр.123
     person: "zagorskaya",
     date: ["19september1941"],
@@ -178,8 +178,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 32.01,
+    y: 56.60,
     person: "knyazev",
     date: ["1october1941"],
     description:
@@ -187,8 +187,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 47.28,
+    y: 64.63, // Лиговский пр.123
     person: "zagorskaya",
     date: ["2october1941"],
     description:
@@ -196,8 +196,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 34.85,
+    y: 55.56, //  На углу улицы Гоголя и Кирпичного переулка
     person: "knyazev",
     date: ["2october1941"],
     description:
@@ -205,8 +205,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 49.69,
+    y: 45.44, //  фигляндский вокзал
     person: "zagorskaya",
     date: ["3october1941"],
     description:
@@ -214,8 +214,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 47.73,
+    y: 62.68, // Лиговский пр.123
     person: "zagorskaya",
     date: ["4october1941"],
     description:
@@ -223,8 +223,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 56.73,
+    y: 54.03, // дегтярная
     person: "knyazev",
     date: ["5october1941"],
     description:
@@ -2139,6 +2139,10 @@ const onSelectPerson = (id) => {
 };
 
 const onSelectDate = (id) => {
+  const allItems = document.querySelectorAll(".calendar-flex-item");
+  for (var i = 0; i < allItems.length; i++) {
+    allItems[i].classList.remove("selected-date");
+  }
   const allDatesItems = document.querySelectorAll("#selectOptionDates li");
   allDatesItems.forEach((item) => {
     if (item.id === id) {
@@ -2183,6 +2187,12 @@ const onSelectDay = (id, value) => {
   } else {
     toggleButtonDates.textContent = `${value} апреля 1942`;
   }
+
+  const allItems = document.querySelectorAll(".calendar-flex-item");
+  for (var i = 0; i < allItems.length; i++) {
+    allItems[i].classList.remove("selected-date");
+  }
+  document.getElementById(id).classList.add("selected-date");
 };
 
 const removeAllMarkers = () => {
