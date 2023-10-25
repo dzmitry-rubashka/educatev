@@ -539,8 +539,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 30,
+    y: 52.63, // архив или что ???
     person: "knyazev",
     date: ["11november1941"],
     description:
@@ -548,8 +548,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 44.05,
+    y: 57.06, // Аничков мост
     person: "luknitskiy",
     date: ["12november1941"],
     description:
