@@ -557,8 +557,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.37,
+    y: 53.13, // дом ?
     person: "knyazev",
     date: ["12november1941"],
     description:
@@ -566,8 +566,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 26.2,
+    y: 55.26, // академия
     person: "knyazev",
     date: ["13november1941"],
     description:
@@ -575,8 +575,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 22.21,
+    y: 30.56, // новая деревня
     person: "luknitskiy",
     date: ["14november1941"],
     description:
@@ -584,8 +584,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 47.73,
+    y: 60.78, // пушкинская
     person: "knyazev",
     date: ["14november1941"],
     description:
@@ -593,8 +593,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 34.65,
+    y: 46.76, // театр ленинского комс
     person: "luknitskiy",
     date: ["15november1941"],
     description:
