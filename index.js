@@ -990,8 +990,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 46.07,
+    y: 65.58, // ???
     person: "zagorskaya",
     date: ["3january1942"],
     description:
@@ -999,8 +999,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 27.08,
+    y: 61.54, // печатников
     person: "polzikovaRubets",
     date: ["5january1942"],
     description:
@@ -1008,8 +1008,8 @@ const personsMarkers = [
     marker: polzikovaRubetsMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 30.15,
+    y: 43.35, // щорса
     person: "luknitskiy",
     date: ["6january1942"],
     description:
@@ -1017,8 +1017,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 20.68,
+    y: 65.07, // завод
     person: "chekrizov",
     date: ["7january1942"],
     description:
@@ -1026,8 +1026,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.35,
+    y: 42.13, // геслеровск.
     person: "luknitskiy",
     date: ["8january1942"],
     description:
@@ -1035,8 +1035,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 52.73,
+    y: 59.78, // полтавская
     person: "polzikovaRubets",
     date: ["9january1942"],
     description:
@@ -1044,8 +1044,8 @@ const personsMarkers = [
     marker: polzikovaRubetsMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 28.83,
+    y: 54.16, // дом ?
     person: "knyazev",
     date: ["9january1942"],
     description:
@@ -1053,8 +1053,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.28,
+    y: 60.43, // На площади перед Театром оперы и балета имени
     person: "polzikovaRubets",
     date: ["9january1942"],
     description:
@@ -1062,8 +1062,8 @@ const personsMarkers = [
     marker: polzikovaRubetsMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 36,
+    y: 3.5, // Шуваловскому кладбищу.
     person: "zimnickaya",
     date: ["10january1942"],
     description:
@@ -1071,8 +1071,8 @@ const personsMarkers = [
     marker: zimnickayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.84,
+    y: 42.65, // союз писателей
     person: "luknitskiy",
     date: ["10january1942"],
     description:
@@ -1080,8 +1080,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 60.51,
+    y: 50.51, // смольный
     person: "chekrizov",
     date: ["12january1942"],
     description:
@@ -1089,8 +1089,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 46.15,
+    y: 48.54, // литейный мост
     person: "luknitskiy",
     date: ["13january1942"],
     description:
@@ -1098,8 +1098,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 25.83,
+    y: 55.59, // 6я линия
     person: "knyazev",
     date: ["13january1942", "14january1942"],
     description:
@@ -1107,8 +1107,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 40.05,
+    y: 57.26, // гостииный двор
     person: "chekrizov",
     date: ["15january1942"],
     description:
