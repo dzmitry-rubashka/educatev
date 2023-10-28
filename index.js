@@ -378,7 +378,7 @@ const personsMarkers = [
   },
   {
     x: 44.78,
-    y: 28.55, // лесотехническая академия
+    y: 28.75, // лесотехническая академия
     person: "zimnickaya",
     date: ["26october1941"],
     description:
@@ -602,8 +602,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.08,
+    y: 56.06, // дом лаваля
     person: "knyazev",
     date: ["15november1941"],
     description:
@@ -611,8 +611,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.06,
+    y: 51.63, // Физиологического института имени И. П. Павлова
     person: "knyazev",
     date: ["17november1941"],
     description:
@@ -620,8 +620,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 38.78,
+    y: 27.85, // станция ланская
     person: "zimnickaya",
     date: ["17november1941"],
     description:
@@ -629,8 +629,8 @@ const personsMarkers = [
     marker: zimnickayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 35.65,
+    y: 41.33, // больница эрисмана
     person: "luknitskiy",
     date: ["18november1941"],
     description:
@@ -638,8 +638,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 39.15,
+    y: 40.13, // пальмовую оранжерею в Ботаническом саду Академии наук.
     person: "knyazev",
     date: ["18november1941"],
     description:
@@ -647,8 +647,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 30.78,
+    y: 52.93, // архив или что ???
     person: "knyazev",
     date: ["20november1941"],
     description:
@@ -656,8 +656,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 44.32,
+    y: 33.55, // Лесном проспектеа
     person: "zimnickaya",
     date: ["20november1941"],
     description:
@@ -666,8 +666,8 @@ const personsMarkers = [
   },
 
   {
-    x: 0,
-    y: 0,
+    x: 24.66,
+    y: 78.52,  // Кировскому району
     person: "chekrizov",
     date: ["21november1941"],
     description:
@@ -675,8 +675,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 40.05,
+    y: 56.26, // невская
     person: "knyazev",
     date: ["24november1941"],
     description:
@@ -684,8 +684,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.4,
+    y: 52.23, // архив или что ??? + // васильевский остров
     person: "knyazev",
     date: ["25november1941", "26november1941"],
     description:
@@ -693,8 +693,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 46.53,
+    y: 65.78, // ???
     person: "zagorskaya",
     date: ["28november1941"],
     description:
@@ -702,8 +702,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 44.98,
+    y: 27.94, // «профессорском» доме у Лесотехнической академии
     person: "zimnickaya",
     date: ["30november1941"],
     description:
@@ -711,8 +711,8 @@ const personsMarkers = [
     marker: zimnickayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 28.99,
+    y: 52.93, // дом ?
     person: "knyazev",
     date: ["30november1941"],
     description:
@@ -720,8 +720,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 46.45,
+    y: 45.94, // военная медицинская академия
     person: "knyazev",
     date: ["2december1941"],
     description:
@@ -729,8 +729,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 37,
+    y: 3, // Шуваловскому кладбищу.
     person: "zimnickaya",
     date: ["4december1941"],
     description:
@@ -738,8 +738,8 @@ const personsMarkers = [
     marker: zimnickayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 33.32,
+    y: 52.61, // река возле дворцового моста
     person: "knyazev",
     date: ["4december1941"],
     description:
@@ -747,8 +747,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 21.08,
+    y: 64.73, // завод
     person: "chekrizov",
     date: ["5december1941"],
     description:
@@ -756,8 +756,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 26.89,
+    y: 52.05, // Библиотекой Академии наук и университетом
     person: "knyazev",
     date: ["5december1941"],
     description:
@@ -765,17 +765,17 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
-    person: "knyazev",
+    x: 50,
+    y: 46.21, // финляндский вокзал
+    person: "knyazev", 
     date: ["6december1941"],
     description:
       "Сто шестьдесят восьмой день войны. Суббота. Сегодня происходило совещание у начальника Административно-хозяйственного отдела ленинградских учреждений Академии наук т[ов]. Федосеева по поводу предстоящей эвакуации. Выяснилось, что отправление эвакуированных пешком нецелесообразно. Первый же опыт дал множество отставших. Теперь решено перевозить на грузовых автомобилях по 15 человек с 30 кг багажа на каждого человека. Сборный пункт на Финляндском вокзале. Оттуда до какой-то станции по железной дороге, далее на грузовиках опять, частично по льду Ладожского озера, с какого-то пункта снова вагон железной дороги. В учреждениях должны остаться сотрудники для охраны зданий и научного имущества. Остальные могут идти в поход. Эвакуация намечается в конце будущей недели. Уже записалось до полутора тысяч человек. Теперь, когда стало известно, что будут предоставлены грузовые машины, количество желающих, конечно, увеличится.<br> Из собравшихся в кабинете Федосеева представителей учреждений не было. Кроме меня и больного Яковкина (директора Библиотеки), ни одного директора: все они улетели. Пришли заместители или помощники по хозяйственной части. Выбрали центральную комиссию, постановили организовать тройки по учреждениям. Смотрел на мало знакомых людей, желтых, зеленых, подпухших, в пальто, в шапках, имеющих одно стремление — бежать, бежать...<br> В вестибюле темно, горит лишь коптилка, едва освещающая проход. Мрачно и жутко на мраморной кваренговской лестнице. Проходят черные тени, а кто — и не разберешь. Никаких пропусков никто не спрашивает... Возвратившись в Архив, собрал сотрудников и объявил им условия объявленной эвакуации. Все задумались. Часть их обязательно должна остаться в Архиве для его охраны, те, кто уедут, теряют свое место, т[ак] к[ак] наше учреждение, как плановое, остается в Ленинграде. Заседание проводил в нижнем этаже, потому что во всех помещениях холод. На дворе большой мороз, а нам который день не могут доставить топлива.<br> И не подозревал, как ослабли мои силы: возвращаясь домой по лестнице, почувствовал, что качаюсь. Неприятное было ощущение... Но я совладал с собой, рассмеялся и для бодрости запел.",
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 28.05,
+    y: 59.33, // площадь труда
     person: "knyazev",
     date: ["8december1941"],
     description:
@@ -783,8 +783,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 28.39,
+    y: 52.73, // дом ?
     person: "knyazev",
     date: ["10december1941"],
     description:
@@ -792,8 +792,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.65,
+    y: 42.13, // щорса
     person: "luknitskiy",
     date: ["11december1941"],
     description:
@@ -801,8 +801,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 27.51,
+    y: 52.31, // Библиотекой Академии наук и университетом
     person: "knyazev",
     date: ["11december1941"],
     description:
@@ -810,8 +810,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 51.32,
+    y: 47.15, // удица комсомола
     person: "zimnickaya",
     date: ["12december1941"],
     description:
@@ -819,8 +819,8 @@ const personsMarkers = [
     marker: zimnickayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 40.45,
+    y: 55.26, // лассаля
     person: "luknitskiy",
     date: ["12december1941"],
     description:
@@ -828,8 +828,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 30.67,
+    y: 54.43, // набережная невы
     person: "knyazev",
     date: ["12december1941", "13december1941"],
     description:
@@ -837,8 +837,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 33.12,
+    y: 53.11, // дворцовый мост
     person: "knyazev",
     date: ["15december1941"],
     description:
@@ -846,8 +846,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 35.65,
+    y: 41.95, // льва толстого
     person: "knyazev",
     date: ["16december1941"],
     description:
@@ -855,8 +855,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 26.28,
+    y: 54.45, // академ дом
     person: "knyazev",
     date: ["17december1941", "18december1941"],
     description:
@@ -864,8 +864,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 26.99,
+    y: 55.15, // академия
     person: "knyazev",
     date: ["19december1941", "20december1941"],
     description:
@@ -873,8 +873,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 27.9,
+    y: 52.96, // дом ?
     person: "knyazev",
     date: ["21december1941"],
     description:
@@ -882,8 +882,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 32.12,
+    y: 52.76, // Зоологического института
     person: "knyazev",
     date: ["22december1941"],
     description:
@@ -891,8 +891,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 21,
+    y: 71.13, // нарвский проспект
     person: "chekrizov",
     date: ["23december1941"],
     description:
@@ -900,8 +900,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 26.59,
+    y: 55.35, // сфинксы
     person: "knyazev",
     date: ["24december1941"],
     description:
@@ -909,8 +909,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.63,
+    y: 53.46, // дом ?
     person: "knyazev",
     date: ["25december1941"],
     description:
@@ -918,8 +918,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.23,
+    y: 53.56, // дом ?
     person: "knyazev",
     date: ["26december1941", "27december1941", "28december1941"],
     description:
@@ -927,8 +927,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 28.35,
+    y: 57.28, // тасс
     person: "luknitskiy",
     date: ["29december1941"],
     description:
@@ -936,8 +936,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 20.08,
+    y: 64.93, // завод
     person: "chekrizov",
     date: ["31december1941"],
     description:
@@ -945,8 +945,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 45.33,
+    y: 67.18, // ??
     person: "zagorskaya",
     date: ["31december1941"],
     description:
@@ -954,8 +954,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 41.85,
+    y: 57.86, // Александринку
     person: "zagorskaya",
     date: ["1january1942"],
     description:
@@ -963,8 +963,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.38,
+    y: 56.19, // сад трудящихся
     person: "polzikovaRubets",
     date: ["2january1942"],
     description:
@@ -972,8 +972,8 @@ const personsMarkers = [
     marker: polzikovaRubetsMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.32,
+    y: 53.32, // архив
     person: "knyazev",
     date: ["2january1942"],
     description:
@@ -981,8 +981,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 26.3,
+    y: 55.59, // сфинксы
     person: "knyazev",
     date: ["3january1942"],
     description:
