@@ -1485,8 +1485,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.22,
+    y: 53.58, // архив
     person: "knyazev",
     date: ["16february1942"],
     description:
@@ -1494,8 +1494,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.28,
+    y: 63.83, // Усачева баня
     person: "glinskaya",
     date: ["18february1942"],
     description:
@@ -1503,8 +1503,8 @@ const personsMarkers = [
     marker: glinskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 27.78,
+    y: 54.85, // академия
     person: "knyazev",
     date: ["19february1942"],
     description:
@@ -1512,8 +1512,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 49.8,
+    y: 46.55, // финляндский вокзал
     person: "knyazev",
     date: ["20february1942"],
     description:
@@ -1521,8 +1521,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.28,
+    y: 58.63, // мойка
     person: "chekrizov",
     date: ["21february1942"],
     description:
@@ -1530,8 +1530,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.62,
+    y: 52.45, // архив
     person: "knyazev",
     date: ["21february1942"],
     description:
@@ -1539,8 +1539,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 46.57,
+    y: 66.25, // ?? дома
     person: "zagorskaya",
     date: ["23february1942"],
     description:
@@ -1548,8 +1548,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 26.9,
+    y: 62.65, // канал грибоедова
     person: "chekrizov",
     date: ["23february1942"],
     description:
@@ -1557,8 +1557,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.5,
+    y: 52.62, // архив
     person: "knyazev",
     date: ["23february1942"],
     description:
@@ -1566,8 +1566,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 21.88,
+    y: 64.88,  // завод
     person: "chekrizov",
     date: ["24february1942"],
     description:
@@ -1575,8 +1575,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 13.96,
+    y: 64.71, // финский залив
     person: "knyazev",
     date: ["24february1942"],
     description:
@@ -1584,8 +1584,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 35.67,
+    y: 50.87, // нева 
     person: "chekrizov",
     date: ["1march1942"],
     description:
@@ -1593,8 +1593,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.32,
+    y: 53.73, // дом ?
     person: "knyazev",
     date: ["1march1942"],
     description:
@@ -1602,8 +1602,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.95,
+    y: 56.95, // площадь Воровского
     person: "chekrizov",
     date: ["4march1942"],
     description:
@@ -1611,8 +1611,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 46.1,
+    y: 49.2, // литейный мост
     person: "luknitskiy",
     date: ["5march1942"],
     description:
@@ -1620,8 +1620,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 30.24,
+    y: 42.85, // союз писателей
     person: "luknitskiy",
     date: ["5march1942"],
     description:
@@ -1629,8 +1629,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 30.18,
+    y: 60.83, // канал грибоедова
     person: "luknitskiy",
     date: ["5march1942"],
     description:
@@ -1638,8 +1638,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 40.85,
+    y: 55.86,
     person: "chekrizov",
     date: ["6march1942"],
     description:
@@ -1647,8 +1647,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 29.95,
+    y: 56.12,
     person: "chekrizov",
     date: ["8march1942"],
     description:
@@ -1656,8 +1656,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 27.95,
+    y: 55.72,
     person: "chekrizov",
     date: ["12march1942"],
     description:
@@ -1665,8 +1665,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 34.17,
+    y: 51.87, // нева 
     person: "knyazev",
     date: ["13march1942"],
     description:
@@ -1674,8 +1674,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 28.72,
+    y: 52.83, // дом ?
     person: "knyazev",
     date: ["15march1942"],
     description:
@@ -1683,8 +1683,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 46.57,
+    y: 66.65, // ?? дома
     person: "zagorskaya",
     date: ["17march1942"],
     description:
@@ -1692,8 +1692,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.22,
+    y: 52.78, // архив
     person: "knyazev",
     date: ["18march1942"],
     description:
@@ -1701,8 +1701,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.78,
+    y: 56, // медный всадник
     person: "chekrizov",
     date: ["18march1942"],
     description:
@@ -1710,8 +1710,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 35.55,
+    y: 54.49, // площадь Урицкого
     person: "chekrizov",
     date: ["19march1942"],
     description:
@@ -1719,8 +1719,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.12,
+    y: 52.92, // архив
     person: "knyazev",
     date: ["19march1942"],
     description:
