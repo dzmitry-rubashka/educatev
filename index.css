@@ -71,6 +71,23 @@
   left: 67px;
   background-color: #f5f5ed;
   border-radius: 10px;
+  border: 2px solid #ccc5c5;
+}
+
+.language-container {
+  position: fixed;
+  top: 10px;
+  right: 370px;
+  z-index: 1;
+}
+
+.language-button {
+  background-color: #f5f5ed;
+  border: 2px solid #ccc5c5;;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  width: 50px;
 }
 
 .persons-colors {
@@ -123,6 +140,7 @@
   position: fixed;
   top: 10px;
   right: 10px;
+  border: 2px solid #ccc5c5;
 }
 
 .button {

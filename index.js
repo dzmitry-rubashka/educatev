@@ -2283,6 +2283,7 @@ let currentTranslation = "en";
 
 function toggleTranslation() {
   if (currentTranslation === "en") {
+    document.getElementById("language-button").textContent = "EN";
     document.getElementById("september1941").textContent = "september 1941";
     document.getElementById("october1941").textContent = "october 1941";
     document.getElementById("november1941").textContent = "november 1941";
@@ -2326,6 +2327,7 @@ function toggleTranslation() {
       "Glinskaya Ekaterina Prokofyevna";
     currentTranslation = "ru";
   } else {
+    document.getElementById("language-button").textContent = "РУ";
     document.getElementById("september1941").textContent = "сентябрь 1941";
     document.getElementById("october1941").textContent = "октябрь 1941";
     document.getElementById("november1941").textContent = "ноябрь 1941";
