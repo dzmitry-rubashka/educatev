@@ -12,7 +12,7 @@ const polzikovaRubetsMarkerSrc = "./assets/icons/marker-icon-violet.png";
 const chekrizovMarkerSrc = "./assets/icons/marker-icon-red.png";
 const zimnickayaMarkerSrc = "./assets/icons/marker-icon-blue.png";
 const zagorskayaMarkerSrc = "./assets/icons/marker-icon-yellow.png";
-const glinskayaMarkerSrc = "./assets/icons/marker-icon-grey.png";
+const glinskayaMarkerSrc = "./assets/icons/marker-icon-black.png";
 const test = "./assets/icons/test.png";
 
 const personsMarkers = [
@@ -2007,8 +2007,8 @@ const showInfo = (description, x, y, imageSrc) => {
   info.classList.add("marker-info");
   info.style.fontSize = "16px";
   info.style.border = "2px solid #ccc5c5";
-  let divInfoHeight = 20 > 99 - y ? 99 - y : 20;
-  info.style.maxHeight = `${divInfoHeight}%`;
+  let divInfoHeight = 20 > 99 - y ? `${99 - y}%` : "400px";
+  info.style.maxHeight = divInfoHeight;
   if (x <= 100 / 3) {
     info.style.left = x + "%";
   } else if (x > 100 / 3 && x < 100 / (3 / 2)) {
