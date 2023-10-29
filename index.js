@@ -1,5 +1,5 @@
 const map = document.getElementById("map-container");
-
+let currentTranslation = "ru";
 const navigationPlusButton = document.getElementById("npb");
 const navigationMinusButton = document.getElementById("nmb");
 const navigationResetButton = document.getElementById("nrb");
@@ -2005,10 +2005,15 @@ navigationPlusButton.addEventListener("click", increaseMapSize);
 navigationMinusButton.addEventListener("click", decreaseMapSize);
 navigationResetButton.addEventListener("click", resetMapSize);
 
-const showInfo = (description, x, y, imageSrc) => {
+const showInfo = (description, x, y, imageSrc, description2) => {
   const info = document.createElement("div");
   infoContainer.appendChild(info);
-  info.innerHTML = "<div>" + description + "</div>";
+  if (currentTranslation === "ru") {
+    info.innerHTML = "<div>" + description + "</div>";
+  }
+  if (currentTranslation === "en") {
+    info.innerHTML = "<div>" + description2 + "</div>";
+  }
   info.classList.add("marker-info");
   info.style.fontSize = "16px";
   info.style.border = "2px solid #ccc5c5";
@@ -2050,7 +2055,7 @@ document.addEventListener("click", (event) => {
   }
 });
 
-const createMarker = (x, y, markerSrc, description, imageSrc) => {
+const createMarker = (x, y, markerSrc, description, imageSrc, description2) => {
   const marker = document.createElement("img");
   marker.classList.add("marker");
   marker.style.left = x + "%";
@@ -2060,7 +2065,7 @@ const createMarker = (x, y, markerSrc, description, imageSrc) => {
 
   marker.addEventListener("mouseenter", () => {
     if (!infoVisible) {
-      showInfo(description, x, y, imageSrc);
+      showInfo(description, x, y, imageSrc, description2);
     }
   });
 
@@ -2074,7 +2079,7 @@ const createMarker = (x, y, markerSrc, description, imageSrc) => {
     if (infoVisible) {
       hideInfo();
     } else {
-      showInfo(description, x, y, imageSrc);
+      showInfo(description, x, y, imageSrc, description2);
     }
     infoVisible = !infoVisible;
     event.stopPropagation();
@@ -2089,7 +2094,8 @@ personsMarkers.forEach((marker) => {
     marker.y,
     marker.marker,
     marker.description,
-    marker.imageSrc
+    marker.imageSrc,
+    marker.description2
   );
 });
 
@@ -2227,7 +2233,8 @@ const onClickClearButton = () => {
       marker.y,
       marker.marker,
       marker.description,
-      marker.imageSrc
+      marker.imageSrc,
+      marker.description2
     );
   });
 };
@@ -2245,7 +2252,8 @@ const onClickSearchButton = () => {
           marker.y,
           marker.marker,
           marker.description,
-          marker.imageSrc
+          marker.imageSrc,
+          marker.description2
         );
       }
     });
@@ -2258,7 +2266,8 @@ const onClickSearchButton = () => {
           marker.y,
           marker.marker,
           marker.description,
-          marker.imageSrc
+          marker.imageSrc,
+          marker.description2
         );
       }
     });
@@ -2272,61 +2281,16 @@ const onClickSearchButton = () => {
           marker.y,
           marker.marker,
           marker.description,
-          marker.imageSrc
+          marker.imageSrc,
+          marker.description2
         );
       }
     });
   }
 };
 
-let currentTranslation = "en";
-
 function toggleTranslation() {
   if (currentTranslation === "en") {
-    document.getElementById("language-button").textContent = "EN";
-    document.getElementById("september1941").textContent = "september 1941";
-    document.getElementById("october1941").textContent = "october 1941";
-    document.getElementById("november1941").textContent = "november 1941";
-    document.getElementById("december1941").textContent = "december 1941";
-    document.getElementById("january1942").textContent = "january 1942";
-    document.getElementById("february1942").textContent = "february 1942";
-    document.getElementById("march1942").textContent = "march 1942";
-    document.getElementById("april1942").textContent = "april 1942";
-    document.getElementById("toggleButtonPersons").textContent =
-      "Choose person";
-    document.getElementById("toggleButtonDates").textContent = "Choose month";
-    document.getElementById("search-button").textContent = "Search";
-    document.getElementById("clear-button").textContent = "Clear";
-    document.getElementById("name-knyazev").textContent =
-      "Knyazev Georgiy Alekseevich";
-    document.getElementById("name-luknitskiy").textContent =
-      "Luknitskiy Pavel Nikolaevich";
-    document.getElementById("name-polzikovaRubets").textContent =
-      "Polzikova-Rubets Kseniya Vladimirovna";
-    document.getElementById("name-chekrizov").textContent =
-      "Chekriozov Vasilii Fedorovich";
-    document.getElementById("name-zimnickaya").textContent =
-      "Zimnitskaya Galina Karlovna";
-    document.getElementById("name-zagorskaya").textContent =
-      "Zagorskaya Aleksandra Pavlovna";
-    document.getElementById("name-glinskaya").textContent =
-      "Glinskaya Ekaterina Prokofyevna";
-    document.getElementById("knyazev").textContent =
-      "Knyazev Georgiy Alekseevich";
-    document.getElementById("luknitskiy").textContent =
-      "Luknitskiy Pavel Nikolaevich";
-    document.getElementById("polzikovaRubets").textContent =
-      "Polzikova-Rubets Kseniya Vladimirovna";
-    document.getElementById("chekrizov").textContent =
-      "Chekriozov Vasilii Fedorovich";
-    document.getElementById("zimnickaya").textContent =
-      "Zimnitskaya Galina Karlovna";
-    document.getElementById("zagorskaya").textContent =
-      "Zagorskaya Aleksandra Pavlovna";
-    document.getElementById("glinskaya").textContent =
-      "Glinskaya Ekaterina Prokofyevna";
-    currentTranslation = "ru";
-  } else {
     document.getElementById("language-button").textContent = "РУ";
     document.getElementById("september1941").textContent = "сентябрь 1941";
     document.getElementById("october1941").textContent = "октябрь 1941";
@@ -2369,6 +2333,50 @@ function toggleTranslation() {
       "Загорская Александра Павловна";
     document.getElementById("glinskaya").textContent =
       "Глинская Екатерина Прокофьевна";
+    currentTranslation = "ru";
+  } else {
+    document.getElementById("language-button").textContent = "EN";
+    document.getElementById("september1941").textContent = "september 1941";
+    document.getElementById("october1941").textContent = "october 1941";
+    document.getElementById("november1941").textContent = "november 1941";
+    document.getElementById("december1941").textContent = "december 1941";
+    document.getElementById("january1942").textContent = "january 1942";
+    document.getElementById("february1942").textContent = "february 1942";
+    document.getElementById("march1942").textContent = "march 1942";
+    document.getElementById("april1942").textContent = "april 1942";
+    document.getElementById("toggleButtonPersons").textContent =
+      "Choose person";
+    document.getElementById("toggleButtonDates").textContent = "Choose month";
+    document.getElementById("search-button").textContent = "Search";
+    document.getElementById("clear-button").textContent = "Clear";
+    document.getElementById("name-knyazev").textContent =
+      "Knyazev Georgiy Alekseevich";
+    document.getElementById("name-luknitskiy").textContent =
+      "Luknitskiy Pavel Nikolaevich";
+    document.getElementById("name-polzikovaRubets").textContent =
+      "Polzikova-Rubets Kseniya Vladimirovna";
+    document.getElementById("name-chekrizov").textContent =
+      "Chekriozov Vasilii Fedorovich";
+    document.getElementById("name-zimnickaya").textContent =
+      "Zimnitskaya Galina Karlovna";
+    document.getElementById("name-zagorskaya").textContent =
+      "Zagorskaya Aleksandra Pavlovna";
+    document.getElementById("name-glinskaya").textContent =
+      "Glinskaya Ekaterina Prokofyevna";
+    document.getElementById("knyazev").textContent =
+      "Knyazev Georgiy Alekseevich";
+    document.getElementById("luknitskiy").textContent =
+      "Luknitskiy Pavel Nikolaevich";
+    document.getElementById("polzikovaRubets").textContent =
+      "Polzikova-Rubets Kseniya Vladimirovna";
+    document.getElementById("chekrizov").textContent =
+      "Chekriozov Vasilii Fedorovich";
+    document.getElementById("zimnickaya").textContent =
+      "Zimnitskaya Galina Karlovna";
+    document.getElementById("zagorskaya").textContent =
+      "Zagorskaya Aleksandra Pavlovna";
+    document.getElementById("glinskaya").textContent =
+      "Glinskaya Ekaterina Prokofyevna";
     currentTranslation = "en";
   }
 }
