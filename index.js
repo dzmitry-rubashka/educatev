@@ -2236,7 +2236,7 @@ const onClickSearchButton = () => {
   if (selectedPerson && selectedDate) {
     removeAllMarkers();
     personsMarkers.filter((marker) => {
-      if (marker.person === selectedPerson && marker.date === selectedDate) {
+      if (marker.person === selectedPerson && marker.date.includes(selectedDate)) {
         createMarker(
           marker.x,
           marker.y,
