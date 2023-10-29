@@ -2236,7 +2236,10 @@ const onClickSearchButton = () => {
   if (selectedPerson && selectedDate) {
     removeAllMarkers();
     personsMarkers.filter((marker) => {
-      if (marker.person === selectedPerson && marker.date === selectedDate) {
+      if (
+        marker.person === selectedPerson &&
+        marker.date.includes(selectedDate)
+      ) {
         createMarker(
           marker.x,
           marker.y,
@@ -2275,3 +2278,95 @@ const onClickSearchButton = () => {
     });
   }
 };
+
+let currentTranslation = "en";
+
+function toggleTranslation() {
+  if (currentTranslation === "en") {
+    document.getElementById("september1941").textContent = "september 1941";
+    document.getElementById("october1941").textContent = "october 1941";
+    document.getElementById("november1941").textContent = "november 1941";
+    document.getElementById("december1941").textContent = "december 1941";
+    document.getElementById("january1942").textContent = "january 1942";
+    document.getElementById("february1942").textContent = "february 1942";
+    document.getElementById("march1942").textContent = "march 1942";
+    document.getElementById("april1942").textContent = "april 1942";
+    document.getElementById("toggleButtonPersons").textContent =
+      "Choose person";
+    document.getElementById("toggleButtonDates").textContent = "Choose month";
+    document.getElementById("search-button").textContent = "Search";
+    document.getElementById("clear-button").textContent = "Clear";
+    document.getElementById("name-knyazev").textContent =
+      "Knyazev Georgiy Alekseevich";
+    document.getElementById("name-luknitskiy").textContent =
+      "Luknitskiy Pavel Nikolaevich";
+    document.getElementById("name-polzikovaRubets").textContent =
+      "Polzikova-Rubets Kseniya Vladimirovna";
+    document.getElementById("name-chekrizov").textContent =
+      "Chekriozov Vasilii Fedorovich";
+    document.getElementById("name-zimnickaya").textContent =
+      "Zimnitskaya Galina Karlovna";
+    document.getElementById("name-zagorskaya").textContent =
+      "Zagorskaya Aleksandra Pavlovna";
+    document.getElementById("name-glinskaya").textContent =
+      "Glinskaya Ekaterina Prokofyevna";
+    document.getElementById("knyazev").textContent =
+      "Knyazev Georgiy Alekseevich";
+    document.getElementById("luknitskiy").textContent =
+      "Luknitskiy Pavel Nikolaevich";
+    document.getElementById("polzikovaRubets").textContent =
+      "Polzikova-Rubets Kseniya Vladimirovna";
+    document.getElementById("chekrizov").textContent =
+      "Chekriozov Vasilii Fedorovich";
+    document.getElementById("zimnickaya").textContent =
+      "Zimnitskaya Galina Karlovna";
+    document.getElementById("zagorskaya").textContent =
+      "Zagorskaya Aleksandra Pavlovna";
+    document.getElementById("glinskaya").textContent =
+      "Glinskaya Ekaterina Prokofyevna";
+    currentTranslation = "ru";
+  } else {
+    document.getElementById("september1941").textContent = "сентябрь 1941";
+    document.getElementById("october1941").textContent = "октябрь 1941";
+    document.getElementById("november1941").textContent = "ноябрь 1941";
+    document.getElementById("december1941").textContent = "декабрь 1941";
+    document.getElementById("january1942").textContent = "январь 1942";
+    document.getElementById("february1942").textContent = "февраль 1942";
+    document.getElementById("march1942").textContent = "март 1942";
+    document.getElementById("april1942").textContent = "апрель 1942";
+    document.getElementById("toggleButtonPersons").textContent =
+      "Выбрать человека";
+    document.getElementById("toggleButtonDates").textContent = "Выбрать месяц";
+    document.getElementById("search-button").textContent = "Поиск";
+    document.getElementById("clear-button").textContent = "Очистить";
+    document.getElementById("name-knyazev").textContent =
+      "Князев Георгий Алексеевич";
+    document.getElementById("name-luknitskiy").textContent =
+      "Лукницкий Павел Николаевич";
+    document.getElementById("name-polzikovaRubets").textContent =
+      "Ползикова-Рубец Ксения Владимировна";
+    document.getElementById("name-chekrizov").textContent =
+      "Чекризов Василий Федорович";
+    document.getElementById("name-zimnickaya").textContent =
+      "Зимницкая Галина Карловна";
+    document.getElementById("name-zagorskaya").textContent =
+      "Загорская Александра Павловна";
+    document.getElementById("name-glinskaya").textContent =
+      "Глинская Екатерина Прокофьевна";
+    document.getElementById("knyazev").textContent =
+      "Князев Георгий Алексеевич";
+    document.getElementById("luknitskiy").textContent =
+      "Лукницкий Павел Николаевич";
+    document.getElementById("polzikovaRubets").textContent =
+      "Ползикова-Рубец Ксения Владимировна";
+    document.getElementById("chekrizov").textContent =
+      "Чекризов Василий Федорович";
+    document.getElementById("zimnickaya").textContent =
+      "Зимницкая Галина Карловна";
+    document.getElementById("zagorskaya").textContent =
+      "Загорская Александра Павловна";
+    document.getElementById("glinskaya").textContent =
+      "Глинская Екатерина Прокофьевна";
+    currentTranslation = "en";
+  }
+}

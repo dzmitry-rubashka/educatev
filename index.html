@@ -7,6 +7,7 @@
     <title>Educat e.V.</title>
   </head>
   <body>
+    <button id="x" onclick="toggleTranslation()">Butoon</button>
     <div class="map-container" id="map-container">
       <img class="map-image" src="./assets/images/map.jpg" alt="map" />
       <div id="markers-container"></div>
@@ -28,13 +29,13 @@
         <div class="black-color"></div>
       </div>
       <div>
-        <div>Князев Георгий Алексеевич</div>
-        <div>Лукницкий Павел Николаевич</div>
-        <div>Ползикова-Рубец Ксения Владимировна</div>
-        <div>Чекризов Василий Федорович</div>
-        <div>Зимницкая Галина Карловна</div>
-        <div>Загорская Александра Павловна</div>
-        <div>Глинская Екатерина Прокофьевна</div>
+        <div id="name-knyazev">Князев Георгий Алексеевич</div>
+        <div id="name-luknitskiy">Лукницкий Павел Николаевич</div>
+        <div id="name-polzikovaRubets">Ползикова-Рубец Ксения Владимировна</div>
+        <div id="name-chekrizov">Чекризов Василий Федорович</div>
+        <div id="name-zimnickaya">Зимницкая Галина Карловна</div>
+        <div id="name-zagorskaya">Загорская Александра Павловна</div>
+        <div id="name-glinskaya">Глинская Екатерина Прокофьевна</div>
       </div>
     </div>
     <div class="search-container">
@@ -89,7 +90,6 @@
           <li id="september1941" onclick="onSelectDate(id)">сентябрь 1941</li>
           <div id="september1941-calendar" class="calendar-container">
             <div class="calendar-flex-container">
-              <!--удалено из первого сетября onclick="onSelectDay(this.id, this.getAttribute('data-value'))" -->
               <div
                 class="calendar-flex-item hidden-date"
                 id="1september1941"
@@ -1505,7 +1505,7 @@
               <div
                 class="calendar-flex-item hidden-date"
                 id="27february1942"
-                data-value="27" 
+                data-value="27"
               >
                 27
               </div>
@@ -1750,7 +1750,7 @@
               <div
                 class="calendar-flex-item hidden-date"
                 id="31march1942"
-                data-value="31" 
+                data-value="31"
               >
                 31
               </div>
@@ -1998,12 +1998,20 @@
         </ul>
       </div>
       <div>
-        <button class="button search-button" onclick="onClickSearchButton()">
+        <button
+          class="button search-button"
+          id="search-button"
+          onclick="onClickSearchButton()"
+        >
           Поиск
         </button>
       </div>
       <div>
-        <button class="button clear-button" onclick="onClickClearButton()">
+        <button
+          class="button clear-button"
+          id="clear-button"
+          onclick="onClickClearButton()"
+        >
           Очистить
         </button>
       </div>
