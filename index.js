@@ -1819,7 +1819,7 @@ const personsMarkers = [
   },
   {
     x: 35.85,
-    y: 98.44, // Пулковская обсерватория
+    y: 95.44, // Пулковская обсерватория
     person: "knyazev",
     date: ["7april1942"],
     description:
