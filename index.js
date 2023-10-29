@@ -2050,7 +2050,7 @@ const createMarker = (x, y, markerSrc, description, imageSrc) => {
   marker.classList.add("marker");
   marker.style.left = x + "%";
   marker.style.top = y + "%";
-  marker.style.width = '18px'
+  marker.style.width = "18px";
   marker.src = markerSrc;
 
   marker.addEventListener("mouseenter", () => {
@@ -2257,15 +2257,17 @@ const onClickSearchButton = () => {
   } else if (selectedDate) {
     removeAllMarkers();
     personsMarkers.filter((marker) => {
-      if (marker.date === selectedDate) {
-        createMarker(
-          marker.x,
-          marker.y,
-          marker.marker,
-          marker.description,
-          marker.imageSrc
-        );
-      }
+      marker.date.forEach((date) => {
+        if (date.includes(selectedDate)) {
+          createMarker(
+            marker.x,
+            marker.y,
+            marker.marker,
+            marker.description,
+            marker.imageSrc
+          );
+        }
+      });
     });
   }
 };
