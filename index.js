@@ -405,7 +405,7 @@ const personsMarkers = [
   },
   {
     x: 29.65,
-    y: 55.30, // посреди невы
+    y: 55.3, // посреди невы
     person: "knyazev",
     date: ["28october1941"],
     description:
@@ -459,7 +459,7 @@ const personsMarkers = [
   },
   {
     x: 34.17,
-    y: 50.87, // нева 
+    y: 50.87, // нева
     person: "knyazev",
     date: ["4november1941"],
     description:
@@ -667,7 +667,7 @@ const personsMarkers = [
 
   {
     x: 24.66,
-    y: 78.52,  // Кировскому району
+    y: 78.52, // Кировскому району
     person: "chekrizov",
     date: ["21november1941"],
     description:
@@ -767,7 +767,7 @@ const personsMarkers = [
   {
     x: 50,
     y: 46.21, // финляндский вокзал
-    person: "knyazev", 
+    person: "knyazev",
     date: ["6december1941"],
     description:
       "Сто шестьдесят восьмой день войны. Суббота. Сегодня происходило совещание у начальника Административно-хозяйственного отдела ленинградских учреждений Академии наук т[ов]. Федосеева по поводу предстоящей эвакуации. Выяснилось, что отправление эвакуированных пешком нецелесообразно. Первый же опыт дал множество отставших. Теперь решено перевозить на грузовых автомобилях по 15 человек с 30 кг багажа на каждого человека. Сборный пункт на Финляндском вокзале. Оттуда до какой-то станции по железной дороге, далее на грузовиках опять, частично по льду Ладожского озера, с какого-то пункта снова вагон железной дороги. В учреждениях должны остаться сотрудники для охраны зданий и научного имущества. Остальные могут идти в поход. Эвакуация намечается в конце будущей недели. Уже записалось до полутора тысяч человек. Теперь, когда стало известно, что будут предоставлены грузовые машины, количество желающих, конечно, увеличится.<br> Из собравшихся в кабинете Федосеева представителей учреждений не было. Кроме меня и больного Яковкина (директора Библиотеки), ни одного директора: все они улетели. Пришли заместители или помощники по хозяйственной части. Выбрали центральную комиссию, постановили организовать тройки по учреждениям. Смотрел на мало знакомых людей, желтых, зеленых, подпухших, в пальто, в шапках, имеющих одно стремление — бежать, бежать...<br> В вестибюле темно, горит лишь коптилка, едва освещающая проход. Мрачно и жутко на мраморной кваренговской лестнице. Проходят черные тени, а кто — и не разберешь. Никаких пропусков никто не спрашивает... Возвратившись в Архив, собрал сотрудников и объявил им условия объявленной эвакуации. Все задумались. Часть их обязательно должна остаться в Архиве для его охраны, те, кто уедут, теряют свое место, т[ак] к[ак] наше учреждение, как плановое, остается в Ленинграде. Заседание проводил в нижнем этаже, потому что во всех помещениях холод. На дворе большой мороз, а нам который день не могут доставить топлива.<br> И не подозревал, как ослабли мои силы: возвращаясь домой по лестнице, почувствовал, что качаюсь. Неприятное было ощущение... Но я совладал с собой, рассмеялся и для бодрости запел.",
@@ -1432,7 +1432,7 @@ const personsMarkers = [
   },
   {
     x: 24.08,
-    y: 56, 
+    y: 56,
     person: "chekrizov",
     date: ["10february1942"],
     description:
@@ -1450,7 +1450,7 @@ const personsMarkers = [
   },
   {
     x: 21.48,
-    y: 65,  // завод
+    y: 65, // завод
     person: "chekrizov",
     date: ["12february1942"],
     description:
@@ -1459,7 +1459,7 @@ const personsMarkers = [
   },
   {
     x: 29.87,
-    y: 54, // дом ? 
+    y: 54, // дом ?
     person: "knyazev",
     date: ["13february1942"],
     description:
@@ -1567,7 +1567,7 @@ const personsMarkers = [
   },
   {
     x: 21.88,
-    y: 64.88,  // завод
+    y: 64.88, // завод
     person: "chekrizov",
     date: ["24february1942"],
     description:
@@ -1585,7 +1585,7 @@ const personsMarkers = [
   },
   {
     x: 35.67,
-    y: 50.87, // нева 
+    y: 50.87, // нева
     person: "chekrizov",
     date: ["1march1942"],
     description:
@@ -1666,7 +1666,7 @@ const personsMarkers = [
   },
   {
     x: 34.17,
-    y: 51.87, // нева 
+    y: 51.87, // нева
     person: "knyazev",
     date: ["13march1942"],
     description:
@@ -1728,8 +1728,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 24.4,
+    y: 49.92, // наб Макарова, 3, стрелка Васильевского острова
     person: "knyazev",
     date: ["21march1942"],
     description:
@@ -1737,8 +1737,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 47.1,
+    y: 50.54,
     person: "glinskaya",
     date: ["23march1942"],
     description:
@@ -1746,8 +1746,8 @@ const personsMarkers = [
     marker: glinskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.92,
+    y: 52.62, // архив
     person: "knyazev",
     date: ["25march1942"],
     description:
@@ -1755,8 +1755,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 38.51,
+    y: 63.45, // Загородному пр
     person: "zagorskaya",
     date: ["27march1942"],
     description:
@@ -1764,8 +1764,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 49.5,
+    y: 44.71, // финляндский вокзал
     person: "chekrizov",
     date: ["28march1942"],
     description:
@@ -1773,8 +1773,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 24.96,
+    y: 54.23,
     person: "knyazev",
     date: ["28march1942"],
     description:
@@ -1782,8 +1782,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 26.52,
+    y: 54.8, // академия
     person: "knyazev",
     date: ["1april1942"],
     description:
@@ -1791,8 +1791,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 26.35,
+    y: 56.63, // благовещенский мост
     person: "knyazev",
     date: ["4april1942"],
     description:
@@ -1800,8 +1800,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 42.87,
+    y: 63.95, // город ??
     person: "zagorskaya",
     date: ["5april1942"],
     description:
@@ -1809,8 +1809,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 43.33,
+    y: 64.65, // город ??
     person: "zagorskaya",
     date: ["6april1942", "7april1942", "8april1942", "9april1942"],
     description:
@@ -1818,8 +1818,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 35.85,
+    y: 98.44, // Пулковская обсерватория
     person: "knyazev",
     date: ["7april1942"],
     description:
@@ -1827,8 +1827,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.93,
+    y: 52.94, // Кунсткамера
     person: "knyazev",
     date: ["8april1942"],
     description:
@@ -1836,8 +1836,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 39.23,
+    y: 56.02, // Невский, 30
     person: "knyazev",
     date: ["10april1942"],
     description:
@@ -1845,8 +1845,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 53.93,
+    y: 62.58, // инфекционка
     person: "glinskaya",
     date: ["10april1942"],
     description:
@@ -1854,8 +1854,8 @@ const personsMarkers = [
     marker: glinskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 26.28,
+    y: 54.85, // академия
     person: "knyazev",
     date: ["15april1942"],
     description:
@@ -1863,8 +1863,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 37.17,
+    y: 59.45, // трамваи
     person: "zagorskaya",
     date: ["15april1942"],
     description:
@@ -1872,8 +1872,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 40.61,
+    y: 62.25, // ?
     person: "zagorskaya",
     date: ["16april1942"],
     description:
@@ -1881,8 +1881,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 27.78,
+    y: 54.85, // академия
     person: "knyazev",
     date: ["18april1942"],
     description:
@@ -1890,8 +1890,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 39.55,
+    y: 57.66, // Гостиный Двор
     person: "zagorskaya",
     date: ["19april1942"],
     description:
@@ -1899,8 +1899,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 27.43,
+    y: 54.85, // академия
     person: "knyazev",
     date: ["21april1942"],
     description:
@@ -1908,8 +1908,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 31.38,
+    y: 52.82, // архив
     person: "knyazev",
     date: ["24april1942"],
     description:
@@ -1917,8 +1917,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 24.58,
+    y: 55.77, // угол 9 линии в Большого проспекта,  Благовещенский мост
     person: "knyazev",
     date: ["25april1942"],
     description:
@@ -1926,8 +1926,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 33.8,
+    y: 56.06, // малая морская
     person: "knyazev",
     date: ["27april1942"],
     description:
@@ -1935,8 +1935,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 0,
-    y: 0,
+    x: 46.27,
+    y: 67.04,
     person: "zagorskaya",
     date: ["29april1942"],
     description:
@@ -2267,4 +2267,4 @@ const onClickSearchButton = () => {
       }
     });
   }
-}
+};
