@@ -2050,6 +2050,7 @@ const createMarker = (x, y, markerSrc, description, imageSrc) => {
   marker.classList.add("marker");
   marker.style.left = x + "%";
   marker.style.top = y + "%";
+  marker.style.width = '18px'
   marker.src = markerSrc;
 
   marker.addEventListener("mouseenter", () => {
