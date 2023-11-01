@@ -83,7 +83,7 @@
 
 .language-button {
   background-color: #f5f5ed;
-  border: 2px solid #ccc5c5;;
+  border: 2px solid #ccc5c5;
   padding: 10px;
   border-radius: 10px;
   font-size: 18px;
@@ -237,4 +237,66 @@ ul li:nth-last-child(2),
 
 .selected-date {
   background-color: #ccc5c5;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navigation-plus-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navigation-minus-button {
+    width: 40px;
+    height: 40px;
+    top: 42px;
+  }
+
+  .navigation-reset-button {
+    width: 40px;
+    height: 40px;
+    top: 84px;
+  }
+
+  .persons-container {
+    gap: 8px;
+    left: 60px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
+
+  .language-container {
+    right: 315px;
+  }
+  
+  .language-button {
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 40px;
+  }
+
+  .search-container {
+    font-size: 14px;
+    width: 300px;
+    gap: 6px;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  
+  .button {
+    font-size: 14px;
+    border-radius: 4px;
+    height: 24px;
+  }
+
+  .marker-info {
+    max-width: 350px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 425px) {
 }

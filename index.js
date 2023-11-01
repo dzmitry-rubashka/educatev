@@ -2493,7 +2493,6 @@ const showInfo = (description, x, y, imageSrc, description2) => {
     info.innerHTML = "<div>" + description2 + "</div>";
   }
   info.classList.add("marker-info");
-  info.style.fontSize = "16px";
   info.style.border = "2px solid #ccc5c5";
   let divInfoHeight = 20 > 99 - y ? `${99 - y}%` : "400px";
   info.style.maxHeight = divInfoHeight;
