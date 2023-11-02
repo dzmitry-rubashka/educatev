@@ -808,8 +808,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 37,
-    y: 3, // Шуваловскому кладбищу.
+    x: 55,
+    y: 13.5, // Шуваловскому кладбищу.
     person: "zimnickaya",
     date: ["4december1941", "december1941"],
     description:
@@ -1183,8 +1183,8 @@ const personsMarkers = [
     marker: polzikovaRubetsMarkerSrc,
   },
   {
-    x: 36,
-    y: 3.5, // Шуваловскому кладбищу.
+    x: 55,
+    y: 10.5, // Шуваловскому кладбищу.
     person: "zimnickaya",
     date: ["10january1942", "january1942"],
     description:
