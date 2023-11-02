@@ -385,6 +385,9 @@ ul li:nth-last-child(2),
     max-width: 250px;
     font-size: 8px;
   }
+  .marker {
+    max-width: 12px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -452,5 +455,9 @@ ul li:nth-last-child(2),
   .marker-info {
     max-width: 200px;
     font-size: 6px;
+  }
+
+  .marker {
+    max-width: 8px;
   }
 }
