@@ -5,6 +5,10 @@
   cursor: pointer;
 }
 
+body {
+  background-color: #e6dac9;
+}
+
 .map-container {
   position: relative;
 }
