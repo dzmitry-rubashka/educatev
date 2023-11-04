@@ -2415,7 +2415,7 @@ const personsMarkers = [
   },
   {
     x: 35.85,
-    y: 95.44, // Пулковская обсерватория
+    y: 92, // Пулковская обсерватория
     person: "knyazev",
     date: ["7april1942", "april1942"],
     description:
@@ -2671,7 +2671,7 @@ const showInfo = (description, x, y, imageSrc, description2) => {
   }
   info.classList.add("marker-info");
   info.style.border = "2px solid #ccc5c5";
-  let divInfoHeight = 20 > 99 - y ? `${99 - y}%` : "400px";
+  let divInfoHeight = 20 > 99 - y ? `${98 - y}%` : `19%`;
   info.style.maxHeight = divInfoHeight;
   if (x <= 100 / 3) {
     info.style.left = x + "%";
