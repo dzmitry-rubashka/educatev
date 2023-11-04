@@ -18,9 +18,8 @@ const test = "./assets/icons/test.png";
 
 const personsMarkers = [
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 31.24,
+    y: 45.3, // Б. Пушкарская, 7
     person: "afanasyev",
     date: ["5september1941", "september1941"],
     description:
@@ -49,9 +48,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 38.15,
+    y: 72.94,
     person: "afanasyev",
     date: ["9september1941", "september1941"],
     description:
@@ -110,9 +108,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 30.74,
+    y: 45.7, // Б. Пушкарская, 7
     person: "afanasyev",
     date: ["17september1941", "september1941"],
     description:
@@ -151,9 +148,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 36.95,
+    y: 47.26, // Александровский парк 4
     person: "afanasyev",
     date: ["19september1941", "september1941"],
     description:
@@ -172,9 +168,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 34.65,
+    y: 41.65, // Большой пр. П.С., 75/35
     person: "afanasyev",
     date: ["21september1941", "september1941"],
     description:
@@ -223,9 +218,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 30.14,
+    y: 46.21, // Б. Пушкарская, 7
     person: "afanasyev",
     date: ["27september1941", "september1941"],
     description:
@@ -334,11 +328,10 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 32.24,
+    y: 44.38, // Б. Пушкарская, 7
     person: "afanasyev",
-    date: ["4october1941","5october1941","6october1941", "october1941"],
+    date: ["4october1941", "5october1941", "6october1941", "october1941"],
     description:
       "4 октября. Сегодня день рождения бабушки. Ей исполнилось 75 лет. Сварили суп с гречей и макаронами и кофе. Па кофе позвали Нюсю, Тину Георгиевну с Алюнькой, Серафиму Петровну с Риной... Пили кофе и разговаривали допоздна, вспоминая мирное время. 6 октября. Утром 0 градусов. Весь день мама, Аня, Тина Георгиевна законопачивали окна на зиму. Щели заткнули ватой, но заклеивать не смогли — пожалели картофельную муку на клейстер, а другого клея в доме не оказалось...",
     description2: `noDescription2`,
@@ -435,9 +428,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 33.33,
+    y: 48.11,
     person: "afanasyev",
     date: ["16october1941", "october1941"],
     description:
@@ -696,9 +688,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 31.94,
+    y: 44.9, // Б. Пушкарская, 7
     person: "afanasyev",
     date: ["11november1941", "november1941"],
     description:
@@ -848,9 +839,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 31.16,
+    y: 45.6, // Б. Пушкарская, 7
     person: "afanasyev",
     date: ["20november1941", "21november1941", "november1941"],
     description:
@@ -859,9 +849,8 @@ const personsMarkers = [
     marker: afanasyevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 42,
+    y: 56.46, // театр музыкальной комедии, театр комедии им. Акимова, театр Ленсовета
     person: "afanasyev",
     date: ["23november1941", "november1941"],
     description:
@@ -970,9 +959,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 31.66,
+    y: 45.1, // Б. Пушкарская, 7
     person: "afanasyev",
     date: ["6december1941", "december1941"],
     description:
@@ -991,9 +979,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 31.56,
+    y: 45.36, // Б. Пушкарская, 7
     person: "afanasyev",
     date: ["7december1941", "december1941"],
     description:
@@ -1102,9 +1089,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 30.97,
+    y: 45.32, // Б. Пушкарская, 7
     person: "afanasyev",
     date: ["18december1941", "december1941"],
     description:
@@ -1123,9 +1109,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 31.57,
+    y: 50.87, // Биржевой мост
     person: "afanasyev",
     date: ["20december1941", "december1941"],
     description:
@@ -1154,9 +1139,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 30.44,
+    y: 45.78, // Б. Пушкарская, 7 ?????????
     person: "afanasyev",
     date: ["22december1941", "december1941"],
     description:
@@ -1175,9 +1159,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 35.45,
+    y: 43.85,
     person: "afanasyev",
     date: ["23december1941", "december1941"],
     description:
@@ -1231,9 +1214,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 32.04,
+    y: 44.53, // Б. Пушкарская, 7 ????????
     person: "afanasyev",
     date: ["30december1941", "december1941"],
     description:
@@ -1262,9 +1244,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 32.24,
+    y: 44.67, // Б. Пушкарская, 7 ????????
     person: "afanasyev",
     date: ["31december1941", "december1941"],
     description:
@@ -1363,9 +1344,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 21.8,
+    y: 50.16, // угол 7 линии ВО и Малого пр. ВО
     person: "afanasyev",
     date: ["8january1941", "january1941"],
     description:
@@ -1834,9 +1814,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 32.81,
+    y: 56.19, // у подъезда дома Лобанова-Ростовского
     person: "polzikovaRubets",
     date: ["12february1942", "february1942"],
     description:
@@ -1855,9 +1834,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 36.93,
+    y: 57.76, // 4 и 5 [последний на углу Плеханова]
     person: "polzikovaRubets",
     date: ["13february1942", "february1942"],
     description:
@@ -1876,9 +1854,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 44.78,
+    y: 30.35, // 1-м Муринском проспекте
     person: "zimnickaya",
     date: ["14february1942", "february1942"],
     description:
@@ -1937,9 +1914,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 25.58,
+    y: 63.13, // конце Английского проспекта
     person: "zimnickaya",
     date: ["20february1942", "february1942"],
     description:
@@ -2028,9 +2004,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 49.7,
+    y: 44.91, // финляндский вокзал
     person: "zimnickaya",
     date: ["28february1942", "february1942"],
     description:
@@ -2099,9 +2074,8 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 34.9,
+    y: 57.06, // мост на мойке
     person: "polzikovaRubets",
     date: ["5march1942", "march1942"],
     description:
@@ -2110,9 +2084,8 @@ const personsMarkers = [
     marker: polzikovaRubetsMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 32.47,
+    y: 60.33, // Майоровском
     person: "polzikovaRubets",
     date: ["6march1942", "march1942"],
     description:
@@ -2131,9 +2104,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 53.9,
+    y: 60.1, // Старо-Невский, 127
     person: "polzikovaRubets",
     date: ["7march1942", "march1942"],
     description:
@@ -2142,9 +2114,8 @@ const personsMarkers = [
     marker: polzikovaRubetsMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 42.2,
+    y: 56.16, // кино «Аврора»
     person: "polzikovaRubets",
     date: ["7march1942", "march1942"],
     description:
@@ -2163,9 +2134,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 43.58,
+    y: 26.94, // по Новосильцевской улице
     person: "zimnickaya",
     date: ["9march1942", "march1942"],
     description:
@@ -2174,9 +2144,8 @@ const personsMarkers = [
     marker: zimnickayaMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 49.1,
+    y: 45.31, // финляндский вокзал
     person: "zimnickaya",
     date: ["10march1942", "march1942"],
     description:
@@ -2185,9 +2154,8 @@ const personsMarkers = [
     marker: zimnickayaMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 23.68,
+    y: 59.53, // на углу Мойки и Маклина
     person: "polzikovaRubets",
     date: ["11march1942", "march1942"],
     description:
@@ -2256,9 +2224,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 33,
+    y: 69.5, // церкви Воскресения
     person: "polzikovaRubets",
     date: ["19march1942", "march1942"],
     description:
@@ -2327,9 +2294,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 32.87,
+    y: 55.3, // Александровский сад
     person: "polzikovaRubets",
     date: ["27march1942", "march1942"],
     description:
@@ -2348,9 +2314,8 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 30.88,
+    y: 59.43, // улице Декабристов
     person: "polzikovaRubets",
     date: ["27march1942", "march1942"],
     description:
@@ -2369,9 +2334,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 53.4,
+    y: 59.8, // Старо-Невский, 127 ?? донорском магазине????
     person: "polzikovaRubets",
     date: ["29march1942", "march1942"],
     description:
@@ -2380,9 +2344,8 @@ const personsMarkers = [
     marker: polzikovaRubetsMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 28.55,
+    y: 58.43, // площадь труда
     person: "polzikovaRubets",
     date: ["31march1942", "march1942"],
     description:
@@ -2391,9 +2354,8 @@ const personsMarkers = [
     marker: polzikovaRubetsMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 31.42,
+    y: 56.49, // сад трудящихся
     person: "polzikovaRubets",
     date: ["1april1942", "april1942"],
     description:
@@ -2422,9 +2384,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 42.05,
+    y: 56.86, // магазинов Елисеева
     person: "polzikovaRubets",
     date: ["4april1942", "april1942"],
     description:
@@ -2493,9 +2454,8 @@ const personsMarkers = [
     marker: glinskayaMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 31.77,
+    y: 56.54, // Исаак
     person: "polzikovaRubets",
     date: ["14april1942", "april1942"],
     description:
@@ -2554,9 +2514,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 32.29,
+    y: 62.33, // проспект Майорова
     person: "polzikovaRubets",
     date: ["20april1942", "21april1942", "22april1942", "april1942"],
     description:
@@ -2595,9 +2554,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 38,
+    y: 55.26, // помещении Петершуле
     person: "polzikovaRubets",
     date: ["26april1942", "april1942"],
     description:
@@ -2616,9 +2574,8 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 35.78,
+    y: 30.43, // на Сердобольской
     person: "zimnickaya",
     date: ["28april1942", "april1942"],
     description:
@@ -2637,9 +2594,8 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
-    // new
-    x: 0,
-    y: 0,
+    x: 42.38,
+    y: 56.66, // Елисеева
     person: "polzikovaRubets",
     date: ["30april1942", "april1942"],
     description:
@@ -3017,6 +2973,7 @@ function toggleTranslation() {
       "Загорская Александра Павловна";
     document.getElementById("name-glinskaya").textContent =
       "Глинская Екатерина Прокофьевна";
+    document.getElementById("name-afanasyev").textContent = "Афанасьев";
     document.getElementById("knyazev").textContent =
       "Князев Георгий Алексеевич";
     document.getElementById("luknitskiy").textContent =
@@ -3031,6 +2988,7 @@ function toggleTranslation() {
       "Загорская Александра Павловна";
     document.getElementById("glinskaya").textContent =
       "Глинская Екатерина Прокофьевна";
+    document.getElementById("afanasyev").textContent = "Афанасьев";
     currentTranslation = "ru";
   } else {
     document.getElementById("language-button").textContent = "EN";
@@ -3061,6 +3019,7 @@ function toggleTranslation() {
       "Zagorskaya Aleksandra Pavlovna";
     document.getElementById("name-glinskaya").textContent =
       "Glinskaya Ekaterina Prokofyevna";
+    document.getElementById("name-afanasyev").textContent = "Afanasyev";
     document.getElementById("knyazev").textContent =
       "Knyazev Georgiy Alekseevich";
     document.getElementById("luknitskiy").textContent =
@@ -3075,6 +3034,7 @@ function toggleTranslation() {
       "Zagorskaya Aleksandra Pavlovna";
     document.getElementById("glinskaya").textContent =
       "Glinskaya Ekaterina Prokofyevna";
+    document.getElementById("afanasyev").textContent = "Afanasyev";
     currentTranslation = "en";
   }
 }
