@@ -11,7 +11,7 @@
 
 .map-image {
   width: 100%;
-}
+  }
 
 .marker {
   position: absolute;
@@ -96,38 +96,44 @@
 
 .green-color {
   background-color: #27ac24;
-  height: calc(100% / 7);
+  height: calc(100% / 8);
 }
 
 .orange-color {
   background-color: #ca8428;
-  height: calc(100% / 7);
+  height: calc(100% / 8);
 }
 
 .violet-color {
   background-color: #a246d0;
-  height: calc(100% / 7);
+  height: calc(100% / 8);
 }
 
 .red-color {
   background-color: #ca223a;
-  height: calc(100% / 7);
+  height: calc(100% / 8);
 }
 
 .blue-color {
   background-color: #4495cf;
-  height: calc(100% / 7);
+  height: calc(100% / 8);
 }
 
 .yellow-color {
   background-color: #fed52e;
-  height: calc(100% / 7);
+  height: calc(100% / 8);
 }
 
 .black-color {
   background-color: #3d3d3d;
-  height: calc(100% / 7);
+  height: calc(100% / 8);
 }
+
+.grey-color {
+  background-color: #948190;
+  height: calc(100% / 8);
+}
+
 
 .search-container {
   display: flex;

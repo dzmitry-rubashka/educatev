@@ -13,9 +13,21 @@ const chekrizovMarkerSrc = "./assets/icons/marker-icon-red.png";
 const zimnickayaMarkerSrc = "./assets/icons/marker-icon-blue.png";
 const zagorskayaMarkerSrc = "./assets/icons/marker-icon-yellow.png";
 const glinskayaMarkerSrc = "./assets/icons/marker-icon-black.png";
+const afanasyevMarkerSrc = "./assets/icons/marker-icon-grey.png";
 const test = "./assets/icons/test.png";
 
 const personsMarkers = [
+  {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["5september1941", "september1941"],
+    description:
+      "Нюся сегодня очень ругала меня и Алюньку за то, что мы играли в передней в мяч. Конечно, мы доставили ей своим приездом очень много хлопот. Мама и Аня все время стараются ей помогать, но, конечно, мы очень стесняем ее. Никто не виноват, что идет война.",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
+  },
   {
     x: 26.65,
     y: 56.33, // николаевский мост
@@ -35,6 +47,17 @@ const personsMarkers = [
       "Восьмидесятый день войны. Вторник. Очень трудный день. Воздушные тревоги объявлялись раз 8 или 9. На службе была нарушена вся нормальная работа, но сотрудники сохраняли полное спокойствие даже тогда, когда все здание сотрясалось от орудийной пальбы зениток.<br> Вчера, оказывается, бомбы упали в разных районах города. На Петроградской стороне вдоль Кронверкского проспекта все стекла выбиты; на [ул.] Халтурина разрушен дом; около Волкова кладбища, на Расстанной улице, в складах и жилых домах возникли громадные пожары. Много насчитывается раненых, есть и убитые. С. А. Шахматова была как раз во время нападения вражеских самолетов на Волховом кладбище. Она вместе с другими залегла между могилами и пролежала там всю тревогу. Около них падали зажигательные пластинки, которые очень хорошо тушились песком и грязью, но на строениях они быстро вызывали очаги пожаров. Вскоре они увидели кругом кладбища море огня. «Страшно почему-то не было; гораздо страшнее, когда рассказывают или когда читаешь о таких случаях», — поясняет она. Вскоре весь район, где полыхал громадный пожар, был оцеплен милицией, и воинские части и пожарные тушили бушевавший огонь. С. А. Шахматова об этом и сегодня рассказывает спокойно: «О себе не думала, не думалось совсем, поэтому и страха не было».<br> Вместо 5-ти часов возвратился домой около 9-ти! Беспрерывные тревоги не дали времени даже добраться до дому. М. Ф., идя со мной, задержалась на несколько минут, и я успел доехать до нашего подъезда, а она попала в новую тревогу. Ожидал ее не без волнения, под воротами. Вечером, около 11-ти часов, над нами загрохотали тяжелые зенитки, послышались отдаленные взрывы. Я оделся и стал продолжать пить чай. М. Ф. во что бы то ни стало хотела, чтобы я спустился в нижний этаж, если не в бомбоубежище, взяв дорожный мешок с наиболее нужными вещами и проч[ее]. Я оставался сидеть. Тогда в ней заговорил не то страх, не то слишком преувеличенное благоразумие, настроение ее быстро передалось мне и нарушило мое ровное спокойное выжидание событий. Она стала упрекать меня в фатализме, я не удержался и упрекнул ее в излишней суетливости и страхе за свою драгоценную жизнь... Мне было совершенно непонятно, зачем я должен был вдруг бежать, пробыв целый день во время тревог в верхнем этаже в Архиве!..<br> Тревога кончилась в полночь, но я уже, в нервном напряжении, не стал ложиться на кровать и продремал всю ночь на стуле. Странная была, нелепая ночь. Уже под утро я перешел к себе в комнату и хотел заниматься, но не смог — дремота, какое-то непреодолимое забвение одолевало меня. И лечь не смог — не хватало сил дойти до кровати. М. Ф. легла; не знаю, спала ли она в начале ночи, но к утру она крепко заснула. Ночью тревог не было, только бухали отдельные выстрелы дальнобойных орудий.<br> Когда я возвращался домой, опять был разведен Николаевский мост и потом Дворцовый — пропускались морские военные корабли. За их продвижением, по-видимому, следили вражеские самолеты-разведчики, нагло проносившиеся где-то очень высоко в районе Невы. Множество военных повозок и автомобилей тянулось по набережной. Город на фронте или, точнее, фронт в городе!.. Отсюда все качества.<br> Вернувшийся с трудовой повинности Модзалевский расхворался. Дочка академика Алексеева, дважды ездившая на работы, лежит с тяжелым воспалением легких. Так что вчера во время вечерних тревог, чтобы не оставлять ее одну, вся семья никуда не ушла из квартиры и осталась с нею. Видел вчера во время опасной тревоги, когда бросались фугасные бомбы, очень престарелую вдову академика Успенского (византиноведа), шедшую по двору в санпост. Как потом рассказывала М. Ф., она принесла туда шприц, на всякий случай.<br> Очень опечалился тем, что наши линии поведения, моя и М. Ф., по отношению к опасности разошлись. Она хочет жить во чтобы то ни стало, а я спокойно, насколько у меня хватает сил, взираю на жизнь и смерть. На рожон не лезу, но и никуда не стремлюсь убежать. Вот вчера и сегодня — есть убитые и раненые в Ленинграде. И завтра будут. Может быть, и мы будем в числе их... Что ж!.. Это не равнодушие и не фатализм, фаталист тот, кто верит в предопределенную судьбу. Чему быть суждено, то и сбудется. Я ни в какое предопределение не верю, но знаю, что вчера и сегодня были, а завтра и послезавтра и т. д. будут и убитые, и раненые в нашем городе. О себе ничего не знаю и об этом не думаю...",
     description2: `Eightieth day of the war. Tuesday. A very difficult day. Air alarms went off eight or nine times. All normal work was disrupted at the working place, but the staff remained perfectly calm even when the whole building was shaken by the gunfire of the anti-aircraft guns.<br> Yesterday, it turns out, bombs fell in different parts of the city. On the Petrograd side along Kronverksky Prospekt all the windows were broken; on Khalturina St. a house was destroyed; near the Volkov cemetery, on Rasstannaya St., in warehouses and dwelling houses huge fires broke out. There are many wounded, some killed. S. A. Shakhmatova was just at the time of the attack of enemy planes in the Volkhov cemetery. She, together with others, lay down between the graves and lay there the whole time until alarm went out. Incendiary plates fell near them, which were very well extinguished by sand and mud, but they quickly caused pockets of fire on the buildings. Soon they saw round about the cemetery a sea of fire. "It wasn't scary for some reason; it's much scarier when they tell you or when you read about such cases," she explains. Soon the entire area where the huge fire was burning was cordoned off by the police, and military units and firefighters were extinguishing the raging fire. S.A. Shakhmatova tells about it even today calmly: "I did not think about myself, I did not think at all, so there was no fear".<br> Instead of 5 o'clock returned home about 9! The Unstopping alarms did not give time even to get home. M. F., coming with me, was delayed for a few minutes, and I had time to reach our entrance, while she was caught in a new alarm.<br> I waited for her, not without anxiety, under the gate. In the evening, about 11 o'clock, heavy anti-aircraft guns rumbled over us, and distant explosions were heard. I dressed and went on drinking tea. By all means M. F. wanted me to go down to the lower floor, if not to the bomb shelter, taking a travelling bag with the most necessary things and other stuff. I remained seated. Then her fear or over-exaggerated prudence spoke up in her, and her mood was quickly transmitted to me and disturbed my calm waiting for events to unfold. She began to reproach me with fatalism, and I could not resist reproaching her with excessive fussiness and fear for her precious life..... It was quite incomprehensible to me why I should have suddenly fled after having been all day during the alarms in the upper floor in the Archives!..!<br> The alarm ended at midnight, but in nervous tension I did not go to bed and slept on a chair all night. It was a strange, ridiculous night. In the morning I went to my room and wanted to study, but I could not - drowsiness, some irresistible oblivion overcame me. I could not lie down either - I had not strength enough to reach the bed. M. F. lay down; I do not know whether she slept at the beginning of the night, but by morning she was sound asleep. There were no alarms during the night, only the booming of the occasional shots of the long-range guns.<br> When I returned home, the Nikolayevsky Bridge and then the Palace Bridge had been drawn up again - naval warships were being let through. Their progress was apparently monitored by enemy spy planes, which were brazenly flying somewhere very high in the Neva area. A multitude of military wagons and cars stretched along the embankment. A city on the front, or rather, a front in a city!..... Hence all the qualities.<br> Modzalevsky, who had returned from labour service, became ill. The daughter of Academician Alekseev, who travelled to work twice, is lying with severe pneumonia. So yesterday during the evening alarms, in order not to leave her alone, the whole family did not leave the flat and stayed with her. I saw yesterday, during the dangerous alarm, when the high-explosive bombs were thrown, a very elderly widow of Academician Uspensky (Byzantinologist), walking along the yard to the sanpost. As M.F. later told me, she brought a syringe there, just in case.<br> I was very saddened that our lines of behaviour, mine and M. F.'s, towards danger had diverged. She wants to live at all costs, and I calmly, as far as I have the strength, look at life and death. I don't go to the edge, but I don't want to run away. Yesterday and today there are dead and wounded in Leningrad. And there will be tomorrow. Maybe we'll be among them... Well! This is neither indifference nor fatalism, a fatalist is someone who believes in a predetermined fate. What is destined to happen, will happen. I do not believe in any predetermination, but I know that yesterday and today there were, and tomorrow and the day after tomorrow, etc. there will be killed and wounded in our city. I don't know anything about myself and I don't think about it...`,
     marker: knyazevMarkerSrc,
+  },
+  {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["9september1941", "september1941"],
+    description:
+      "Опять сплошные тревоги. В столовую даже не ходили. Сидели дома. Рассказывают, что вчера в Бадаевских складах, которые вчера сгорели, расплавленный сахар шел рекой из-под ворот и люди его черпали ведрами...",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
   },
   {
     x: 32.77,
@@ -87,6 +110,17 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["17september1941", "september1941"],
+    description:
+      "Весь день грохот взрывов. Обстрел... Когда мы шли в бомбоубежище, мама в темноте упала с лестницы и разбила голову. Решили теперь в убежище не ходить, а сидеть дома. В сводках сегодня бои на подступах к Одессе...",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
+  },
+  {
     x: 30.92,
     y: 52.33, // архив
     person: "knyazev",
@@ -117,6 +151,17 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["19september1941", "september1941"],
+    description:
+      "Ходили в «Великан» на «Конька-Горбунка». Понравилось... Опять бои на всем фронте, и опять идет дождь...",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
+  },
+  {
     x: 61.01,
     y: 51.01, // смольный
     person: "knyazev",
@@ -125,6 +170,17 @@ const personsMarkers = [
       "Девяносто первый день войны. Суббота. Вот, что я увидел, когда вышел из дома утром. Если бы эти две бомбы не ушли глубоко в землю, в плывуны, а разорвались бы, то от нашего дома вряд ли бы что-нибудь осталось! Поздравил коменданта дома т[ов]. Савченко с благополучным исходом этой очередной бомбежки. Что дальше будет — никто не знает. И, не скрою, болезненно сжимается при этой мысли сердце. Судьба по дарила еще несколько часов или дней...<br> Бомбы глубоко ушли в землю, разрушив канализацию. Яма, образовавшаяся при их падении, полностью залита водою, та что бомб достать не удалось. Места, где упали бомбы, оцеплены. Проезда по 6-й и 7-й линиям нет. Все жильцы нашего дома смотрят удивленными расширенными глазами на чудо своего спасения. Так и осталось неизвестным — достали бомбы или нет. Никто из жильцов дома об этом толком не знает, а спрашивать рабочих неудобно было.<br> Академикам действительно было предложено вылететь из Ленинграда на самолете. Академики были вызваны в Смольный 18-го в 11 часов вечера и к восьми часам им было приказано прибыть на аэродром. Кто должен был лететь, точно не знаю. Записываю то, что слышал от акад. И. Ю. Крачковского; ни он, ни Алексеев предложения лететь не получали. Но из академиков по общественным наукам 19-го должны были лететь академики С. А. Жебелев, Н. С. Державин и Иосиф Орбели. И. Ю. Крачковский знал только, что случилось с двумя первыми. Как и было предписано, Жебелев и Державин явились в назначенное время на аэродром. И как раз в это время началась ожесточенная бомбежка Ленинграда, и в особенности аэродрома. Шофер выскочил из машины и скрылся. Академики остались в автомобиле с закрытыми дверцами под обстрелом вражеских самолетов. Сразу они не могли открыть дверцы и некоторое время оставались в совершенно беззащитном состоянии на дороге под бомбами и пулеметами. Наконец они выбрались из автомобиля, им кричали: «В канаву, в канаву ложитесь». И Державин, и Жебелев со своими женами залегли в канаву, где и пролежали до окончания налета. Состояние духа Жебелева, не хотевшего ехать и подчинившегося приказу, было очень тяжелое. По словам Крачковского, С. А. Жебелев, по возвращении домой в чьем-то уже чужом автомобиле, написал рапорт приблизительно в следующих словах: «Приказание правительства мною выполнено. Я точно в указанное время прибыл на аэродром, но вылететь не мог по независящим от меня обстоятельствам».",
     description2: `Ninety-first day of the war. Saturday. This is what I saw when I left the house this morning. If those two bombs had not gone deep into the ground, into the driftwood, but had burst, there would hardly have been anything left of our house! I congratulated the commandant of the house, comrade Savchenko with the favourable outcome of this regular bombing. Nobody knows what will happen next. And, I can't hide, my heart clenches painfully at this thought. Fate gave a few more hours or days....<br> The bombs went deep into the ground, destroying the sewage system. The pit formed by their fall was completely filled with water, so that the bombs could not be retrieved. The places where the bombs fell are cordoned off. The 6th and 7th lines are off-limits. All tenants of our house look with surprised widened eyes at the miracle of their salvation. It remains unknown whether the bombs were taken out or not. None of the tenants of the house knows about it, and it was inconvenient to ask the workers.<br> The academicians were indeed offered to leave Leningrad by aeroplane. The academicians were summoned to Smolny on the 18th at 11 p.m. and by eight o'clock they were ordered to arrive at the aerodrome. Who was to fly, I do not know exactly. I write down what I heard from Acad. I. Y. Krachkovsky; neither he nor Alekseev received an offer to fly. But of the academicians in the social sciences, Academicians S. A. Zhebelev, N. S. Derzhavin, and Joseph Orbeli were to fly on the 19th. I. Y. Krachkovsky only knew what happened to the first two. As instructed, Zhebelev and Derzhavin arrived at the airfield at the appointed time. And just at that time began a fierce bombing of Leningrad, and especially the aerodrome. The chauffeur jumped out of the car and disappeared. The academicians remained in the car with closed doors under the fire of enemy planes. At once they could not open the doors and for some time remained in a completely defenceless state on the road under bombs and machine guns. Finally they got out of the car, they were shouted to: "In the ditch, in the ditch lie down." Both Derzhavin and Zhebelev with their wives lay down in the ditch, where they lay until the end of the raid. The state of mind of Zhebelev, who did not want to go and obeyed the order, was very heavy. According to Krachkovsky, S. A. Zhebelev, after returning home in someone else's car, wrote a report in approximately the following words: "I have fulfilled the order of the government. I arrived at the aerodrome exactly at the specified time, but I could not take off due to circumstances beyond my control".`,
     marker: knyazevMarkerSrc,
+  },
+  {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["21september1941", "september1941"],
+    description:
+      "Вечером грелись на кухне у плиты. Ожесточенные бои под Киевом. На душе тяжко. Чтобы хоть немного развлечься, сходил в «АРС» на «Праздник святого Йоргена». Но легче не стало.",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
   },
   {
     x: 15.66,
@@ -165,6 +221,17 @@ const personsMarkers = [
       "Девяносто восьмой день войны. Суббота. Всю ночь ухали дальнобойные орудия. Утром — одна вслед за другой — объявлялись воздушные тревоги. И ночи как не бывало. Люди начинают делиться на две своеобразные категории: не обращающих больше внимания ни на какие тревоги, бомбежку, выстрелы и т. п. и волнующихся, нервно-напряженных. И те и другие имеют разновидности. В первой группе: а) равнодушно-беспечные люди или слишком, до апатии уставшие, утомившиеся, которым стало «все равно»; б) верующие: «Господь бог знает, что делает, и только ему ведомо, кому жить, кому умереть». Эти люди даже относительно спокойны... Вера спасает их. К числу их, между прочим, относится вдова академика Павлова. От жены нашего знакомого портного мы слышали то же. Ко второй группе [относятся]: а) неспокойные, с диапазоном от «нервности» почти до психического расстройства (я уже упоминал о нашей соседке, которая почти не выходит из бомбоубежища; при мне она забежала домой, чтобы пообедать, но съела только несколько ложек супу и второе доедала в бомбоубежище); б) нервно, но в меру напряженные люди, прислушивающиеся к свисту снарядов, далеким или близким разрывам их, болезненно ощущающие дрожание дома, взвешивающие ежеминутную, ежесекундную опасность, но внешне остающиеся спокойными. К счастью, большинстве моих сотрудников обладает этим качеством, т. е. относится к данной подгруппе.<br> В городе очень много разрушений. Стервятники делают мерзкое дело — систематически бомбят больницы, клиники!.. Это уже не «немецкие зверства» в кавычках, а самые мерзкие настоящие, без кавычек, зверства обезумевших немцев. Как нам, гуманистам, и больно, и стыдно быть свидетелями таких мерзостей человеческих. Невольно начинаешь вспоминать оброненную старушкой этнографом Штернберг фразу об отвращении к жизни, порождающей такие отвратительные мерзости, как убийство и не только в бою, но и на больничной койке! «Если камень катится с горы, то посторонись», — учат арабские мудрецы. Этот афоризм, сказанный И. Ю. Крачковским в свое оправдание, когда он нарушил свое сидение дома во время тревоги и, после падения двух бомб в нескольких метрах от его окон, стал выходить под защиту сводов лестничной клетки, действительно может сейчас служить руководством к действию. Отдыхаю после вчерашних волнений по службе. Получил телеграмму от С. И. Вавилова: «Случае выезда Казань телеграфируйте мне». Коротко ответил: «Ехать не могу. Подробности письмом. Привет». Написал подробное письмо об отложенной эвакуации и работах А[рхива] и КИАН. Имеется какой-то список, по которому люди вылетают из Ленинграда. Об этом мы узнаем случайно и постфактум. Сегодня узнали, что улетел академик Обнорский, не успев даже распорядиться своими делами, и его неоконченные научные работы пришел сдавать в Архив его брат. Державин, Павловский, как я уже упоминал, уже в Москве. Другие еще здесь, т. е. те, которых мне приходится видеть. Но улетают не только академики и виднейшие деятели науки, литературы, искусства. Модзалевский сообщил, что вылетел литературовед Берков, величина отнюдь не первой степени.<br> Приходил астроном Васильев с женой сдавать на временное хранение свои научные материалы. Пулково сожжено. Очень пострадало центральное здание и его крылья. Квартиры астрономов тоже погорели вместе с их личными библиотеками и имуществом. «Вот по вечерам вы видите зарево прямо на юге от Ленинграда — это горят Пулково и окрестности... Мы все потеряли, мы беженцы», — говорила мне нервно жена Васильева. Он — старик, глухой на оба уха, просил только сберечь единственное, что они успели захватить, — рукописи его незаконченных многолетних трудов.<br> Как хорош был парк на холмах вокруг обсерватории, особенно в солнечные осенние дни. Что с ним теперь? И культура, и природа — все разрушается!",
     description2: `Ninety-eighth day of the war. "Saturday. All night long-range guns rumbled. In the morning, one after the other, air raid alarms were sounded. And the night was over. People begin to divide into two peculiar categories: those who no longer pay attention to any alarms, bombing, gunshots, etc., and those who are worried, nervous and tense. Both have varieties. In the first group: a) indifferent and unconcerned people or too tired, tired to the point of apathy, who have become "indifferent"; b) believers: "God knows what he is doing, and only he knows who will live and who will die." These people are even relatively calm... Faith saves them. Among them, by the way, is the widow of Academician Pavlov. We heard the same thing from the wife of a tailor we know. To the second group [belong]: a) restless, with a range from "nervousness" almost to mental disorder (I have already mentioned our neighbour who almost never leaves the bomb shelter; in front of me she ran home to have lunch, but ate only a few spoonfuls of soup and finished the second one in the bomb shelter); b) nervous but moderately tense people, listening to the whistling of shells, to their distant or close bursts, painfully feeling the trembling of the house, weighing the minute-by-minute, second-by-second danger, but outwardly remaining calm. Fortunately, most of my staff possess this quality, i.e. belong to this subgroup.<br> There's a lot of destruction in the city. The vultures are doing an abominable thing - systematically bombing hospitals, clinics...! These are no longer "German atrocities" in inverted commas, but the most abominable real, unquote, atrocities of mad Germans. How painful and shameful it is for us, humanists, to witness such human abominations. Involuntarily one begins to remember the phrase, uttered by the old ethnographer Sternberg, about disgust for life, which gives rise to such disgusting abominations as murder, and not only in battle, but also in a hospital bed!<br> "If a stone rolls down a mountain, step aside," the Arab sages teach. This aphorism, said by I. Y. Krachkovsky in his justification, when he broke his sitting at home during the alarm and, after two bombs fell a few metres from his windows, began to go out under the protection of the vaults of the stairwell, can indeed now serve as a guide to action.<br> Resting after yesterday's excitement at work. Received a telegram from S. I. Vavilov: "If you leave for Kazan, telegraph me". I briefly replied: "I cannot go. Details by letter. Hi". Wrote a detailed letter about the postponed evacuation and the work of the A[rkhive] and Committee on the history of Academy of sciences of the USSR. There is some kind of list by which people fly out of Leningrad. We learn about it accidentally and de-facto. Today we learnt that Academician Obnorsky left without even having time to dispose of his affairs, and his unfinished scientific works were delivered to the Archive by his brother. Derzhavin, Pavlovsky, as I have already mentioned, are already in Moscow. Others are still here, i.e. those whom I have to see. But not only academicians and the most prominent figures of science, literature and art are leaving. Modzalevsky reported that the literary scholar Berkov, who was not of the first degree, had flown out.<br> Astronomer Vasiliev and his wife came to deposit their scientific materials. Pulkovo was burnt down. The central building and its wings were very badly damaged. The astronomers' flats were also burnt, along with their personal libraries and possessions. "Here in the evenings you see a blaze just south of Leningrad - that's Pulkovo and the neighbourhood burning.... 'We have lost everything, we are refugees,' Vasiliev's wife told me nervously. He - an old man, deaf in both ears, asked only to save the only thing they had managed to seize - the manuscripts of his unfinished works of many years.<br> How beautiful was the park on the hills around the observatory, especially on sunny autumn days. What of it now? Culture and nature are all being destroyed!`,
     marker: knyazevMarkerSrc,
+  },
+  {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["27september1941", "september1941"],
+    description:
+      "Вечером грелись на кухне у плиты. По вечерам кухня -единственное теплое место в нашей квартире. Все сидят, смотрят на живые отблески огня и молчат. Разговаривать никому не хочется. Так не хочется потом выходить из кухни и лезть в холодную кровать...",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
   },
   {
     x: 33.18,
@@ -267,6 +334,17 @@ const personsMarkers = [
     marker: zagorskayaMarkerSrc,
   },
   {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["4october1941","5october1941","6october1941", "october1941"],
+    description:
+      "4 октября. Сегодня день рождения бабушки. Ей исполнилось 75 лет. Сварили суп с гречей и макаронами и кофе. Па кофе позвали Нюсю, Тину Георгиевну с Алюнькой, Серафиму Петровну с Риной... Пили кофе и разговаривали допоздна, вспоминая мирное время. 6 октября. Утром 0 градусов. Весь день мама, Аня, Тина Георгиевна законопачивали окна на зиму. Щели заткнули ватой, но заклеивать не смогли — пожалели картофельную муку на клейстер, а другого клея в доме не оказалось...",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
+  },
+  {
     x: 9.15,
     y: 53.44, // горный университет
     person: "knyazev",
@@ -355,6 +433,17 @@ const personsMarkers = [
       "Сто шестнадцатый день войны. Среда. Из-за пасмурного неба и выпавшего первого снега ночь обошлась без бомбежки. Но плохо отдохнули ленинградцы — ночью разгорелась сильная артиллерийская дуэль. Казалось, что снаряды ложатся где-то близко. И ленинградцы не спали спокойно и эту ночь. Моя сослуживица Цветникова совсем измоталась: «И холодно, и голодно, и бомбежка или стрельба!» Другая сослуживица, Шахматова, совсем побледнела, посерела, но молчит. В глазах какая-то покорность, может быть, и воле божьей: «Он знает, что делает». Не говорит этого она, но это можно прочесть в глазах, сосредоточенных и грустных. Этнограф Штернберг, которая говорила мне об отвращении к жизни при виде всех творящихся ужасов, показалась мне сегодня спокойнее: «Никуда не спасешься от судьбы. Да и не страшно умереть старухе, но быть искалеченной и остаться жить — это страшно». И в относительно спокойных до этого ее глазах засветился признак страха, подавленного ужаса перед возможным грядущим ударом.<br> Зашел профессор физики Т. П. Кравец. Внешне сдержан, как всегда. Полушутливо передал, что покуда находился в больнице, бомба попала в их отделение, но он остался, по какой-то счастливой случайности, жив и даже оправился от своей болезни. Другая бомба ударила, по его возвращении, в соседний дом. Кстати, не помню, отмечал ли я, что в тот дом, где жил Младенцев у Измайловского проспекта, бомба попала вторично и теперь уже разрушила не только лестницу, на которой погиб Младенцев, но и его квартиру, точнее комнату. Так что и не пришлось проверить, были ли у него рукописи Менделеева, и погибло ли что-нибудь из них.<br> Третьего дня, во время очередного налета стервятников, было сброшено множество зажигательных бомб, и одна фугасная бомба разбила часть набережной у Ростральных колонн. Моя сослуживица Травина передала мне об этом спокойно, но всегда сдержанный Андреев на этот раз нервничал. Нехорошие у него, злорадствующие были глаза. Как хорошо, что, по своему положению, мне не часто приходится с кем-либо беседовать, что говорится, «по душе». Не нужно вскрывать, хотя бы и мысленно, черепные коробки многих. Но что у некоторых под костяным покровом черепа так и остается погребенным, как например у Андреева, то у такого, как Модзалевский, попадает и на язык. Я уже упоминал. кажется, о том, что он с величайшим сожалением говорил, что не имеет... чина! Да, да, чина, т. е. в его годы какого-нибудь коллежского асессора или надворного советника. Он не продолжил своей мысли об «Анне на шее», «Владимире в петлице», но указал, что он тогда бы имел авторитет. А сейчас с ним никто не считается. Я не стал спорить с ним, но хотелось указать ему, что научное звание доктор окружено у нас большим вниманием. Кто же виноват, что он только кандидат? Что касается чинов, то, конечно, они давались всякому, для чего не нужно было защищать диссертации. У Модзалевского растерянный вид, в глазах можно прочесть: «Как это все надоело, когда же это кончится, куда бы убежать от всего этого!» Менее всего мне понятна Лосева. Я так и не знаю, прав ли я, так строго осуждая ее иногда. Во всяком случае, она из породы кошек. А эти существа бывают и ласковы, и бездушно жестоки, простодушны и по-кошачьи коварны. Я хочу быть честным по отношению к ней и ко всем другим, о которых я упоминаю в своих записках.<br> Останавливаюсь я на этом маленьком мирке людей, потому что они меня окружают. Они создают «фон» жизни на моем малом радиусе. Это не «герои», не типы, а простые обыкновенные люди, с которыми мне приходится жить и работать. Хотелось бы расширить иногда свой радиус, но по многим причинам это мне не всегда удается. Поэтому мой дальний друг поймет, почему я останавливаюсь иногда на мелочах, на простых, незаметных людях, незначительных фактах.<br> Вчера мы провели радио от трансляционной сети, но репродуктор так плох, что в пяти шагах уже ничего не слышно, кроме невнятного бормотания. Иногда подхожу и вслушиваюсь в очередную передачу. Все то же, что и в газетах. Радио мы поставили, чтобы слушать сигналы тревоги. Внизу, у Карпинских, А. А. Нехорошева, как только стемнеет — и до утра — не спит, напрягает свой слух, прислушивается, нет ли тревоги. Так проходят у нее вечер за вечером, ночь за ночью. Знакомая М. Ф. — Екатерина Ивановна — живет около Мариинского театра в мансарде, в седьмом этаже. Около них много разрушений. Они покуда целы, но очень тяжело переживают вечерние и ночные тревоги. Она мать двух детей: взрослой дочери и сына — мальчика. За них она исстрадалась. В своем «фонаре» они, словно в воздухе висят; до этого времени она отправляла детей к знакомым в первый этаж. Теперь этого нельзя стало делать, так как квартиру заселили целиком жильцами из соседнего разрушенного дома. Бомбоубежище в доме мало устроенное и забитое своими и чужими жильцами. Наши соседи продолжают начатый режим. Как только темнеет, отправляются в бомбоубежище и проводят там вечер и ночь до утра. Иногда во время тревог и днем не выходят оттуда. Такова наша жизнь в городе на фронте. «До каких же пор это продолжится? — спрашивают некоторые недоуменно, нервно или внешне спокойно. — Ну, недели, ну, месяц, два... Туда-сюда... Неужели и всю зиму так? Ведь впереди ничего не видно. Мы в неизвестности. Сжимается ли опять кольцо вокруг Ленинграда, идет ли к нам подмога? Обороняемся ли мы, идя к цели отпора врагу, или медленно агонизируем?» Все эти вопросы мучительны и страшны. Смертельная опасность грозит Ленинграду и его жителям? Судьба его, правда, зависит от Балтийского флота и Кронштадтской крепости: покуда они целы, существует Ленинград. А дальше-то что? И я отвечаю или вслух, или только для себя: «Лучше не думать, не задумываться». Я не сомневаюсь в конечной победе трех великих держав, но на ближайшее время у меня никаких перспектив, никаких иллюзий нет. Гляжу прямо в глаза роковой действительности. И не могу сказать, чтобы был стоически спокоен. Несказанно тяжело быть свидетелем такой страшной катастрофы, которую переживает моя родная страна, не Россия только, а весь наш великий Советский Союз, несший в мир, ценой стольких трудов, обновление человечеству, новую эру в его истории. Тут тяжело быть стоиком и спокойно смотреть на совершающуюся трагедию, по своим грандиозным размерам еще не бывалую в мировой истории.<br> Сегодня можно было бы и кончить свои записи. Но столько тревоги в сердце! Разгром? Открылось новое направление — Калининское. Москва обходится с флангов. На юге Мариуполь в руках немцев. Следовательно, Крым отрезан. И радио, и газеты молчат об Одессе. Не думал я, что моя родина подвергнется — и так скоро! —таким страшным разрушениям всех материальных и культурных ценностей. Знаю одно, что всякая мало-мальски нормальная человеческая жизнь на многие годы кончилась на земле, и в особенности для нас, русских, советских людей. Никого не обвиняю. События развернулись тяжелее, чем мог предполагать самый худший пессимист. Но все, что можно было сделать для сопротивления страшному врагу, сделано. Что же делать, если нас бьет немецкая техническая мощь и пресловутый немецкий порядок, работающий во всех областях с точностью часового механизма, бездушного механизма. Но будущее все-таки не за немцами, заставившими страдать столько миллионов людей. И во имя чего?! Подумать страшно. Ради великой Германии, ради господства ее над всеми другими народами!",
     description2: `The one hundred and sixteenth day of the war. Wednesday. Because of the cloudy sky and the first snow that fell, the night passed without bombing. But the Leningraders did not rest well - a strong artillery duel broke out at night. It seemed that the shells were landing somewhere close. And the Leningraders did not sleep peacefully even that night. My colleague Tsvetnikova was completely exhausted: “It’s cold, and hungry, and there’s bombing or shooting!” Another colleague, Shakhmatova, has turned completely pale, gray, but is silent. There is some kind of submission in her eyes, perhaps to the will of God: “He knows what he is doing.” She does not say this, but it can be read in her eyes, concentrated and sad Ethnographer Sternberg, who told me about disgust for life at the sight of all the horrors that are happening, seemed calmer to me today: “You can’t escape fate anywhere. And it’s not scary for an old woman to die, but to be crippled and still live is scary.” And in relatively Her previously calm eyes began to glow with a sign of fear, suppressed horror of a possible coming blow.<br> Physics professor T.P. Kravets came in. Outwardly reserved, as always. He half-jokingly said that while he was in the hospital, a bomb hit their department, but by some lucky chance he remained alive and even recovered from his illness. Another bomb hit, upon his return, a neighboring house. By the way, I don’t remember whether I noted that the bomb hit the house where Mladentsev lived on Izmailovsky Prospekt a second time and now destroyed not only the staircase on which Mladentsev died, but also his apartment, or rather his room. So there was no need to check whether he had Mendeleev’s manuscripts or whether any of them were lost.<br> On the third day, during another raid of vultures, many incendiary bombs were dropped, and one high-explosive bomb destroyed part of the embankment near the Rostral Columns. My colleague Travina told me about this calmly, but the always reserved Andreev was nervous this time. He had bad, gloating eyes. It’s good that, due to my position, I don’t often have to talk with anyone, as they say, “to my heart’s content.” There is no need to open, even mentally, the skulls of many. But what in some people remains buried under the bony covering of the skull, such as in Andreev, in someone like Modzalevsky ends up on the tongue. I already mentioned. It seems that he said with the greatest regret that he did not have ... rank! Yes, yes, rank, that is, at his age, some kind of collegiate assessor or court councilor. He did not continue his thoughts about “Anna on the neck”, “Vladimir in the buttonhole”, but pointed out that he would then have authority. And now no one takes him into account. I did not argue with him, but I wanted to point out to him that the scientific title of doctor is surrounded by great attention in our country. Who is to blame for the fact that he is only a candidate? As for ranks, of course, they were given to everyone, for which it was not necessary to defend a dissertation. Modzalevsky has a confused look, in his eyes you can read: “How tired of all this, when will this end, where can I run away from all this!” I understand Loseva the least. I still don’t know if I’m right in judging her so harshly sometimes. In any case, she is a cat breed. And these creatures can be both affectionate and soullessly cruel, simple-minded and cunning like a cat. I want to be honest with her and with everyone else I mention in my notes.<br> I dwell on this small world of people because they surround me. They create the “background” of life in my small radius. These are not “heroes”, not types, but simple ordinary people with whom I have to live and work. Sometimes I would like to expand my radius, but for many reasons I don’t always succeed. Therefore, my distant friend will understand why I sometimes dwell on little things, on simple, inconspicuous people, insignificant facts.<br> Yesterday we conducted a radio broadcast from the broadcast network, but the loudspeaker is so bad that five steps away we can no longer hear anything except indistinct muttering. Sometimes I come up and listen attentively to the next broadcast. Everything is the same as in the newspapers. We installed a radio to listen to alarms. Downstairs, at the Karpinskys, A. A. Nekhorosheva, as soon as it gets dark - and until the morning - does not sleep, strains his ears, listens for alarm. This is how she passes evening after evening, night after night. M. F.’s friend, Ekaterina Ivanovna, lives near the Mariinsky Theater in the attic, on the seventh floor. There is a lot of destruction around them. They are still safe, but they have a very difficult time experiencing evening and night anxiety. She is the mother of two children: an adult daughter and a son, a boy. She suffered for them. In their “lantern” they seem to hang in the air; Until that time, she sent her children to her friends on the first floor. Now this can no longer be done, since the apartment has been completely occupied by residents from the neighboring destroyed building. The bomb shelter in the house is poorly equipped and filled with its own and other people's residents. Our neighbors continue the regime they started. As soon as it gets dark, they go to the bomb shelter and spend the evening and night there until the morning. Sometimes during alarms they don’t even leave there during the day.<br> This is our life in the city at the front. “How long will this continue? - ask some people expressing bewilderment, nervousness, or outwardly calmness. - Well, weeks, well, a month, two... Back and forth... Is it really like this all winter? After all, nothing is visible ahead. We are in the unknown. Is the ring around Leningrad closing again, is help coming to us? Are we defending ourselves, moving toward the goal of repelling the enemy, or are we slowly agonizing?” All these questions are painful and scary. Is Leningrad and its residents in mortal danger? Its fate, however, depends on the Baltic Fleet and the Kronstadt Fortress: as long as they are intact, Leningrad exists. And then what? And I answer either out loud, or only for myself: “It’s better not to think, not to think.” I have no doubt about the final victory of the three great powers, but for the near future I have no prospects, no illusions. I look straight into the eyes of fatal reality. And I can’t say that I was stoically calm. It is incredibly difficult to witness such a terrible catastrophe that my native country is experiencing, not only Russia, but our entire great Soviet Union, which, at the cost of so much work, brought to the world a renewal of humanity, a new era in its history. It’s hard to be stoic here and calmly look at the ongoing tragedy, which in its grandiose proportions has never happened in world history.<br> Today I could finish my notes. But there is so much anxiety in my heart! Destruction? A new direction has opened - Kalinin. Moscow is being flanked. In the south, Mariupol is in German hands. Consequently, Crimea is cut off. Both radio and newspapers are silent about Odessa. I didn’t think that my homeland would be exposed - and so soon! -such terrible destruction of all material and cultural values. I know one thing, that any more or less normal human life has ended on earth for many years, and especially for us, Russian, Soviet people. I don't blame anyone. Events unfolded more severely than the worst pessimist could have imagined. But everything that could be done to resist the terrible enemy has been done. What to do if we are beaten by German technical power and the notorious German order, which works in all areas with the precision of a clockwork, a soulless mechanism. But the future still does not belong to the Germans, who made so many millions of people suffer. And in the name of what?! It's scary to think about. For the sake of great Germany, for the sake of its dominance over all other nations!`,
     marker: knyazevMarkerSrc,
+  },
+  {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["16october1941", "october1941"],
+    description:
+      "Вечером, в половине восьмого, началась бомбежка нашего района. Небо осветилось, как днем. Прибежала соседка из 4-й квартиры, сказала, что в саду Госнардома горят «американские горы», которые сделали хранилищем запасов нефти. Полыхало до утра. Мы почти не спали...",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
   },
   {
     x: 33.33,
@@ -607,6 +696,17 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["11november1941", "november1941"],
+    description:
+      "Опять с 2-х часов ночи стояли за пайкой. Стояли по очереди. Наконец, достали... Но дома не лучше, чем на улице: холод такой же, свет горит слабо, жизнь только на кухне... Как не хочется уходить с кухни! Ждешь, пока погаснет последний огонек в плите.",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
+  },
+  {
     x: 44.05,
     y: 57.06, // Аничков мост
     person: "luknitskiy",
@@ -748,6 +848,28 @@ const personsMarkers = [
     marker: chekrizovMarkerSrc,
   },
   {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["20november1941", "21november1941", "november1941"],
+    description:
+      "20 ноября. Опять сбавили хлеб. Рабочим — 250 г, всем остальным 125 г. До каких же пор можно сбавлять? Опять живем с коптилкой. Экономим машинное масло, зажигаем коптилку, когда нужно что-то делать... 21 ноября. Сварили суп из картофельной муки. Похоже на соленый горячий кисель...",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
+  },
+  {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["23november1941", "november1941"],
+    description:
+      "Читал «Ленинградскую правду». Там статья профессора Макульского о премьере в театре Комедии «Питомцы славы» (об Отечественной войне 1812 года). Декорации и постановка Акимова. Очень захотелось в театр! В Ленинграде сейчас, оказывается, работают: театр Ленинского комсомола, театр имени Ленсовета, театр Музкомедии, театр Комедии, ленинградский театр драмы и ТЮЗ. А мне казалось, что ничего этого в городе уже нет. Сидим, как кроты во мраке и холоде, думаем, что и вокруг то же самое. Может быть, только у нас так плохо?",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
+  },
+  {
     x: 40.05,
     y: 56.26, // невская
     person: "knyazev",
@@ -848,6 +970,17 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["6december1941", "december1941"],
+    description:
+      "У нас окончательно перестала идти вода (шла последнее время маленькой струйкой), а на верхние этажи давно не поднимается. Нужно за водой ходить во двор, к крану. Уборная тоже не работает и все нужно выносить на помойку в ведре. Ужас!",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
+  },
+  {
     x: 50,
     y: 46.21, // финляндский вокзал
     person: "knyazev",
@@ -856,6 +989,17 @@ const personsMarkers = [
       "Сто шестьдесят восьмой день войны. Суббота. Сегодня происходило совещание у начальника Административно-хозяйственного отдела ленинградских учреждений Академии наук т[ов]. Федосеева по поводу предстоящей эвакуации. Выяснилось, что отправление эвакуированных пешком нецелесообразно. Первый же опыт дал множество отставших. Теперь решено перевозить на грузовых автомобилях по 15 человек с 30 кг багажа на каждого человека. Сборный пункт на Финляндском вокзале. Оттуда до какой-то станции по железной дороге, далее на грузовиках опять, частично по льду Ладожского озера, с какого-то пункта снова вагон железной дороги. В учреждениях должны остаться сотрудники для охраны зданий и научного имущества. Остальные могут идти в поход. Эвакуация намечается в конце будущей недели. Уже записалось до полутора тысяч человек. Теперь, когда стало известно, что будут предоставлены грузовые машины, количество желающих, конечно, увеличится.<br> Из собравшихся в кабинете Федосеева представителей учреждений не было. Кроме меня и больного Яковкина (директора Библиотеки), ни одного директора: все они улетели. Пришли заместители или помощники по хозяйственной части. Выбрали центральную комиссию, постановили организовать тройки по учреждениям. Смотрел на мало знакомых людей, желтых, зеленых, подпухших, в пальто, в шапках, имеющих одно стремление — бежать, бежать...<br> В вестибюле темно, горит лишь коптилка, едва освещающая проход. Мрачно и жутко на мраморной кваренговской лестнице. Проходят черные тени, а кто — и не разберешь. Никаких пропусков никто не спрашивает... Возвратившись в Архив, собрал сотрудников и объявил им условия объявленной эвакуации. Все задумались. Часть их обязательно должна остаться в Архиве для его охраны, те, кто уедут, теряют свое место, т[ак] к[ак] наше учреждение, как плановое, остается в Ленинграде. Заседание проводил в нижнем этаже, потому что во всех помещениях холод. На дворе большой мороз, а нам который день не могут доставить топлива.<br> И не подозревал, как ослабли мои силы: возвращаясь домой по лестнице, почувствовал, что качаюсь. Неприятное было ощущение... Но я совладал с собой, рассмеялся и для бодрости запел.",
     description2: `noDescription2`,
     marker: knyazevMarkerSrc,
+  },
+  {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["7december1941", "december1941"],
+    description:
+      "Сейчас вечер. 7 часов. Я сижу за столом в пальто, шапке, руковицах. На столе мигает коптилка. В ней замерзает масло. Скоро спать. Я теперь ложусь в кровать, не снимая пальто и шапки. Даже под одеялом мерзнут щеки и руки. Сегодня в комнате на столе замерзла вода. Ах если бы в квартире были печи!..",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
   },
   {
     x: 28.05,
@@ -958,6 +1102,17 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["18december1941", "december1941"],
+    description:
+      "Сегодня произошло событие. Я сидел в шубе у стола и рисовал, как вдруг дверь отворилась и вошла тетя Маруся. Она узнала, где мы, из Аниного письма... Она сразу же предложила нам переезжать на Васильевский остров. Там есть печи, небольшой запас дров и можно топить...",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
+  },
+  {
     x: 26.99,
     y: 55.15, // академия
     person: "knyazev",
@@ -966,6 +1121,17 @@ const personsMarkers = [
       "Сто восемьдесят первый и сто восемьдесят второй дни войны. Пятница и суббота. Ослабевшего от недоедания и истощения академика С. А. Жебелева вчера, 19-го, пришлось отвезти в больницу. Это произвело удручающее впечатление на всех нас.<br> Сегодня я звонил по телефону начальнику ЛАХУ т[ов]. Федосееву о том, что акад. И. Ю. Крачковский, живущий на нашей лестнице, сам носит дрова. Семья его до сих пор не получила из-за очередей продуктов по карточкам ни за первую, ни за вторую декаду.<br> Есть еще академик в Ленинграде — престарелый восьмидесятилетний Коковцов, создавший школу гебраистов. О нем мало кто знает. Если он умрет от голода, как и первые двое, то это будет очень тяжелая потеря и может быть использована врагом как выгодный для себя козырь.<br> Надеялись, что Федосеев примет необходимые меры по партийной линии. Вообще в эти трудные дни Академия наук оказалась в очень печальном положении. Оставшиеся в Ленинграде научные сотрудники брошены на произвол судьбы. На днях улетела вторая заместительница директора Л[енинградского] отд[еления] Института истории Бочкарева, более известная под прозвищем «Бочкариха». Институт остался совершенно без руководителя. (Предполагали, что акад. Жебелев согласится принять руководство, но он заболел.) Встретившийся со мной ст[арший] научн[ый] сотрудник института В. Г. Гейман, исхудавший, постаревший, с горечью говорил мне о создавшемся безнадежном положении в Институте. Бочкарева, к сожалению, член партии, как и Нахалкова (Напалкова). Хорошо бы встретиться с ними и не подать им руки как дезертирам. Тяжело и то, что в такие трудные дни между сотрудниками разных учреждений в Академии нет ни солидарности, ни товарищества. Мы не можем получить в Архив с соседнего двора этнографии отпущенные нам полтора кубометра дров, потому что обратились к заместителю директора т[ов]. Абрамзону, а не к вернувшемуся к своим обязанностям помощнику директора по хозяйственной части т[ов]. Шапиро. Оба сотрудника — партийцы, это только один из печальных примеров нашей тяжелой академической жизни. Ни Казань, где Президиум, ни Куйбышев, где какая-то часть Академии при правительстве, о нас никак не пекутся. Ответов на посланные телеграммы мы не получили. О смете на 1942 год ничего не известно. Зарплата за декабрь задерживается.<br> Ходил я сегодня по законсервированным промерзшим хранилищам и с грустью думал — уберегу ли я вверенные мне научные ценности. Сотрудники ослабевают с каждым днем, да и мои ноги еле носят меня. А помощи нет и ждать неоткуда. П. М. Стулов, всегда излишне молчаливый, тут заговорил со мной: «Еще недели две продержимся. Если не будет улучшения положения, начнем валиться. Напряжение достигло последних пределов».<br> Таков Ленинград в декабре 1941 года. Почти символ. Встретилась мне вчера утром похоронная процессия. Двое везут на санях закрытый в пальто с головой труп умершего (значит, и гроба не достали!), за покойником трое провожатых. Падал снег... Вероятно, привезут труп на кладбище и оставят его непогребенным, т[ак] к[ак] рыть промерзшую и твердую как железо землю некому. Бабка и дядя нашей бывшей воспитанницы Вали, умершие дней 20 тому назад, так и лежат непохороненными на кладбище.<br> Неспокойно, нехорошо сегодня стало мне после известия об отправке в больницу Жебелева и всего виденного и услышанного за последнее время на моем малом радиусе. Радуют только удачи на фронте, удары по врагу мощные. Догорел мой светильник!",
     description2: `noDescription2`,
     marker: knyazevMarkerSrc,
+  },
+  {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["20december1941", "december1941"],
+    description:
+      "Весь день готовились к переезду. Наконец, собрались. Погрузили вещи на саночки, попрощались с Нюсей и соседями. На улицах тихо, ни души и только иногда в стороне Биржевого моста за Невой слабые вспышки. Ехать трудно: мостовая в торосах, обледенела. Вещи поминутно сваливаются с саночек. Часто останавливаемся, отдыхаем и снова в путь... Тетя Маруся нас встретила и устроила в комнате, в которой живет она (она сейчас в госпитале, на казарменном положении). Комнатка маленькая, но это хорошо, теплее будет. Есть печка-буржуйка. У нашей буржуйки собралась вся квартира: тетя Маруся, ее муж Владимир Петрович с сестрой Анной Петровной, тетя Таня с сыном Андрюшей... Легли спать поздно, прямо на вещах, не раздеваясь.",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
   },
   {
     x: 27.9,
@@ -988,6 +1154,17 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["22december1941", "december1941"],
+    description:
+      "Сегодня шел за водой, упал на лестнице и сильно ушибся. Кто-то вылил прямо на ступени парашу, и все замерзло. Теперь ходить просто опасно: окна заросли льдом и инеем и в темноте лестница каждую минуту преподносит сюрпризы, идешь ощупью, держась за перила.",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
+  },
+  {
     x: 21,
     y: 71.13, // нарвский проспект
     person: "chekrizov",
@@ -996,6 +1173,17 @@ const personsMarkers = [
       "Ну вот, сегодня опять, после некоторого перерыва, [немец] обстреливает город. Обстрел застал меня на Нарвском [проспекте] (ходил в свой старый район). Пришлось переждать, ложились очень близко снаряды. Пришел домой, а там не лучше. Снаряд упал напротив дома, выбил в квартире все [...] стояки. Спал в прихожей на холоду 2 ночи. Простудился. Перебрался спать в завод.",
     description2: `Well, today again, after a break, Germans are shelling the city. The shelling caught me on Narva Prospekt (I went to my old district). I had to wait, the shells were laying very close. Came home, and there is no better. The shell fell in front of the house, knocked out all the pipes. Slept in the hallway in cold for 2 nights. I caught a cold. Moved to the factory to sleep.`,
     marker: chekrizovMarkerSrc,
+  },
+  {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["23december1941", "december1941"],
+    description:
+      "Узнал о взятии Будогощи и Грузино. Зашевелились-таки под Ленинградом. Скорей бы уж. Вернулись бы мы тогда в милую Гатчину и зажили бы снова, как до войны. Вечером рисовал Гатчину, Красную улицу и каланчу. Мама ходила на Кировский проспект к тете Лизе в столовую. Принесла супу и каши.",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
   },
   {
     x: 26.59,
@@ -1043,6 +1231,17 @@ const personsMarkers = [
     marker: luknitskiyMarkerSrc,
   },
   {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["30december1941", "december1941"],
+    description:
+      "Пришло печальное известие: умерла тетя Лиля. Пришла к нам ее соседка сказать об этом... Соседка ждала, что мы ее накормим, но мы ее только напоили кофе и дали лепешечку из кофейной гущи (нас научили их жарить без масла)...",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
+  },
+  {
     x: 20.08,
     y: 64.93, // завод
     person: "chekrizov",
@@ -1061,6 +1260,17 @@ const personsMarkers = [
       "Готовились к встрече нового 1942 года, ездив к Павлику, привезли даже маленькую елочку, украсили ее. Украсили комнату, которая приняла праздничный вид. Недели полторы хранили банку консервов для того, чтобы сварить суп и встретить Новый год. Получили поллитра вина и больше ничего. Часов в 11 вечера пришла товарищ Бурутина со своей дочерью Женей, секретарь партбюро со своей женой и я с Олей встречали Новый год. В дружественной беседе вспоминали своих близкий родных, которые находились на фронтах Отечественной войны. У т. Бурутиной сын 19-летний парень еще в июле месяце ушел в партизанский отряд и с тех пор не было от него никаких известий. Я в эту ночь, сидя за столом в теплой комнате, вспомнила сына, мужа, которые в это время находились вдали от меня, где-либо в окопах или землянках. В эту ночь перед глазами встал весь мир, потрясенный ужасающей бойней человечества, затеянной кровавым псом — гитлером. В эту ночь, когда уходил 1941 год и наступал 1942 год, с глубокой верой в сердце чувствовалось, что 1942 год принесет нам победу над врагом. Красная Армия успешно уже развивала наступление на подлых паразитов. Так кончился 1941 год.",
     description2: `noDescription2`,
     marker: zagorskayaMarkerSrc,
+  },
+  {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["31december1941", "december1941"],
+    description:
+      "Последний день старого года. Мы с утра растопили буржуйку, нагрели воды и устроили мытье и даже мама немного постирала. Потом варили новогодний обед: бабушка достала припрятанную гречневую крупу и был сварен суп, похожий на очень жидкую кашу. Я накрошил в кружку с этим супом свой хлеб и получилось очень праздничное блюдо... В двенадцать часов мы пили сладкий кофе и ели блинчики из отрубей.",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
   },
   {
     x: 41.85,
@@ -1151,6 +1361,17 @@ const personsMarkers = [
       "12 часов 30 минут дня... На почте чернила замерзли. Бани не работают. По улицам вереницами гробы. Улицы завалены стеклами. На улице Попова выносят людей на носилках — только что в дом попал снаряд и пробил его насквозь. На Геслеровском, угол Теряевой, другой снаряд выбил огромную дыру в доме. Кровь. На Карповке снаряд попал в лед... Все это меланхолично сообщает Людмила Федоровна, войдя в комнату и чертя на клочке бумаги план улиц, чтобы определить, с какой стороны падали снаряды.",
     description2: `12:30 p.m. The ink froze at the post office. Baths don't work. Rows of coffins in the streets. Streets are covered with glass. In Popov Street - people are carried out - a projectile has just hit the house and pierced it through. At the corner of Geslerovsky and Teryaeva another projectile made a huge hole in the house. Blood. On Karpovka river, the projectile hit the ice... Lyudmila Fedorovna reports all of this melancholically. She is drawing a plan of streets on a piece of paper to determine which side the shells fell from.`,
     marker: luknitskiyMarkerSrc,
+  },
+  {
+    // new
+    x: 0,
+    y: 0,
+    person: "afanasyev",
+    date: ["8january1941", "january1941"],
+    description:
+      "После обеда вышел погулять. На улице очень красиво: все в густом инее и все туманно-розовое от висящего в морозной дымке розово-оранжевого солнца. На улице же никто на эту красоту не смотрит: удивительно пусто и тихо. Только снег потрескивает...",
+    description2: `noDescription2`,
+    marker: afanasyevMarkerSrc,
   },
   {
     x: 52.73,
