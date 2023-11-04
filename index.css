@@ -11,7 +11,7 @@
 
 .map-image {
   width: 100%;
-  }
+}
 
 .marker {
   position: absolute;
@@ -130,10 +130,9 @@
 }
 
 .grey-color {
-  background-color: #948190;
+  background-color: #7b7b7b;
   height: calc(100% / 8);
 }
-
 
 .search-container {
   display: flex;
