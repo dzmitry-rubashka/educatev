@@ -2905,9 +2905,31 @@ navigationPlusButton.addEventListener("click", increaseMapSize);
 navigationMinusButton.addEventListener("click", decreaseMapSize);
 navigationResetButton.addEventListener("click", resetMapSize);
 
-const showInfo = (description, x, y, imageSrc, description2, person) => {
+const showInfo = (description, x, y, imageSrc, description2, person, date) => {
   const info = document.createElement("div");
   infoContainer.appendChild(info);
+  const dateToShow = date
+    .slice(0, date.length - 1)
+    .map((item) => {
+      if (item.includes("september")) {
+        return item.replace("september", ".09.");
+      } else if (item.includes("october")) {
+        return item.replace("october", ".10.");
+      } else if (item.includes("november")) {
+        return item.replace("november", ".11.");
+      } else if (item.includes("december")) {
+        return item.replace("december", ".12.");
+      } else if (item.includes("january")) {
+        return item.replace("january", ".01.");
+      } else if (item.includes("february")) {
+        return item.replace("february", ".02.");
+      } else if (item.includes("march")) {
+        return item.replace("march", ".03.");
+      } else if (item.includes("april")) {
+        return item.replace("april", ".04.");
+      }
+    })
+    .join(", ");
   if (currentTranslation === "ru") {
     let personName;
     if (person === "knyazev") {
@@ -2928,7 +2950,13 @@ const showInfo = (description, x, y, imageSrc, description2, person) => {
       personName = "Афанасьев";
     }
     info.innerHTML =
-      "<div>" + "<div>" + personName + "</div>" + description + "</div>";
+      "<div>" +
+      "<div style='font-weight: bold'>" +
+      personName +
+      ` (${dateToShow})` +
+      "</div>" +
+      description +
+      "</div>";
   }
   if (currentTranslation === "en") {
     let personName;
@@ -2950,7 +2978,13 @@ const showInfo = (description, x, y, imageSrc, description2, person) => {
       personName = "Afanasyev";
     }
     info.innerHTML =
-      "<div>" + "<div>" + personName + "</div>" + description2 + "</div>";
+      "<div>" +
+      "<div style='font-weight: bold'>" +
+      personName +
+      ` (${dateToShow})` +
+      "</div>" +
+      description2 +
+      "</div>";
   }
   info.classList.add("marker-info");
   info.style.border = "2px solid #ccc5c5";
@@ -2999,7 +3033,8 @@ const createMarker = (
   description,
   imageSrc,
   description2,
-  person
+  person,
+  date
 ) => {
   const marker = document.createElement("img");
   marker.classList.add("marker");
@@ -3010,7 +3045,7 @@ const createMarker = (
 
   marker.addEventListener("mouseenter", () => {
     if (!infoVisible) {
-      showInfo(description, x, y, imageSrc, description2, person);
+      showInfo(description, x, y, imageSrc, description2, person, date);
     }
   });
 
@@ -3024,7 +3059,7 @@ const createMarker = (
     if (infoVisible) {
       hideInfo();
     } else {
-      showInfo(description, x, y, imageSrc, description2, person);
+      showInfo(description, x, y, imageSrc, description2, person, date);
     }
     infoVisible = !infoVisible;
     event.stopPropagation();
@@ -3041,7 +3076,8 @@ personsMarkers.forEach((marker) => {
     marker.description,
     marker.imageSrc,
     marker.description2,
-    marker.person
+    marker.person,
+    marker.date
   );
 });
 
@@ -3181,7 +3217,8 @@ const onClickClearButton = () => {
       marker.description,
       marker.imageSrc,
       marker.description2,
-      marker.person
+      marker.person,
+      marker.date
     );
   });
 };
@@ -3201,7 +3238,8 @@ const onClickSearchButton = () => {
           marker.description,
           marker.imageSrc,
           marker.description2,
-          marker.person
+          marker.person,
+          marker.date
         );
       }
     });
@@ -3216,7 +3254,8 @@ const onClickSearchButton = () => {
           marker.description,
           marker.imageSrc,
           marker.description2,
-          marker.person
+          marker.person,
+          marker.date
         );
       }
     });
@@ -3232,7 +3271,8 @@ const onClickSearchButton = () => {
           marker.description,
           marker.imageSrc,
           marker.description2,
-          marker.person
+          marker.person,
+          marker.date
         );
       }
     });
