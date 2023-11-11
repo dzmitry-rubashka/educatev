@@ -2905,14 +2905,52 @@ navigationPlusButton.addEventListener("click", increaseMapSize);
 navigationMinusButton.addEventListener("click", decreaseMapSize);
 navigationResetButton.addEventListener("click", resetMapSize);
 
-const showInfo = (description, x, y, imageSrc, description2) => {
+const showInfo = (description, x, y, imageSrc, description2, person) => {
   const info = document.createElement("div");
   infoContainer.appendChild(info);
   if (currentTranslation === "ru") {
-    info.innerHTML = "<div>" + description + "</div>";
+    let personName;
+    if (person === "knyazev") {
+      personName = "Князев Георгий Алексеевич";
+    } else if (person === "luknitskiy") {
+      personName = "Лукницкий Павел Николаевич";
+    } else if (person === "polzikovaRubets") {
+      personName = "Ползикова-Рубец Ксения Владимировна";
+    } else if (person === "chekrizov") {
+      personName = "Чекризов Василий Федорович";
+    } else if (person === "zimnickaya") {
+      personName = "Зимницкая Галина Карловна";
+    } else if (person === "zagorskaya") {
+      personName = "Загорская Александра Павловна";
+    } else if (person === "glinskaya") {
+      personName = "Глинская Екатерина Прокофьевна";
+    } else {
+      personName = "Афанасьев";
+    }
+    info.innerHTML =
+      "<div>" + "<div>" + personName + "</div>" + description + "</div>";
   }
   if (currentTranslation === "en") {
-    info.innerHTML = "<div>" + description2 + "</div>";
+    let personName;
+    if (person === "knyazev") {
+      personName = "Knyazev Georgiy Alekseevich";
+    } else if (person === "luknitskiy") {
+      personName = "Luknitskiy Pavel Nikolaevich";
+    } else if (person === "polzikovaRubets") {
+      personName = "Polzikova-Rubets Kseniya Vladimirovna";
+    } else if (person === "chekrizov") {
+      personName = "Chekriozov Vasilii Fedorovich";
+    } else if (person === "zimnickaya") {
+      personName = "Zimnitskaya Galina Karlovna";
+    } else if (person === "zagorskaya") {
+      personName = "Zagorskaya Aleksandra Pavlovna";
+    } else if (person === "glinskaya") {
+      personName = "Glinskaya Ekaterina Prokofyevna";
+    } else {
+      personName = "Afanasyev";
+    }
+    info.innerHTML =
+      "<div>" + "<div>" + personName + "</div>" + description2 + "</div>";
   }
   info.classList.add("marker-info");
   info.style.border = "2px solid #ccc5c5";
@@ -2954,7 +2992,15 @@ document.addEventListener("click", (event) => {
   }
 });
 
-const createMarker = (x, y, markerSrc, description, imageSrc, description2) => {
+const createMarker = (
+  x,
+  y,
+  markerSrc,
+  description,
+  imageSrc,
+  description2,
+  person
+) => {
   const marker = document.createElement("img");
   marker.classList.add("marker");
   marker.style.left = x + "%";
@@ -2964,7 +3010,7 @@ const createMarker = (x, y, markerSrc, description, imageSrc, description2) => {
 
   marker.addEventListener("mouseenter", () => {
     if (!infoVisible) {
-      showInfo(description, x, y, imageSrc, description2);
+      showInfo(description, x, y, imageSrc, description2, person);
     }
   });
 
@@ -2978,7 +3024,7 @@ const createMarker = (x, y, markerSrc, description, imageSrc, description2) => {
     if (infoVisible) {
       hideInfo();
     } else {
-      showInfo(description, x, y, imageSrc, description2);
+      showInfo(description, x, y, imageSrc, description2, person);
     }
     infoVisible = !infoVisible;
     event.stopPropagation();
@@ -2994,7 +3040,8 @@ personsMarkers.forEach((marker) => {
     marker.marker,
     marker.description,
     marker.imageSrc,
-    marker.description2
+    marker.description2,
+    marker.person
   );
 });
 
@@ -3133,7 +3180,8 @@ const onClickClearButton = () => {
       marker.marker,
       marker.description,
       marker.imageSrc,
-      marker.description2
+      marker.description2,
+      marker.person
     );
   });
 };
@@ -3152,7 +3200,8 @@ const onClickSearchButton = () => {
           marker.marker,
           marker.description,
           marker.imageSrc,
-          marker.description2
+          marker.description2,
+          marker.person
         );
       }
     });
@@ -3166,7 +3215,8 @@ const onClickSearchButton = () => {
           marker.marker,
           marker.description,
           marker.imageSrc,
-          marker.description2
+          marker.description2,
+          marker.person
         );
       }
     });
@@ -3181,7 +3231,8 @@ const onClickSearchButton = () => {
           marker.marker,
           marker.description,
           marker.imageSrc,
-          marker.description2
+          marker.description2,
+          marker.person
         );
       }
     });
