@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <title>Educat e.V.</title>
   </head>
   <body>
     <div class="language-container">
-      <button class="language-button" id="language-button" onclick="toggleTranslation()">РУ</button>
+      <button
+        class="language-button"
+        id="language-button"
+        onclick="toggleTranslation()"
+      >
+        РУ
+      </button>
     </div>
     <div class="map-container" id="map-container">
       <img class="map-image" src="./assets/images/map.jpg" alt="map" />
@@ -73,9 +83,7 @@
           <li id="glinskaya" onclick="onSelectPerson(id)">
             Глинская Екатерина Прокофьевна
           </li>
-          <li id="afanasyev" onclick="onSelectPerson(id)">
-            Афанасьев
-          </li>
+          <li id="afanasyev" onclick="onSelectPerson(id)">Афанасьев</li>
           <button
             id="closeButtonPersons"
             class="button close-button"
