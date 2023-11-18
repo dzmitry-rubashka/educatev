@@ -2079,16 +2079,6 @@ const personsMarkers = [
     marker: knyazevMarkerSrc,
   },
   {
-    x: 31.54,
-    y: 44.64, // Б. Пушкарская, 7 ??????
-    person: "afanasyev",
-    date: ["23february1942", "february1942"],
-    description:
-      "Мы с бабушкой сидим дома. Я щиплю тонкие лучинки для растопки. Приходит мама из магазина, приносит крупу и кокосовый жир, и начинается приготовление обеда. Растапливаем буржуйку, под нее и около кладем для сушки принесенные Аней и Юрой дрова и ставим кипятить воду. Когда вода закипит, в нее в присутствии всей семьи кладется чашечка крупы — наша норма на день. Потом опускается добытая мамой на рынке вобла. Но она скоро вынимается обратно, чтобы не разварилась. Аня начинает заниматься «ювелирной работой» — вынимать пинцетом из воблы все кости, а мясо делим на равным кучки. Я режу свой хлеб на маленькие кусочки и кладу их в суп. Потом растираю их в супе вместе с воблой до кашеобразного состояния. А потом маленькой ложечкой ем тюрьку в течение часа. Потом все ложимся в кровать. Сегодня много работали и сил нет...",
-    description2: `noDescription2`,
-    marker: afanasyevMarkerSrc,
-  },
-  {
     x: 21.88,
     y: 64.88, // завод
     person: "chekrizov",
@@ -2975,7 +2965,7 @@ const showInfo = (description, x, y, imageSrc, description2, person, date) => {
     } else if (person === "glinskaya") {
       personName = "Glinskaya Ekaterina Prokofyevna";
     } else {
-      personName = "Afanasyev";
+      personName = "Afanasyev Dmitriy Vladimirovich";
     }
     info.innerHTML =
       "<div>" +
@@ -3309,7 +3299,8 @@ function toggleTranslation() {
       "Загорская Александра Павловна";
     document.getElementById("name-glinskaya").textContent =
       "Глинская Екатерина Прокофьевна";
-    document.getElementById("name-afanasyev").textContent = "Афанасьев";
+    document.getElementById("name-afanasyev").textContent =
+      "Афанасьев Дмитрий Владимирович";
     document.getElementById("knyazev").textContent =
       "Князев Георгий Алексеевич";
     document.getElementById("luknitskiy").textContent =
@@ -3324,7 +3315,8 @@ function toggleTranslation() {
       "Загорская Александра Павловна";
     document.getElementById("glinskaya").textContent =
       "Глинская Екатерина Прокофьевна";
-    document.getElementById("afanasyev").textContent = "Афанасьев";
+    document.getElementById("afanasyev").textContent =
+      "Афанасьев Дмитрий Владимирович";
     currentTranslation = "ru";
   } else {
     document.getElementById("language-button").textContent = "EN";
@@ -3355,7 +3347,8 @@ function toggleTranslation() {
       "Zagorskaya Aleksandra Pavlovna";
     document.getElementById("name-glinskaya").textContent =
       "Glinskaya Ekaterina Prokofyevna";
-    document.getElementById("name-afanasyev").textContent = "Afanasyev";
+    document.getElementById("name-afanasyev").textContent =
+      "Afanasyev Dmitriy Vladimirovich";
     document.getElementById("knyazev").textContent =
       "Knyazev Georgiy Alekseevich";
     document.getElementById("luknitskiy").textContent =
@@ -3370,7 +3363,8 @@ function toggleTranslation() {
       "Zagorskaya Aleksandra Pavlovna";
     document.getElementById("glinskaya").textContent =
       "Glinskaya Ekaterina Prokofyevna";
-    document.getElementById("afanasyev").textContent = "Afanasyev";
+    document.getElementById("afanasyev").textContent =
+      "Afanasyev Dmitriy Vladimirovich";
     currentTranslation = "en";
   }
 }
