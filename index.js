@@ -24,7 +24,7 @@ const personsMarkers = [
     date: ["5september1941", "september1941"],
     description:
       "Нюся сегодня очень ругала меня и Алюньку за то, что мы играли в передней в мяч. Конечно, мы доставили ей своим приездом очень много хлопот. Мама и Аня все время стараются ей помогать, но, конечно, мы очень стесняем ее. Никто не виноват, что идет война.",
-    description2: `noDescription2`,
+    description2: `Nyusya scolded me and Alyunka today because we were playing ball in the front room. Of course we caused her a lot of trouble with our arrival. Mom and Anya try to help her all the time but still we constrain her very much. It is no one's fault that there’s war going on.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -54,7 +54,7 @@ const personsMarkers = [
     date: ["9september1941", "september1941"],
     description:
       "Опять сплошные тревоги. В столовую даже не ходили. Сидели дома. Рассказывают, что вчера в Бадаевских складах, которые вчера сгорели, расплавленный сахар шел рекой из-под ворот и люди его черпали ведрами...",
-    description2: `noDescription2`,
+    description2: `Again, air raid warnings all the time. We didn't even go to the canteen. We stayed at home. They say that in the Badaevsky warehouses which burned down yesterday melted sugar flowed like a river from under the gates and people scooped it up in buckets...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -114,7 +114,7 @@ const personsMarkers = [
     date: ["17september1941", "september1941"],
     description:
       "Весь день грохот взрывов. Обстрел... Когда мы шли в бомбоубежище, мама в темноте упала с лестницы и разбила голову. Решили теперь в убежище не ходить, а сидеть дома. В сводках сегодня бои на подступах к Одессе...",
-    description2: `noDescription2`,
+    description2: `There's been a roar of explosions all day. Shelling... as we were running to the bomb shelter my mother fell down on the stairs in the dark and hit her head. This time we decided not to go to the shelter but to stay at home. Today's reports include battles on the outskirts of Odessa...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -154,7 +154,7 @@ const personsMarkers = [
     date: ["19september1941", "september1941"],
     description:
       "Ходили в «Великан» на «Конька-Горбунка». Понравилось... Опять бои на всем фронте, и опять идет дождь...",
-    description2: `noDescription2`,
+    description2: `We went to the Giant Cinema to see “The Little Humpbacked Horse”. I liked it... Again there are battles on the entire front, and again it is raining...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -174,7 +174,7 @@ const personsMarkers = [
     date: ["21september1941", "september1941"],
     description:
       "Вечером грелись на кухне у плиты. Ожесточенные бои под Киевом. На душе тяжко. Чтобы хоть немного развлечься, сходил в «АРС» на «Праздник святого Йоргена». Но легче не стало.",
-    description2: `noDescription2`,
+    description2: `In the evening we warmed ourselves in kitchen by the stove. Fierce battles near Kyiv. My heart is heavy. To have at least a little fun I went to ARS Cinema to see “The feast of St. Jorgen.” But it didn't get any easier.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -224,7 +224,7 @@ const personsMarkers = [
     date: ["27september1941", "september1941"],
     description:
       "Вечером грелись на кухне у плиты. По вечерам кухня -единственное теплое место в нашей квартире. Все сидят, смотрят на живые отблески огня и молчат. Разговаривать никому не хочется. Так не хочется потом выходить из кухни и лезть в холодную кровать...",
-    description2: `noDescription2`,
+    description2: `In the evening we warmed ourselves in kitchen by the stove. It is the only warm place in our apartment. Everyone sits, looks at the living reflections of the fire and is silent. Nobody wants to talk. I really don’t want to leave the kitchen and go to my cold bed...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -334,7 +334,7 @@ const personsMarkers = [
     date: ["4october1941", "5october1941", "6october1941", "october1941"],
     description:
       "4 октября. Сегодня день рождения бабушки. Ей исполнилось 75 лет. Сварили суп с гречей и макаронами и кофе. Па кофе позвали Нюсю, Тину Георгиевну с Алюнькой, Серафиму Петровну с Риной... Пили кофе и разговаривали допоздна, вспоминая мирное время. 6 октября. Утром 0 градусов. Весь день мама, Аня, Тина Георгиевна законопачивали окна на зиму. Щели заткнули ватой, но заклеивать не смогли — пожалели картофельную муку на клейстер, а другого клея в доме не оказалось...",
-    description2: `noDescription2`,
+    description2: `October 4th. Today is grandma's birthday. She turned 75 years old. We made soup with buckwheat and macaroni and coffee. Invited Nyusya, Tina Georgievna and Alyunka, Serafima Petrovna and Rina for coffee... They drank coffee and talked until late remembering peacetime. October 6th. 0 degrees in the morning. All day my mother, Anya and Tina Georgievna were caulking windows for the winter. They plugged cracks with cotton wool but could not seal them - saving potato flour for flour paste, and there was no other glue in the house...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -434,7 +434,7 @@ const personsMarkers = [
     date: ["16october1941", "october1941"],
     description:
       "Вечером, в половине восьмого, началась бомбежка нашего района. Небо осветилось, как днем. Прибежала соседка из 4-й квартиры, сказала, что в саду Госнардома горят «американские горы», которые сделали хранилищем запасов нефти. Полыхало до утра. Мы почти не спали...",
-    description2: `noDescription2`,
+    description2: `In the evening, at half past seven the bombing of our area began. The sky lit up as if it was day. Our neighbor from apartment 4 came running and said that the American Mountains (Roller-coaster) were burning in the People House garden which had been turned into a storage facility for oil reserves. It burned until morning. We almost didn't sleep...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -694,7 +694,7 @@ const personsMarkers = [
     date: ["11november1941", "november1941"],
     description:
       "Опять с 2-х часов ночи стояли за пайкой. Стояли по очереди. Наконец, достали... Но дома не лучше, чем на улице: холод такой же, свет горит слабо, жизнь только на кухне... Как не хочется уходить с кухни! Ждешь, пока погаснет последний огонек в плите.",
-    description2: `noDescription2`,
+    description2: `Again, we stood for rations since 2 o'clock at night. We stood in line. Finally, we got it... But at home it’s no better than outside: the cold is the same, lights are weak, there’s life only in the kitchen... I don’t want to leave the kitchen! We wait until the last light in the stove goes out.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -814,7 +814,7 @@ const personsMarkers = [
     date: ["20november1941", "november1941"],
     description:
       "Сто пятьдесят второй день войны. Четверг. Два плана — героический и просто «существовательский». Все время героем быть невозможно, в особенности в будничной обстановке. Эти противоречия мы переживаем каждый день. Вот я читаю газету — героика, вот я оглядываюсь кругом на моем малом радиусе — оборотная сторона медали. И холодная дрожь пробегает по спине: тяжело и страшно делается от этой негероики.<br> Радио, газеты только и говорят о родине, о мщении и опять о жертве. Описываются эпизоды гомеровской силы, слезы выступают на глазах... А чернорабочая беженка, таскающая кирпичи, говорит: «А у немцев, может, лучше будет». Родина превратилась в святыню в агитационных речах. Все для родины!<br> Любовь к родине — это готовность к любым жертвам.<br> Жертвенность, самоотречение, самозабвение — вот, что требуется.<br> Но не только это, а прежде всего, то есть прежде чем принести себя в жертву, требуется ненависть, гнев за поруганную родину. Гнев рождает героев, смерть за смерть! Ненависть — мать патриотизма. Боец без гнева не боец.<br> Передают такой случай. Грохочет немецкий танк. Боец Николай Мухин не может бросить связку гранат: руки перебиты осколками, а сердце полно злобы к врагу. Боец зубами хватает связку и бросается под машину. Танк рванулся и застыл, как памятник над могилой...<br> Родина. Жертвенность, смерть за родину. Вот современная героика. Это в одном плане, а в другом — «может у немцев...», но о другом потом забудут. Ведь в музеях видят лишь одну выставленную сторону медали. За что мы любим родину?<br> Глеб Алехин в «Л[енинградской] правде» (1941. XI. 19) говорит в агитационной статье, построенной в основном на фольклорном материале: «Родина любима за ее богатства. Родина любима за вольную, веселую, зажиточную жизнь. Ни в одной стране нет столько бодрых песен, как в России».<br> Крестьянин Никандр Ефимов на вопрос немца, почему Ефимов вступил в колхоз, ответил: «Колхоз — золота воз».<br> Любовь к родине рождает веру в победу. Алехин приводит народную сказочку: «Вылезло на планету волосатое чудовище: пузо тощее, глазки жадные, пасть зубастая. Проглотило оно Польшу — облизалось; проглотило Бельгию — почесалось; проглотило Францию — раскорячилось и зарычало: „Ж-жрать! Ж-жрать!” Схватило то чудище шестую [часть] мира и подавилось: кусочек больше пасти».<br> Он же приводит слова старого путаловского слесаря Ивана Медведева: «Россия — стальная пружина. Чем больше сжимаешь ее, тем дальше отскочишь от нее».<br> И всё только о родине, о России, но не о Советском Союзе, не о социалистической родине, просто о Родине (и с большой буквы) говорится. О самой кровной родине, осязательной: своем доме, своей семье, своем имуществе, своем очаге...<br> А немцы прут и прут, как банда грабителей, расхищают имущество, разоряют, расстреливают. За свои неудачи под Ленинградом мстят жестокой бомбежкой города и кровавой расправой над мирным населением оккупированных городов и сел нашей области.",
-    description2: `noDescription2`,
+    description2: `The one hundred and fifty-second day of the war. Thursday. Two plans - heroic and simply “existent”. It is impossible to be a hero all the time, especially in everyday life. We experience these contradictions every day. Here I am reading a newspaper - heroics, here I look around at in my small radius - the other side of the coin. And a cold shiver runs down my spine: this unheroism makes me feel heavy and scary.<br> Radio and newspapers only talk about the homeland, about revenge and again about sacrifice. Episodes of Homeric strength are described, tears come to the eyes... And a refugee laborer carrying bricks says: “But with the Germans, maybe it will be better.” The homeland turned into a shrine in propaganda speeches. Everything for the homeland!<br> Love for the homeland means readiness for any sacrifice.<br> Sacrifice, self-denial, self-forgetfulness - this is what is required.<br> But not only this, but first of all, that is, before sacrificing oneself, hatred and anger for the desecrated homeland are required. Anger gives birth to heroes, death for death! Hatred is the mother of patriotism. A fighter without anger is not a fighter.<br> Such a case is reported. A German tank rumbles. Fighter Nikolai Mukhin cannot throw a bunch of grenades: his hands are broken by shrapnel, and his heart is full of anger towards the enemy. The fighter grabs the bundle with his teeth and throws himself under the car. The tank rushed and froze, like a monument over a grave...<br> Homeland. Sacrifice, death for the homeland. This is modern heroics. This is in one sense, and in another - “maybe with the Germans...”, but then they will forget about the other. After all, in museums they see only one side of the coin on display.<br> Why do we love our homeland?<br> Gleb Alekhine in Leningradskaya Pravda (1941. XI. 19) says in a propaganda article based mainly on folklore material: “The Motherland is loved for its riches. The homeland is loved for its free, cheerful, prosperous life. No other country has as many cheerful songs as Russia.”<br> Peasant Nikandr Efimov, when asked by a German why Efimov joined the collective farm, replied: “The collective farm is a cartload of gold.”<br> Love for the homeland gives rise to faith in victory. Alekhine cites a folk tale: “A hairy monster crawled onto the planet: a skinny belly, greedy eyes, a toothy mouth. It swallowed Poland - it licked its lips; swallowed Belgium - it itched; swallowed France - it stretched out and growled: “E-eat!” E-eat!” That monster grabbed a sixth [part] of the world and choked: the piece was bigger than its mouth.”<br> He also quotes the words of the old Putalovsky mechanic Ivan Medvedev: “Russia is a steel spring. The more you squeeze it, the farther you will bounce away from it.”<br> And everything is only about the homeland, about Russia, but not about the Soviet Union, not about the socialist homeland, it’s just about the Motherland (and with a capital “M”). About the most tangible homeland: your home, your family, your property, your hearth...<br> And the Germans, like a gang of robbers, are constantly stealing property, ruining it, shooting at it. They are taking revenge for their failures near Leningrad with a brutal bombing of the city and bloody massacres of the civilian population of the occupied cities and villages of our region.`,
     marker: knyazevMarkerSrc,
   },
   {
@@ -845,7 +845,7 @@ const personsMarkers = [
     date: ["20november1941", "21november1941", "november1941"],
     description:
       "20 ноября. Опять сбавили хлеб. Рабочим — 250 г, всем остальным 125 г. До каких же пор можно сбавлять? Опять живем с коптилкой. Экономим машинное масло, зажигаем коптилку, когда нужно что-то делать... 21 ноября. Сварили суп из картофельной муки. Похоже на соленый горячий кисель...",
-    description2: `noDescription2`,
+    description2: `November 20th. Bread was reduced again. For workers - 250 g, for everyone else - 125 g. How long will they reduce it? We live with a smoke candle again. We save machine oil and light the smoker when we need to do something... November 21st. We made soup from potato flour. It tastes like salty hot jelly...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -855,7 +855,7 @@ const personsMarkers = [
     date: ["23november1941", "november1941"],
     description:
       "Читал «Ленинградскую правду». Там статья профессора Макульского о премьере в театре Комедии «Питомцы славы» (об Отечественной войне 1812 года). Декорации и постановка Акимова. Очень захотелось в театр! В Ленинграде сейчас, оказывается, работают: театр Ленинского комсомола, театр имени Ленсовета, театр Музкомедии, театр Комедии, ленинградский театр драмы и ТЮЗ. А мне казалось, что ничего этого в городе уже нет. Сидим, как кроты во мраке и холоде, думаем, что и вокруг то же самое. Может быть, только у нас так плохо?",
-    description2: `noDescription2`,
+    description2: `I’ve read Leningradskaya Pravda. There is an article by Professor Makulsky about the premiere “Fosterling of Glory” (about Patriotic War of 1812) in Comedy Theater. Scenery and production by Akimov. I really want to go to the theater! It turns out in Leningrad the following work now: Lenin Komsomol Theater, Lensovet Theater, Musical Comedy Theater, Comedy Theater, Leningrad Drama Theater and Youth Theater. But it seemed to me that there was nothing like this in the city anymore. We sit like moles in the darkness and cold thinking that it’s the same around us. Maybe it's just us who have it so bad?`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -965,7 +965,7 @@ const personsMarkers = [
     date: ["6december1941", "december1941"],
     description:
       "У нас окончательно перестала идти вода (шла последнее время маленькой струйкой), а на верхние этажи давно не поднимается. Нужно за водой ходить во двор, к крану. Уборная тоже не работает и все нужно выносить на помойку в ведре. Ужас!",
-    description2: `noDescription2`,
+    description2: `Our water has finally stopped going. It was only a small trickle lately and the water was not rising to the upper floors for a long time. You need to go down to the yard to get water from the tap. Toilet also doesn’t work and everything needs to be taken out in a bin. What a horror!`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -985,7 +985,7 @@ const personsMarkers = [
     date: ["7december1941", "december1941"],
     description:
       "Сейчас вечер. 7 часов. Я сижу за столом в пальто, шапке, руковицах. На столе мигает коптилка. В ней замерзает масло. Скоро спать. Я теперь ложусь в кровать, не снимая пальто и шапки. Даже под одеялом мерзнут щеки и руки. Сегодня в комнате на столе замерзла вода. Ах если бы в квартире были печи!..",
-    description2: `noDescription2`,
+    description2: `It is evening now. 7 o'clock. I am sitting at the table in a coat, hat and mittens. Smoker is flashing on the table. Oil freezes inside. Time to sleep soon. Now I go to bed without taking off my coat and hat. Even under the blanket my cheeks and hands are cold. Today water froze on the table. Oh, if only there were stoves in the apartment!..`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1095,7 +1095,7 @@ const personsMarkers = [
     date: ["18december1941", "december1941"],
     description:
       "Сегодня произошло событие. Я сидел в шубе у стола и рисовал, как вдруг дверь отворилась и вошла тетя Маруся. Она узнала, где мы, из Аниного письма... Она сразу же предложила нам переезжать на Васильевский остров. Там есть печи, небольшой запас дров и можно топить...",
-    description2: `noDescription2`,
+    description2: `Event happened today. I was sitting in a fur coat at the table and drawing when suddenly the door opened and Aunt Marusya came in. She found out where we were from Anya’s letter... She immediately suggested that we move to Vasilyevsky Island. There are stoves there, a small supply of firewood and you can heat... `,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1115,7 +1115,7 @@ const personsMarkers = [
     date: ["20december1941", "december1941"],
     description:
       "Весь день готовились к переезду. Наконец, собрались. Погрузили вещи на саночки, попрощались с Нюсей и соседями. На улицах тихо, ни души и только иногда в стороне Биржевого моста за Невой слабые вспышки. Ехать трудно: мостовая в торосах, обледенела. Вещи поминутно сваливаются с саночек. Часто останавливаемся, отдыхаем и снова в путь... Тетя Маруся нас встретила и устроила в комнате, в которой живет она (она сейчас в госпитале, на казарменном положении). Комнатка маленькая, но это хорошо, теплее будет. Есть печка-буржуйка. У нашей буржуйки собралась вся квартира: тетя Маруся, ее муж Владимир Петрович с сестрой Анной Петровной, тетя Таня с сыном Андрюшей... Легли спать поздно, прямо на вещах, не раздеваясь.",
-    description2: `noDescription2`,
+    description2: `We spent the whole day preparing for the move. Finally we were ready. We loaded our things on the sled and said goodbye to Nyusya and our neighbors. Streets are quiet, not a soul, and only faint flashes towards Birzhevoy Bridge across the Neva. It’s difficult to walk: pavement is hummocked and icy. Things keep falling off the sled. We often stop, rest and then hit the road again... Aunt Marusya met us and settled us in the room where she lives (she is now in the hospital, in barracks condition). The room is small, but that's good, it will be warmer. There is a metal stove. The whole apartment gathered at our potbelly stove: aunt Marusya, her husband Vladimir Petrovich with his sister Anna Petrovna, aunt Tanya and her son Andryusha... They went to bed late, right on their things, without undressing.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1145,7 +1145,7 @@ const personsMarkers = [
     date: ["22december1941", "december1941"],
     description:
       "Сегодня шел за водой, упал на лестнице и сильно ушибся. Кто-то вылил прямо на ступени парашу, и все замерзло. Теперь ходить просто опасно: окна заросли льдом и инеем и в темноте лестница каждую минуту преподносит сюрпризы, идешь ощупью, держась за перила.",
-    description2: `noDescription2`,
+    description2: `Today I went to get water, fell on the door and hurt myself badly. Someone poured a bucket right on the step and everything froze. Now it’s simply dangerous to walk. The window is overgrown with ice and frost, and the nearby staircase presents surprises every minute; you walk unexpectedly holding on to the railing. `,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1165,7 +1165,7 @@ const personsMarkers = [
     date: ["23december1941", "december1941"],
     description:
       "Узнал о взятии Будогощи и Грузино. Зашевелились-таки под Ленинградом. Скорей бы уж. Вернулись бы мы тогда в милую Гатчину и зажили бы снова, как до войны. Вечером рисовал Гатчину, Красную улицу и каланчу. Мама ходила на Кировский проспект к тете Лизе в столовую. Принесла супу и каши.",
-    description2: `noDescription2`,
+    description2: `I learned about the capture of Budogoshch and Gruzino. Something begins near Leningrad. I hope as soon as possible. We would then return to dear Gatchina and live again as before the war. In the evening I painted Gatchina, Krasnaya Street and the tower. Mom went to aunt Lisa’s canteen on Kirovsky Prospekt. She brought soup and porridge.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1220,7 +1220,7 @@ const personsMarkers = [
     date: ["30december1941", "december1941"],
     description:
       "Пришло печальное известие: умерла тетя Лиля. Пришла к нам ее соседка сказать об этом... Соседка ждала, что мы ее накормим, но мы ее только напоили кофе и дали лепешечку из кофейной гущи (нас научили их жарить без масла)...",
-    description2: `noDescription2`,
+    description2: `We’ve got sad news: Aunt Lilya died. Her neighbor came and told us... Neighbor was waiting that we would feed her but we only gave her coffee and a piece of cake made from coffee grounds (we learned how to fry them without oil)...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1250,7 +1250,7 @@ const personsMarkers = [
     date: ["31december1941", "december1941"],
     description:
       "Последний день старого года. Мы с утра растопили буржуйку, нагрели воды и устроили мытье и даже мама немного постирала. Потом варили новогодний обед: бабушка достала припрятанную гречневую крупу и был сварен суп, похожий на очень жидкую кашу. Я накрошил в кружку с этим супом свой хлеб и получилось очень праздничное блюдо... В двенадцать часов мы пили сладкий кофе и ели блинчики из отрубей.",
-    description2: `noDescription2`,
+    description2: `The last day of the year. In the morning we lit the stove, heated water and washed. My mother even did a little laundry. Then we cooked New Year's dinner: grandmother took out hidden buckwheat and cooked a soup which looked like a very watery porridge. I crumbled my bread into a mug of soup and it turned out to be a very festive dish... At twelve o'clock we drank sweet coffee and ate bran pancakes.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1350,7 +1350,7 @@ const personsMarkers = [
     date: ["8january1941", "january1941"],
     description:
       "После обеда вышел погулять. На улице очень красиво: все в густом инее и все туманно-розовое от висящего в морозной дымке розово-оранжевого солнца. На улице же никто на эту красоту не смотрит: удивительно пусто и тихо. Только снег потрескивает...",
-    description2: `noDescription2`,
+    description2: `After lunch I decided to go for a walk. It is beautiful outside: everything is covered in thick frost and everything is hazy pink from the pink-orange sun hanging in the frosty haze. No one looks at this beauty in the street: it is amazingly empty and quiet. Only snow crackles...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1420,7 +1420,7 @@ const personsMarkers = [
     date: ["12january1942", "january1942"],
     description:
       "Был врач. Говорит, что у бабушки дистрофия. У Анечки определили голодный понос. Мама сегодня ходила на рынок. Купила кило хлеба за 500 рублей и обменяла дедушкины часы на две довольно большие луковицы. Вечером мы все съели по куску хлеба с тертым луком. Очень вкусно...",
-    description2: `noDescription2`,
+    description2: `Doctor came. He said that my grandmother has dystrophy. Anya was diagnosed with hunger diarrhea. Mom went to the market today. She bought a kilo of bread for 500 rubles [1820 contemporary euro] and exchanged my grandfather’s clock for two large onions. In the evening we all ate a piece of bread with onion. Delicious...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1450,7 +1450,7 @@ const personsMarkers = [
     date: ["14january1942", "15january1942", "january1942"],
     description:
       "14 января. Мороз все сильнее. Сегодня утром было 28 градусов ниже нуля. Мы спали, не раздеваясь, а бабушка и Аня лежат весь день, закрытые одеялами до глаз... Вечером испекли кофейно-мучные лепешки и ели их с чаем (кипятком с остатками патоки). 15 января. Сегодня было событие: мама нашла у себя на подушке вошь. Стала чесать нам с Юрой волосы и тоже их обнаружила... Мама чесала весь вечер волосы бабушке и Ане. У них тоже нашла, ужас.",
-    description2: `noDescription2`,
+    description2: `January 14th. The frost is getting stronger. This morning it was 28 degrees below zero. We slept dressed. Grandma and Anya lay there all day, covered with blankets up to their eyes... In the evening we baked coffee-flour cakes and ate them with tea (boiling water with the remains of syrup). January 15th. Today there was an event: my mother found a louse on her pillow. She started scratching Yura’s and my hair and found them too... Mom scratched grandma’s and Anya’s hair all evening. And found them too, horror.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1580,7 +1580,7 @@ const personsMarkers = [
     date: ["22january1942", "january1942"],
     description:
       "Весь день — обстрел. Мама мыла и вычесывала Аню. Ходил с ведром во двор и выносил воду после мытья. Лестница стала почти непроходимой от замерзших помоев и ледяных подтеков.",
-    description2: `noDescription2`,
+    description2: `Shelling all day. Mom washed and brushed Anya’s hair. I went to the yard with a bucket and carried out water after washing. Stairs became almost impassable from frozen slops and icy smudges.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1630,7 +1630,7 @@ const personsMarkers = [
     date: ["25january1942", "january1942"],
     description:
       "Мы все сегодня не вставали с кроватей. Очень холодно и слабость. У меня очень опухли ноги и болят. Только мама выходила в магазин, стопила буржуйку, чтобы сварить обед. В квартире полная тишина, как в могиле. Темно и холодно. Мы даже коптилку почти не зажигаем. Лежим в темноте. Очень страшно.",
-    description2: `noDescription2`,
+    description2: `We all didn't get out of bed today. We are all very cold and weak. My legs are swollen and hurt. Only our mother went out to the store and then set fire to cook dinner. There is complete silence in the apartment as if in a grave. It's dark and cold. We hardly even light the smoker. We lie in the dark. Frightful.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1740,7 +1740,7 @@ const personsMarkers = [
     date: ["29january1942", "january1942"],
     description:
       "Лежим. Мама сегодня ходила на Кировский к тете Лизе. Пришла очень поздно, покормила нас. Рассказала, что попала под обстрел и долго стояла в подворотне... Тетя Лиза дала только супу. Поели в темноте...",
-    description2: `noDescription2`,
+    description2: `We're lying. Mom went to Kirovsky today to see aunt Lisa. She came very late and fed us. She told me that she came under fire and stood in the gateway for a long time... Aunt Lisa only gave her soup. We ate in the dark...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1790,7 +1790,7 @@ const personsMarkers = [
     date: ["2february1942", "february1942"],
     description:
       "Проводили соседку тетю Галю в эвакуацию. По ее предложению мы переехали в ее комнату. Тут можно спать на кроватях и диване, а не на вещах, как до сих пор.",
-    description2: `noDescription2`,
+    description2: `"We escorted our neighbor aunt Galya to the evacuation. She suggested that we could move in her room. Here we can sleep on beds and a sofa, not on our belongings as before. "`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1870,7 +1870,7 @@ const personsMarkers = [
     date: ["10february1942", "february1942"],
     description:
       "Сегодня хоронили Владимира Петровича. Мама, Аня, я и Юра пошли в его комнату прощаться... Горела маленькая коптилка в изголовье и слабо освещала лицо. Он очень изменился и совсем на себя не похож. Постояли немного, поклонились и пошли к себе... Опять лежал. Встал, когда Владимира Петровича выносили. Гроба не достали и зашили в простыню... «Отмучился», — сказала бабушка.",
-    description2: `noDescription2`,
+    description2: `We buried Vladimir Petrovich today. Mom, Anya, Yura and I came into his room to say goodbye... A small smoker was burning by his dimly illuminating his face. He had changed a lot and didn't look like himself at all. We stood for a while, bowed and returned to our room... I was lying down again. Stood up when Vladimir Petrovich was being carried out. There was no coffin, his body was sewed into a sheet... “Will suffer no more,” said grandma.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -1975,7 +1975,7 @@ const personsMarkers = [
     ],
     description:
       "16 февраля. Лежал. Днем мама заставила нас с Юрой встать и чесала нам головы, а потом смазывала керосином, который оказался на донышке лампы, стоявшей на шкафу. «Животных» поймалось много. Вечером опять лежал. 18 февраля. Лежал, но к обеду встал. После обеда сидел на диванчике и читал «Мифы Древней Греции». Но читал мало, так как быстро устал.",
-    description2: `noDescription2`,
+    description2: `February 16th. Lying down. In the afternoon  mom made Yura and me stand up and scratched our heads, and then smeared us with kerosene taken from the bottom of the lamp standing on the closet. A lot of “animals” were caught. In the evening I am laying down again. February 18th. I laid down but got up for a lunch. After lunch I was sitting on the sofa and reading “Myths of Ancient Greece.” But I read little as got tired quickly.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2045,7 +2045,7 @@ const personsMarkers = [
     date: ["22february1942", "february1942"],
     description:
       "Мама была на рынке. Там купила и сменяла воблу и луковицу. Луковым соком она смазывала всем десна от цынги. Мы сидели и старались не глотать слюну, чтобы сок получше впитался в десна...",
-    description2: `noDescription2`,
+    description2: `Mom was at the market. She bought and exchanged roach and onion. Then she smeared everyone's gums with onion juice against scurvy. We sat and tried not to swallow saliva so that the juice would be better absorbed into the gums...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2105,7 +2105,7 @@ const personsMarkers = [
     date: ["26february1942", "february1942"],
     description:
       "Очень сильный мороз, но мама позволила мне выйти на улицу. Очень красиво. В морозной дымке низко над землей висит розово-оранжевое солнце. И все розовое. Кажется, что даже воздух серовато-розовый и пар изо рта — тоже... Пока я стоял, провезли несколько покойников по направлению к Малому проспекту (наверное в морг). Везут их без гробов, зашитыми в одеяла или простыни, а одного просто на куске фанеры.",
-    description2: `noDescription2`,
+    description2: `It is so cold but my mother allowed me to go outside. Beautiful. A pink-orange sun hangs low above the ground in a frosty haze. And everything is pink. It seems that even the air is grayish-pink and so is the steam out of my mouth... While I was standing several dead people were transported towards Maly Prospekt (probably to the morgue). They are transported without coffins, sewn into blankets or sheets, and one simply on a piece of plywood.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2145,7 +2145,7 @@ const personsMarkers = [
     date: ["1march1942", "march1942"],
     description:
       "Сегодня у меня день рождения — исполнилось 14 лег. Обстановка, правда, не очень праздничная, но все же. Мама и Аня приготовили праздничный обед: вместо супа была пшенная каша с мясными консервами и сладкий клюквенный морс. Такого пира у нас давно уже не было... Легли спать поздно. И уже лежа на своем диванчике, я вспомнил, что сегодня двойной праздник: первый день весны. Кончилась наконец-то эта страшная зима. Теперь, что бы ни было, а мы движемся к теплу, к свету, к зелени. Скорей бы, скорей бы уж!!!",
-    description2: `noDescription2`,
+    description2: `Today is my birthday - I turned 14 years old. However the atmosphere is not very festive, but still. Mom and Anya prepared a festive dinner: instead of soup there was millet porridge with canned meat and sweet cranberry juice. We haven't had such a feast for a long time... We went to bed late. And already lying on my sofa I remembered that today is a double holiday: the first day of spring. This terrible winter is finally over. Now, no matter what, we are moving towards warmth, towards light, towards greenery. Hurry up, hurry up!!!`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2205,7 +2205,7 @@ const personsMarkers = [
     date: ["5march1942", "6march1942", "march1942"],
     description:
       "5 марта. Сильный мороз. Мы все, кроме мамы, сидим дома. А мама вернулась из магазина, села на стул около двери и сидела, не двигаясь, целый час. Даже сумку из рук не выпустила. Как она устала. Ведь она делает в доме всю главную работу... Вечером переписывал Малаховец, пока мама не отобрала у меня коптилку. 6 марта. Сегодня было массовое избиение «животных». И откуда они только берутся? Мама сняла с нас нижние рубашки и, пока мы сидели в одеялах, нагрела утюг и просадила все швы А потом смазала головы керосином. Долго не мог заснуть. От керосина все чешется.",
-    description2: `noDescription2`,
+    description2: `March 5th. Severe frost. We all stay at home, except for mom. Mom returned from the store, sat down on a chair near the door and sat without moving for an hour. She didn’t even give me her bag. How tired she is. After all, she does all the main work in the house... In the evening I copied Malakhovets cooking book until my mother took the smoker away from me. March 6th. Today there was a mass beating of “animals”. And where do they come from? Mom took off our undershirts and, while we were sitting in the blankets, heated the iron and seared all the seams, and then greased our heads with kerosene. I couldn't sleep for a long time. Kerosene makes everything itchy.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2265,7 +2265,7 @@ const personsMarkers = [
     date: ["8march1942", "march1942"],
     description:
       "Мама и Аня пришли из магазина радостные: в городе воскресник по очистке от снега и льда трамвайных путей. В очереди рассказывали, что видели на улицах грузовой трамвай, который не стоял, а ехал. Значит ток в городе есть. Господи! Неужели жизнь налаживается! Даже не верится… Ходит слух, что летом начнется наше наступление по снятию блокады. А вдруг к осени мы уже вернемся в Гатчину, а 1 сентября, как всегда, пойдем в школу. И буду я снова сидеть на одной парте с Димкой Ткачевым, а вокруг будут сидеть все наши ребята: Юра Тулупов, Толя Жиркович, Кимка Богданов, Олег Яковлев, Фроська Никифорова и остальные. Какое это будет счастье. Наверное, в школах после войны будут учиться одни отличники...",
-    description2: `noDescription2`,
+    description2: `Mom and Anya came home from the store joyful: Sunday is a day to clear snow and ice from the tram tracks. In the queue we saw a freight tram in the streets that was not standing but moving. This means there is electricity in the city. God! Life is getting better! I can’t even believe it... There is a rumor that our attempt to break the blockade will begin this summer. What if the following fall we will already return to Gatchina, and on September 1st as always we will go to school. And I will again sit at the same desk with Dimka Tkachev, and all our guys will sit around: Yura Tulupov, Tolya Zhirkovich, Kimka Bogdanov, Oleg Yakovlev, Froska Nikiforova and the rest. What happiness that will be. Probably, after the war only excellent students will study in schools...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2295,7 +2295,7 @@ const personsMarkers = [
     date: ["10march1942", "march1942"],
     description:
       "Ходил сегодня в магазин с мамой. Пока мама стояла в очереди, я дошел до угла 8 линии и Малого проспекта. Трамвайные пути почти совсем расчищены. Дома переписывал книгу.",
-    description2: `noDescription2`,
+    description2: `I went to the store with my mom today. While my mother was standing in line I reached the corner of the 8th line and Maliy Prospekt. The tram tracks are almost completely cleared. At home I copied the cooking book.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2325,7 +2325,7 @@ const personsMarkers = [
     date: ["12march1942", "march1942"],
     description:
       "Утром было -26°. Мама вышла за хлебом и вернулась вся в инее. Долго отпаивали ее кипятком, затопив буржуйку в неурочное время. Дома очень холодно — ходим завернутые в одеяла поверх пальто. Очень смешной у всех вид.",
-    description2: `noDescription2`,
+    description2: `In the morning it was -26°. Mom went out to buy bread and returned covered in frost. We set fire and gave her boiling water. It's very cold at home - we walk around wrapped in blankets over our coats. Everyone looks very funny.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2365,7 +2365,7 @@ const personsMarkers = [
     date: ["17march1942", "18march1942", "march1942"],
     description:
       "17 марта. Опять мороз. Опять сидел дома Дрова кончаются. Мама договорилась с Анной Петровной, чтобы распилили на дрова кухонный стол, которым сейчас никто не пользуется. Весь день пилили по очереди. Юра предложил распилить и стоящий в передней большой платяной шкаф. Мама сказала, что этак можно и вообще весь дом распилить, сжечь и остататься сидеть посреди 11 линии. Заснул поздно. 18 марта. Опять мороз -28° Буржуйку сегодня топили 5 раз и все равно мерзли Дрова из столика оказались не такими уж хорошими: они сухие и сгорают.мгновенно... Вечером при коптилке читал А К.Толстого. На фронте затишье. Надолго ли?",
-    description2: `noDescription2`,
+    description2: `March 17th. It's frosty again. I was sitting at home again. Firewood is running out. Mom agreed with Anna Petrovna to saw the kitchen table for firewood. No one uses the table now. They took turns sawing all day. Yura suggested sawing a large wardrobe in the front room. Mom said that this way we could cut up the whole house, burn it down and remain sitting in the middle of the 11th line. I fell asleep late. March 18th. Frost again -28°. Potbelly stove was heated 5 times today and it is still freezing cold. Table firewood turned out to be not so good: it was too dry and burned instantly... In the evening while using the smoker I read A. K. Tolstoy. It is calm at the front. How long?`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2435,7 +2435,7 @@ const personsMarkers = [
     date: ["21march1942", "march1942"],
     description:
       "Мороз спал. Ходил с ведром и прошелся немного до угла Мусоргского. Там чинят трамвайные провода: видимо, всерьез готовятся к пуску трамвая...",
-    description2: `noDescription2`,
+    description2: `Warmer. I went out with a bucket and walked a little to Musorgsky's corner. The tram wires are being repaired there: apparently they are seriously preparing to launch the tram...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2455,7 +2455,7 @@ const personsMarkers = [
     date: ["24march1942", "march1942"],
     description:
       "Управдом Анна Васильевна руководила очисткой нашей парадной. С лестниц и подоконников скалывали намерзший за зиму снег, перемешанный с «гажевом». Скоро, наверное, перестанем ходить через черный ход. Дома переписывал книгу.",
-    description2: `noDescription2`,
+    description2: `House manager Anna Vasilievna supervised the cleaning of our front door. We removed the snow that had frozen over the winter mixed with plaster. Soon we will probably stop going through the back door. At home I copied the cooking book.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2495,7 +2495,7 @@ const personsMarkers = [
     date: ["27march1942", "march1942"],
     description:
       "Началась работа по очистке улиц. На улицу вышли, наверное, все работоспособные. Люди с ломами и лопатами и топорами скалывают сугробы, сосульки, ледяные натеки на домах. И все это на больших фанерных листах волокут вдоль по улице прямо в Неву...",
-    description2: `noDescription2`,
+    description2: `Work of cleaning up the streets had begun. Probably everyone who was able to work came out into the street. People with shovels and axes are chipping away the snowdrifts, icicles, and ice pieces on houses. And all this is dragged on large plywood sheets along the street straight to the Neva...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2555,7 +2555,7 @@ const personsMarkers = [
     date: ["31march1942", "march1942"],
     description:
       "Неожиданно пришла Лида Евсеева. Рассказала, что тетя Лиза эвакуировалась в Сибирь, а сама Лида работает на заводе «Севкабель». Принесла нам в подарок баночку кокосового жира... Мама сказала, что как только потеплеет, надо будет навестить всех родных и знакомых.",
-    description2: `noDescription2`,
+    description2: `Lida Evseeva came unexpectedly. She said that aunt Lisa was evacuated to Siberia, and Lida herself works at Sevkabel plant. She brought us a jar of coconut fat as a gift... Mom said that as soon as it gets warmer we need to visit all our relatives and friends.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2585,7 +2585,7 @@ const personsMarkers = [
     date: ["2april1942", "april1942"],
     description:
       "Мама ходила с саночками на Голодай за дровами. Мы с Юрой просились пойти вместе с ней, но она не взяла, хотя на улице сегодня не холодно. Вернулась она к еде, привезла две доски и много щепок. Теперь живем!.. Вечером переписывал книгу.",
-    description2: `noDescription2`,
+    description2: `Mom went with a sled to Goloday island to get firewood. Yura and I asked to go with her but she didn’t allow it although it’s not cold outside today. She returned and brought two boards and a lot of wood chips. Now we live!.. In the evening I was copying the cooking book.`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2655,7 +2655,7 @@ const personsMarkers = [
     date: ["8april1942", "april1942"],
     description:
       "Вечером, в 7 часов, шел дождь. Мы с Аней вышли на улицу и стояли под аркой ворот, дышали воздухом А запахи совсем весенние: пахнет землей, прелым листом, навозом (ну это не удивительно) — совсем деревенские запахи. И так захотелось на природу. Вспомнилась наша гатчинская роща, Приоратский парк, бабушкина дорожка над Черным озером... Как было хорошо...",
-    description2: `noDescription2`,
+    description2: `In the evening at 7 o'clock it was raining. Anya and I went out to the street and stood under the arch of the gate breathing in the air. And the smells were completely spring: it smelled with earth, rotten leaves, manure (well, this is not surprising) - completely village smells. And I really wanted to go to nature. I remembered our Gatchina grove, Priory Park, grandmother’s path over the Black Lake... How good it was...`,
     marker: afanasyevMarkerSrc,
   },
   {
@@ -2705,7 +2705,7 @@ const personsMarkers = [
     date: ["15april1942", "april1942"],
     description:
       "Встали рано. Поели и все пошли смотреть трамвай (только бабушка осталась дома). На улицах людей много, все радостные, оживленные, как на 1 Мая... Мама отпустила нас с Юрой покататься на трамвае. Мы ездили на семерке и на тройке. Объездили все эти маршруты от кольца до кольца!.. Днем сегодня был сильный обстрел Васильевского острова. Рвалось совсем рядом от нашего дома... Спать легли поздно. Подробно рассказывали бабушке про сегодняшний день. Ей тоже очень хочется поехать на трамвае.",
-    description2: `noDescription2`,
+    description2: `We got up early. We ate and everyone went to watch the tram (only grandma stayed at home). There are a lot of people in the streets, everyone is joyful, lively, like on May 1st... Mom let Yura and me go on a tram ride. We drove a seven and a three. We traveled all these routes from ring to ring!.. Today during the day there was heavy shelling of Vasilyevsky Island. It was bursting very close to our house... We went to bed late. They told grandma in detail about today. She also really wants to go on the tram.`,
     marker: afanasyevMarkerSrc,
   },
   {
