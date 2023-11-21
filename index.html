@@ -21,7 +21,12 @@
       </button>
     </div>
     <div class="map-container" id="map-container">
-      <img class="map-image" src="./assets/images/map.jpg" alt="map" />
+      <img
+        class="map-image"
+        id="map-image"
+        src="./assets/images/map.jpg"
+        alt="map"
+      />
       <div id="markers-container"></div>
       <div id="info-container"></div>
     </div>
@@ -30,26 +35,90 @@
       <a href="#" class="navigation-minus-button" id="nmb"></a>
       <a href="#" class="navigation-reset-button" id="nrb"></a>
     </div>
-    <div class="persons-container">
-      <div class="persons-colors">
-        <div class="green-color"></div>
-        <div class="orange-color"></div>
-        <div class="violet-color"></div>
-        <div class="red-color"></div>
-        <div class="blue-color"></div>
-        <div class="yellow-color"></div>
-        <div class="black-color"></div>
-        <div class="grey-color"></div>
+    <div class="persons-instruction-container">
+      <div class="persons-container">
+        <div class="persons-colors">
+          <div class="green-color"></div>
+          <div class="orange-color"></div>
+          <div class="violet-color"></div>
+          <div class="red-color"></div>
+          <div class="blue-color"></div>
+          <div class="yellow-color"></div>
+          <div class="black-color"></div>
+          <div class="grey-color"></div>
+        </div>
+        <div>
+          <div id="name-knyazev">Князев Георгий Алексеевич</div>
+          <div id="name-luknitskiy">Лукницкий Павел Николаевич</div>
+          <div id="name-polzikovaRubets">
+            Ползикова-Рубец Ксения Владимировна
+          </div>
+          <div id="name-chekrizov">Чекризов Василий Федорович</div>
+          <div id="name-zimnickaya">Зимницкая Галина Карловна</div>
+          <div id="name-zagorskaya">Загорская Александра Павловна</div>
+          <div id="name-glinskaya">Глинская Екатерина Прокофьевна</div>
+          <div id="name-afanasyev">Афанасьев Дмитрий Владимирович</div>
+        </div>
       </div>
-      <div>
-        <div id="name-knyazev">Князев Георгий Алексеевич</div>
-        <div id="name-luknitskiy">Лукницкий Павел Николаевич</div>
-        <div id="name-polzikovaRubets">Ползикова-Рубец Ксения Владимировна</div>
-        <div id="name-chekrizov">Чекризов Василий Федорович</div>
-        <div id="name-zimnickaya">Зимницкая Галина Карловна</div>
-        <div id="name-zagorskaya">Загорская Александра Павловна</div>
-        <div id="name-glinskaya">Глинская Екатерина Прокофьевна</div>
-        <div id="name-afanasyev">Афанасьев Дмитрий Владимирович</div>
+      <div
+        class="instruction-container"
+        id="instruction-container"
+        onclick="toggleInstruction()"
+      >
+        Инструкция
+      </div>
+      <div class="instruction">
+        <p id="instruction-1">
+          1. В левом верхнем углу кнопки управления картой:<br />
+          - кнопка "<b>+</b>": увеличение масштаба карты<br />
+          - кнопка "<b>-</b>": уменьшение масштаба карты<br />
+          - кнопка "<b>&#8634;</b>": сброс масштаба карты.
+        </p>
+        <p id="instruction-2">
+          2. В таблице указаны имена и цвета, которые соответствуют цвету
+          маркера человека на карте.
+        </p>
+        <p id="instruction-3">
+          3. При нажатии на кнопку смены языка можно переключаться между русским
+          и английским языками.
+        </p>
+        <p id="instruction-4">
+          4. Для поиска отметок конкретного человека просто выберите его в
+          верхнем правом углу в разделе поиска, а затем нажмите "Поиск". В таком
+          случае будут отображены все отметки только с этим человеком за все
+          время.
+        </p>
+        <p id="instruction-5">
+          5. Чтобы найти отметки всех людей за конкретную дату (есть возможность
+          выбрать целый месяц или кокретный день), выберите ее в верхнем правом
+          углу в разделе поиска, а затем нажмите "Поиск". Таким образом, будут
+          отображены все отметки, сделанные только за выбранный период времени.
+        </p>
+        <p id="instruction-6">
+          6. Чтобы найти отметки конкретного человека за определенный период
+          времени, выберите его в верхнем правом углу в разделе поиска. Далее,
+          выберите желаемую дату (месяц/день) и нажмите "Поиск". Таким образом,
+          отобразятся все отметки только для выбранного человека и выбранного
+          периода времени.
+        </p>
+        <p id="instruction-7">
+          7. Перед новым поиском отметок рекомендуется очистить предыдущий
+          запрос. Для этого просто нажмите кнопку "Очистить" перед тем, как
+          выбрать новые параметры поиска.
+        </p>
+        <p id="instruction-8">
+          8. Чтобы свернуть или раскрыть список людей или дат, необходимо нажать
+          кнопку "&#9650;".
+        </p>
+        <p id="instruction-9">
+          9. При наведении курсора на маркер появляется информация о событии.
+          Эта информация автоматически исчезает, если курсор не будет находиться
+          на маркере.
+        </p>
+        <p id="instruction-10">
+          10. При наведении курсора на маркер появляется информация о событии,
+          которая остается видимой до момента нажатия на другую часть карты.
+        </p>
       </div>
     </div>
     <div class="search-container">

@@ -15,7 +15,7 @@ const zagorskayaMarkerSrc = "./assets/icons/marker-icon-yellow.png";
 const glinskayaMarkerSrc = "./assets/icons/marker-icon-black.png";
 const afanasyevMarkerSrc = "./assets/icons/marker-icon-grey.png";
 const test = "./assets/icons/test.png";
-// 24 new
+
 const personsMarkers = [
   {
     x: 31.24,
@@ -3269,7 +3269,7 @@ const onClickSearchButton = () => {
   }
 };
 
-function toggleTranslation() {
+const toggleTranslation = () => {
   if (currentTranslation === "en") {
     document.getElementById("language-button").textContent = "РУ";
     document.getElementById("september1941").textContent = "сентябрь 1941";
@@ -3317,6 +3317,35 @@ function toggleTranslation() {
       "Глинская Екатерина Прокофьевна";
     document.getElementById("afanasyev").textContent =
       "Афанасьев Дмитрий Владимирович";
+    document.getElementById("instruction-container").textContent = "Инструкция";
+    document.getElementById("instruction-1").innerHTML =
+      "1. В левом верхнем углу кнопки управления картой:<br />" +
+      '- кнопка "<b>+</b>": увеличение масштаба карты<br />' +
+      '- кнопка "<b>-</b>": уменьшение масштаба карты<br />' +
+      '- кнопка "<b>&#8634;</b>": сброс масштаба карты.';
+    document.getElementById("instruction-2").textContent =
+      "2. В таблице указаны имена и цвета, которые соответствуют цвету маркера человека на карте.";
+    document.getElementById("instruction-3").textContent =
+      "3. При нажатии на кнопку смены языка можно переключаться между русским и английским языками.";
+    document.getElementById(
+      "instruction-4"
+    ).textContent = `4. Для поиска отметок конкретного человека просто выберите его в верхнем правом углу в разделе поиска, а затем нажмите "Поиск". В таком случае будут отображены все отметки только с этим человеком за все время.`;
+    document.getElementById(
+      "instruction-5"
+    ).textContent = `5. Чтобы найти отметки всех людей за конкретную дату (есть возможность выбрать целый месяц или кокретный день), выберите ее в верхнем правом углу в разделе поиска, а затем нажмите "Поиск". Таким образом, будут отображены все отметки, сделанные только за выбранный период времени.`;
+    document.getElementById(
+      "instruction-6"
+    ).textContent = `6. Чтобы найти отметки конкретного человека за определенный период времени, выберите его в верхнем правом углу в разделе поиска. Далее, выберите желаемую дату (месяц/день) и нажмите "Поиск". Таким образом, отобразятся все отметки только для выбранного человека и выбранного периода времени.`;
+    document.getElementById(
+      "instruction-7"
+    ).textContent = `7. Перед новым поиском отметок рекомендуется очистить предыдущий запрос. Для этого просто нажмите кнопку "Очистить" перед тем, как выбрать новые параметры поиска.`;
+    document.getElementById(
+      "instruction-8"
+    ).textContent = `8. Чтобы свернуть или раскрыть список людей или дат, необходимо нажать кнопку "&#9650;".`;
+    document.getElementById("instruction-9").textContent =
+      "9. При наведении курсора на маркер появляется информация о событии. Эта информация автоматически исчезает, если курсор не будет находиться на маркере.";
+    document.getElementById("instruction-10").textContent =
+      "10. При наведении курсора на маркер появляется информация о событии, которая остается видимой до момента нажатия на другую часть карты.";
     currentTranslation = "ru";
   } else {
     document.getElementById("language-button").textContent = "EN";
@@ -3365,6 +3394,63 @@ function toggleTranslation() {
       "Glinskaya Ekaterina Prokofyevna";
     document.getElementById("afanasyev").textContent =
       "Afanasyev Dmitriy Vladimirovich";
+    document.getElementById("instruction-container").textContent =
+      "Instruction";
+    document.getElementById("instruction-container").textContent =
+      "Instruction";
+    document.getElementById("instruction-1").innerHTML =
+      "1. In the top left corner of the map control buttons:<br />" +
+      '- button "<b>+</b>": zoom in on the map<br />' +
+      '- button "<b>-</b>": zoom out of the map<br />' +
+      '- button "<b>&#8634;</b>": reset map zoom.';
+    document.getElementById("instruction-2").textContent =
+      "2. The table shows names and colors corresponding to the color of a person's marker on the map.";
+    document.getElementById("instruction-3").textContent =
+      "3. By pressing the language switch button, you can switch between Russian and English languages.";
+    document.getElementById(
+      "instruction-4"
+    ).textContent = `4. To search for marks of a specific person, simply select them in the top right corner in the search section, and then press "Search." In this case, all marks with only that person will be displayed for all time.`;
+    document.getElementById(
+      "instruction-5"
+    ).textContent = `5. To find marks for all people on a specific date (you can choose an entire month or a specific day), select it in the top right corner in the search section, and then press "Search." This way, all marks made only during the selected time period will be displayed.`;
+    document.getElementById(
+      "instruction-6"
+    ).textContent = `6. To find marks of a specific person for a specific period, select them in the top right corner in the search section. Next, choose the desired date (month/day) and press "Search." This way, all marks will be displayed only for the selected person and time period.`;
+    document.getElementById(
+      "instruction-7"
+    ).textContent = `7. Before starting a new search for marks, it is recommended to clear the previous query. To do this, simply press the "Clear" button before selecting new search parameters.`;
+    document.getElementById(
+      "instruction-8"
+    ).textContent = `8. To collapse or expand the list of people or dates, press the "▲" button.`;
+    document.getElementById("instruction-9").textContent =
+      "9. When hovering over a marker, information about the event appears. This information automatically disappears if the cursor is not on the marker.";
+    document.getElementById("instruction-10").textContent =
+      "10. When hovering over a marker, information about the event appears, which remains visible until another part of the map is clicked.";
     currentTranslation = "en";
   }
-}
+};
+
+const toggleInstruction = () => {
+  const instructionDiv = document.querySelector(".instruction");
+  const containerDiv = document.querySelector(".instruction-container");
+
+  if (
+    instructionDiv.style.display === "none" ||
+    instructionDiv.style.display === ""
+  ) {
+    instructionDiv.style.display = "block";
+    containerDiv.classList.add("rounded-corners");
+  } else {
+    instructionDiv.style.display = "none";
+    containerDiv.classList.remove("rounded-corners");
+  }
+};
+
+document.getElementById("map-image").addEventListener("click", () => {
+  const instructionDiv = document.querySelector(".instruction");
+  const containerDiv = document.querySelector(".instruction-container");
+  if (instructionDiv.style.display === "block") {
+    instructionDiv.style.display = "none";
+    containerDiv.classList.remove("rounded-corners");
+  }
+});

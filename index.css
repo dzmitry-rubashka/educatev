@@ -66,16 +66,47 @@ body {
   border-radius: 5px;
 }
 
+.persons-instruction-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 10px;
+  left: 67px;
+  width: 365px;
+}
+
 .persons-container {
   display: flex;
-  position: fixed;
   gap: 10px;
   padding: 10px;
   top: 10px;
-  left: 67px;
   background-color: #f5f5ed;
   border-radius: 10px;
   border: 2px solid #ccc5c5;
+}
+
+.instruction-container {
+  text-align: center;
+  margin-top: 5px;
+  background-color: #f5f5ed;
+  border-radius: 10px;
+  border: 2px solid #ccc5c5;
+  padding: 5px;
+}
+
+.rounded-corners {
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: none;
+}
+
+.instruction {
+  background-color: #dddddd;
+  display: none;
+  border: 2px solid #ccc5c5;
+  padding: 5px;
+  border-radius: 0px 0px 10px 10px;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 .language-container {
@@ -260,10 +291,24 @@ ul li:nth-last-child(2),
     top: 42px;
   }
 
+  .instruction-container {
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .instruction {
+    font-size: 14px;
+  }
+
   .navigation-reset-button {
     width: 40px;
     height: 40px;
     top: 84px;
+  }
+
+  .persons-instruction-container {
+    left: 57px;
+    width: 325px;
   }
 
   .persons-container {
@@ -322,11 +367,25 @@ ul li:nth-last-child(2),
     background-size: 16px;
   }
 
+  .instruction-container {
+    font-size: 8px;
+    padding: 3px;
+  }
+
+  .instruction {
+    font-size: 8px;
+  }
+
   .navigation-reset-button {
     width: 24px;
     height: 24px;
     top: 52px;
     background-size: 16px;
+  }
+
+  .persons-instruction-container {
+    left: 30px;
+    width: 185px;
   }
 
   .persons-container {
@@ -403,6 +462,15 @@ ul li:nth-last-child(2),
     width: 15px;
   }
 
+  .instruction-container {
+    font-size: 6px;
+    padding: 2px;
+  }
+
+  .instruction {
+    font-size: 6px;
+  }
+
   .navigation-minus-button {
     width: 18px;
     height: 18px;
@@ -415,6 +483,11 @@ ul li:nth-last-child(2),
     height: 18px;
     top: 40px;
     background-size: 12px;
+  }
+
+  .persons-instruction-container {
+    left: 24px;
+    width: 145px;
   }
 
   .persons-container {
