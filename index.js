@@ -3295,8 +3295,8 @@ const onClickClearButton = () => {
   const allDatesItems = document.querySelectorAll("#selectOptionDates li");
   allPersonsItems.forEach((item) => item.classList.remove("active"));
   allDatesItems.forEach((item) => item.classList.remove("active"));
-  document.getElementById("toggleButtonPersons").innerHTML = "Выбрать человека";
-  document.getElementById("toggleButtonDates").innerHTML = "Выбрать месяц";
+  // document.getElementById("toggleButtonPersons").innerHTML = "Выбрать человека";
+  // document.getElementById("toggleButtonDates").innerHTML = "Выбрать месяц";
   selectedPerson = null;
   selectedDate = null;
 
