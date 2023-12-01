@@ -3237,23 +3237,44 @@ const onSelectDate = (id) => {
 
 const onSelectDay = (id, value) => {
   selectedDate = id;
-  if (id.includes("september")) {
-    toggleButtonDates.textContent = `${value} сентября 1941`;
-  } else if (id.includes("october")) {
-    toggleButtonDates.textContent = `${value} октября 1941`;
-  } else if (id.includes("november")) {
-    toggleButtonDates.textContent = `${value} ноября 1941`;
-  } else if (id.includes("december")) {
-    toggleButtonDates.textContent = `${value} декабря 1941`;
-  } else if (id.includes("january")) {
-    toggleButtonDates.textContent = `${value} января 1942`;
-  } else if (id.includes("february")) {
-    toggleButtonDates.textContent = `${value} февраля 1942`;
-  } else if (id.includes("march")) {
-    toggleButtonDates.textContent = `${value} марта 1942`;
-  } else {
-    toggleButtonDates.textContent = `${value} апреля 1942`;
+  if (currentTranslation === "ru") {
+    if (id.includes("september")) {
+      toggleButtonDates.textContent = `${value} сентября 1941`;
+    } else if (id.includes("october")) {
+      toggleButtonDates.textContent = `${value} октября 1941`;
+    } else if (id.includes("november")) {
+      toggleButtonDates.textContent = `${value} ноября 1941`;
+    } else if (id.includes("december")) {
+      toggleButtonDates.textContent = `${value} декабря 1941`;
+    } else if (id.includes("january")) {
+      toggleButtonDates.textContent = `${value} января 1942`;
+    } else if (id.includes("february")) {
+      toggleButtonDates.textContent = `${value} февраля 1942`;
+    } else if (id.includes("march")) {
+      toggleButtonDates.textContent = `${value} марта 1942`;
+    } else {
+      toggleButtonDates.textContent = `${value} апреля 1942`;
+    }
+  } else if (currentTranslation === "en") {
+    if (id.includes("september")) {
+      toggleButtonDates.textContent = `${value} september 1941`;
+    } else if (id.includes("october")) {
+      toggleButtonDates.textContent = `${value} october 1941`;
+    } else if (id.includes("november")) {
+      toggleButtonDates.textContent = `${value} november 1941`;
+    } else if (id.includes("december")) {
+      toggleButtonDates.textContent = `${value} december 1941`;
+    } else if (id.includes("january")) {
+      toggleButtonDates.textContent = `${value} january 1942`;
+    } else if (id.includes("february")) {
+      toggleButtonDates.textContent = `${value} february 1942`;
+    } else if (id.includes("march")) {
+      toggleButtonDates.textContent = `${value} march 1942`;
+    } else {
+      toggleButtonDates.textContent = `${value} april 1942`;
+    }
   }
+  
 
   const allItems = document.querySelectorAll(".calendar-flex-item");
   for (var i = 0; i < allItems.length; i++) {
