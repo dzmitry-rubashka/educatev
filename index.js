@@ -3380,6 +3380,12 @@ const onClickSearchButton = () => {
 };
 
 const toggleTranslation = () => {
+  const spanElement1 = document.createElement("span");
+  spanElement1.textContent = '"Очистить"';
+  spanElement1.className = "red-word";
+  const spanElement2 = document.createElement("span");
+  spanElement2.textContent = '"Clear"';
+  spanElement2.className = "red-word";
   if (currentTranslation === "en") {
     document.getElementById("language-button").textContent = "РУ";
     document.getElementById("september1941").textContent = "сентябрь 1941";
@@ -3428,9 +3434,10 @@ const toggleTranslation = () => {
     document.getElementById("afanasyev").textContent =
       "Афанасьев Дмитрий Владимирович";
     document.getElementById("instruction-container").textContent = "Инструкция";
-    document.getElementById(
-      "instruction-1"
-    ).textContent = `1. Перед новым поиском отметок рекомендуется очистить предыдущий запрос. Для этого просто нажмите кнопку "Очистить" перед тем, как выбрать новые параметры поиска.`;
+    const instructionElement1 = document.getElementById("instruction-1");
+    instructionElement1.innerHTML = `1. Перед новым поиском отметок рекомендуется очистить предыдущий запрос. Для этого просто нажмите кнопку `;
+    instructionElement1.appendChild(spanElement1);
+    instructionElement1.innerHTML += ` перед тем, как выбрать новые параметры поиска.`;
     document.getElementById("instruction-2").innerHTML =
       "2. В левом верхнем углу кнопки управления картой:<br />" +
       '- кнопка "<b>+</b>": увеличение масштаба карты<br />' +
@@ -3508,9 +3515,10 @@ const toggleTranslation = () => {
       "Instruction";
     document.getElementById("instruction-container").textContent =
       "Instruction";
-    document.getElementById(
-      "instruction-1"
-    ).textContent = `1. Before starting a new search for marks, it is recommended to clear the previous query. To do this, simply press the "Clear" button before selecting new search parameters.`;
+      const instructionElement2 = document.getElementById("instruction-1");
+    instructionElement2.innerHTML = `1. Before starting a new search for marks, it is recommended to clear the previous query. To do this, simply press the `;
+    instructionElement2.appendChild(spanElement2);
+    instructionElement2.innerHTML += ` button before selecting new search parameters.`;
     document.getElementById("instruction-2").innerHTML =
       "2. In the top left corner of the map control buttons:<br />" +
       '- button "<b>+</b>": zoom in on the map<br />' +
