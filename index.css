@@ -32,6 +32,10 @@ body {
   overflow-y: auto;
 }
 
+.red-word {
+  color: red;
+}
+
 .navigation-container {
   position: fixed;
   top: 10px;
