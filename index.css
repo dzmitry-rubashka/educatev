@@ -36,6 +36,19 @@ body {
   color: red;
 }
 
+.instr {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 900;
+  background-color: rgb(214, 96, 199);
+  border-radius: 0px 0px 10px 10px;
+  border-left: 2px solid #9a3e3e;
+  border-right: 2px solid #9a3e3e;
+  border-bottom: 2px solid #9a3e3e;
+  padding: 5px;
+  color: #9a3e3e;
+}
+
 .navigation-container {
   position: fixed;
   top: 10px;
@@ -93,8 +106,9 @@ body {
   text-align: center;
   margin-top: 5px;
   background-color: rgb(214, 96, 199);
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
   border: 2px solid #9a3e3e;
+  border-bottom: none;
   padding: 5px;
   color: #9a3e3e;
   font-weight: 900;
@@ -102,7 +116,7 @@ body {
 }
 
 .rounded-corners {
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
   border-bottom: none;
 }
 
@@ -380,6 +394,10 @@ ul li:nth-last-child(2),
   }
 
   .instruction {
+    font-size: 8px;
+  }
+
+  .instr {
     font-size: 8px;
   }
 

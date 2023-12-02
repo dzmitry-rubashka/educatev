@@ -3433,7 +3433,10 @@ const toggleTranslation = () => {
       "Глинская Екатерина Прокофьевна";
     document.getElementById("afanasyev").textContent =
       "Афанасьев Дмитрий Владимирович";
-    document.getElementById("instruction-container").textContent = "Инструкция по использованию карты";
+    document.getElementById("instruction-container").textContent =
+      "Инструкция по использованию карты";
+    document.getElementById("instr").textContent =
+      "(Нажмите здесь, чтобы открыть/закрыть инструкцию)";
     const instructionElement1 = document.getElementById("instruction-1");
     instructionElement1.innerHTML = `1. Перед новым поиском отметок рекомендуется очистить предыдущий запрос. Для этого просто нажмите кнопку `;
     instructionElement1.appendChild(spanElement1);
@@ -3513,7 +3516,9 @@ const toggleTranslation = () => {
       "Afanasyev Dmitriy Vladimirovich";
     document.getElementById("instruction-container").textContent =
       "Map user guide";
-      const instructionElement2 = document.getElementById("instruction-1");
+      document.getElementById("instr").textContent =
+      "(Click here to open/close guide)";
+    const instructionElement2 = document.getElementById("instruction-1");
     instructionElement2.innerHTML = `1. Before starting a new search for marks, it is recommended to clear the previous query. To do this, simply press the `;
     instructionElement2.appendChild(spanElement2);
     instructionElement2.innerHTML += ` button before selecting new search parameters.`;
@@ -3548,7 +3553,7 @@ const toggleTranslation = () => {
 
 const toggleInstruction = () => {
   const instructionDiv = document.querySelector(".instruction");
-  const containerDiv = document.querySelector(".instruction-container");
+  const containerDiv = document.querySelector(".instr");
 
   if (
     instructionDiv.style.display === "none" ||
