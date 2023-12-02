@@ -92,10 +92,13 @@ body {
 .instruction-container {
   text-align: center;
   margin-top: 5px;
-  background-color: #f5f5ed;
+  background-color: rgb(214, 96, 199);
   border-radius: 10px;
-  border: 2px solid #ccc5c5;
+  border: 2px solid #9a3e3e;
   padding: 5px;
+  color: #9a3e3e;
+  font-weight: 900;
+  font-size: 26px;
 }
 
 .rounded-corners {
@@ -296,7 +299,7 @@ ul li:nth-last-child(2),
   }
 
   .instruction-container {
-    font-size: 14px;
+    /* font-size: 14px; */
     padding: 4px;
   }
 
@@ -372,7 +375,7 @@ ul li:nth-last-child(2),
   }
 
   .instruction-container {
-    font-size: 8px;
+    font-size: 18px;
     padding: 3px;
   }
 
@@ -467,7 +470,7 @@ ul li:nth-last-child(2),
   }
 
   .instruction-container {
-    font-size: 6px;
+    font-size: 12px;
     padding: 2px;
   }
 
