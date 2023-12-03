@@ -3569,7 +3569,7 @@ const toggleInstruction = () => {
 
 document.getElementById("map-image").addEventListener("click", () => {
   const instructionDiv = document.querySelector(".instruction");
-  const containerDiv = document.querySelector(".instruction-container");
+  const containerDiv = document.querySelector(".instr");
   if (instructionDiv.style.display === "block") {
     instructionDiv.style.display = "none";
     containerDiv.classList.remove("rounded-corners");
