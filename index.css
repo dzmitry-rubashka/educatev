@@ -40,7 +40,7 @@ body {
   font-size: 14px;
   text-align: center;
   font-weight: 900;
-  background-color: rgb(214, 96, 199);
+  background-color: #cb8fa2;
   border-radius: 0px 0px 10px 10px;
   border-left: 2px solid #9a3e3e;
   border-right: 2px solid #9a3e3e;
@@ -105,7 +105,7 @@ body {
 .instruction-container {
   text-align: center;
   margin-top: 5px;
-  background-color: rgb(214, 96, 199);
+  background-color: #cb8fa2;
   border-radius: 10px 10px 0px 0px;
   border: 2px solid #9a3e3e;
   border-bottom: none;
